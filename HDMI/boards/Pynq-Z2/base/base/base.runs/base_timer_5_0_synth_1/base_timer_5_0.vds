@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 17 15:37:52 2024
+# Process ID: 17008
+# Current directory: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1
+# Command line: vivado.exe -log base_timer_5_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_timer_5_0.tcl
+# Log file: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/base_timer_5_0.vds
+# Journal file: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1\vivado.jou
+# Running On        :Weathly
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16969 MB
+# Swap memory       :9593 MB
+# Total Virtual     :26562 MB
+# Available Virtual :3565 MB
+#-----------------------------------------------------------
+source base_timer_5_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 488.074 ; gain = 201.473
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/PXL/EOS_PXL_2025/HDMI/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: base_timer_5_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 91d10a17bf3fa1c0 to dir: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.cache/ip/2024.1/9/1/91d10a17bf3fa1c0/base_timer_6.dcp to C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/base_timer_5_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.cache/ip/2024.1/9/1/91d10a17bf3fa1c0/base_timer_6_sim_netlist.v to C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/base_timer_5_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.cache/ip/2024.1/9/1/91d10a17bf3fa1c0/base_timer_6_sim_netlist.vhdl to C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/base_timer_5_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.cache/ip/2024.1/9/1/91d10a17bf3fa1c0/base_timer_6_stub.v to C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/base_timer_5_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.cache/ip/2024.1/9/1/91d10a17bf3fa1c0/base_timer_6_stub.vhdl to C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/base_timer_5_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP base_timer_5_0, cache-ID = 91d10a17bf3fa1c0.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 17 15:38:26 2024...

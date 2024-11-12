@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 17 16:20:29 2024
+# Process ID: 27456
+# Current directory: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_distributor_rpi_0_synth_1
+# Command line: vivado.exe -log base_distributor_rpi_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_distributor_rpi_0.tcl
+# Log file: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_distributor_rpi_0_synth_1/base_distributor_rpi_0.vds
+# Journal file: C:/PXL/EOS_PXL_2025/HDMI/boards/Pynq-Z2/base/base/base.runs/base_distributor_rpi_0_synth_1\vivado.jou
+# Running On        :Weathly
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16969 MB
+# Swap memory       :12890 MB
+# Total Virtual     :29859 MB
+# Available Virtual :5525 MB
+#-----------------------------------------------------------
+source base_distributor_rpi_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 485.043 ; gain = 201.430
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/PXL/EOS_PXL_2025/HDMI/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: base_distributor_rpi_0
+Command: synth_design -top base_distributor_rpi_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
