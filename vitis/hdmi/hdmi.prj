@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="hdmi" location="C:/EOS/Pynq-Z2-Video-main/baremetal/vitis/hdmi" platform="C:/EOS/Pynq-Z2-Video-main/baremetal/vitis/video_out_pynq_z2/export/video_out_pynq_z2/video_out_pynq_z2.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="hdmi_system" sysConfig="video_out_pynq_z2" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="dbd00e934bb47bb4496e4d186e1146c2">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.487430965">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1898067552" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
