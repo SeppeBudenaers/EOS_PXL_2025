@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\EOS\Pynq-Z2-Video-main\baremetal\vitis\video_out_pynq_z2\export\video_out_pynq_z2"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\EOS\Pynq-Z2-Video-main\baremetal\vitis\video_out_pynq_z2\export\video_out_pynq_z2"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\EOS\Pynq-Z2-Video-main\baremetal\vitis\video_out_pynq_z2\export\video_out_pynq_z2;C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\video_out_pynq_z2\export\video_out_pynq_z2"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\video_out_pynq_z2\export\video_out_pynq_z2"/>
 </section>

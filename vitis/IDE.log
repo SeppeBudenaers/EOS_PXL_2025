@@ -73,3 +73,39 @@ con
 
 14:03:07 INFO  : Launch script is exported to file 'C:\EOS\Pynq-Z2-Video-main\baremetal\vitis\hdmi_system\_ide\scripts\debugger_hdmi-default.tcl'
 14:05:11 INFO  : Disconnected from the channel tcfchan#2.
+12:53:03 DEBUG : Logs will be stored at 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/vitis/IDE.log'.
+13:00:28 DEBUG : Logs will be stored at 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/vitis/IDE.log'.
+13:00:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\temp_xsdb_launch_script.tcl
+13:00:29 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:00:29 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:00:29 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:00:36 INFO  : XSCT server has started successfully.
+13:00:36 INFO  : Successfully done setting XSCT server connection channel  
+13:00:36 INFO  : plnx-install-location is set to ''
+13:00:36 INFO  : Successfully done setting workspace for the tool. 
+13:00:37 INFO  : Registering command handlers for Vitis TCF services
+13:00:37 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+13:00:37 INFO  : Platform repository initialization has completed.
+13:00:42 INFO  : Successfully done query RDI_DATADIR 
+13:04:10 INFO  : Hardware specification for platform project 'video_out_pynq_z2' is updated.
+13:06:16 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+13:07:34 INFO  : Result from executing command 'getProjects': video_out_pynq_z2
+13:07:34 INFO  : Result from executing command 'getPlatforms': 
+13:07:34 INFO  : Checking for BSP changes to sync application flags for project 'hdmi'...
+13:07:40 INFO  : Updating application flags with new BSP settings...
+13:07:41 INFO  : Successfully updated application flags for project hdmi.
+13:07:42 INFO  : The hardware specification used by project 'hdmi' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+13:07:42 INFO  : The file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\hdmi\_ide\bitstream\video_out_pynq_z2.bit' stored in project is removed.
+13:07:42 INFO  : The updated bitstream files are copied from platform to folder 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\hdmi\_ide\bitstream' in project 'hdmi'.
+13:07:42 INFO  : The file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\hdmi\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:07:51 INFO  : The updated ps init files are copied from platform to folder 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\vitis\hdmi\_ide\psinit' in project 'hdmi'.
+13:10:00 INFO  : Hardware specification for platform project 'video_out_pynq_z2' is updated.

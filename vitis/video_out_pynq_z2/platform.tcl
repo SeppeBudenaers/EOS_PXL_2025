@@ -20,3 +20,8 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform active {video_out_pynq_z2}
+platform config -updatehw {C:/XilinxDev/PBEAI3/EOS_PXL_2025/BaseDesign/BASE.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/XilinxDev/PBEAI3/EOS_PXL_2025/BaseDesign/BASE.xsa}

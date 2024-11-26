@@ -5,7 +5,7 @@ PROCESSOR = ps7_cortexa9_0
 LIBRARIES = ${PROCESSOR}/lib/libxil.a
 BSP_MAKEFILES := $(wildcard $(PROCESSOR)/libsrc/*/src/Makefile)
 SUBDIRS := $(patsubst %/Makefile, %, $(BSP_MAKEFILES))
-BSP_SEQUENTIAL_MAKEFILES := ps7_cortexa9_0/libsrc/xilrsa_v1_8/src/Makefile
+BSP_SEQUENTIAL_MAKEFILES := ps7_cortexa9_0/libsrc/color_convert_v1_0/src/Makefile ps7_cortexa9_0/libsrc/pixel_pack_v1_0/src/Makefile ps7_cortexa9_0/libsrc/pixel_unpack_v1_0/src/Makefile ps7_cortexa9_0/libsrc/trace_cntrl_32_v1_4/src/Makefile ps7_cortexa9_0/libsrc/trace_cntrl_64_v1_4/src/Makefile ps7_cortexa9_0/libsrc/xilrsa_v1_8/src/Makefile
 BSP_PARALLEL_MAKEFILES := $(filter-out $(BSP_SEQUENTIAL_MAKEFILES),$(BSP_MAKEFILES))
 SEQ_SUBDIRS := $(patsubst %/Makefile, %, $(BSP_SEQUENTIAL_MAKEFILES))
 PAR_SUBDIRS := $(patsubst %/Makefile, %, $(BSP_PARALLEL_MAKEFILES))
@@ -16,7 +16,7 @@ endif
 
 all: 
 	$(MAKE) --no-print-directory seq_libs
-	$(MAKE) -j 18 --no-print-directory par_libs
+	$(MAKE) -j 9 --no-print-directory par_libs
 	$(MAKE) --no-print-directory archive
 	@echo 'Finished building libraries'
 
