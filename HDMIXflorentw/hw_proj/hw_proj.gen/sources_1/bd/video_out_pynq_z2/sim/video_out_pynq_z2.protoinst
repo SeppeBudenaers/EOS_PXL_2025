@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"video_out_pynq_z2": {
-			"proto_instances": {
-			}
-		}
-	}
-}
