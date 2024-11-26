@@ -5,7 +5,7 @@
     "cell_name": "rgb2dvi_0",
     "component_reference": "digilentinc.com:ip:rgb2dvi:1.4",
     "ip_revision": "8",
-    "gen_directory": "../../../../../../hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_rgb2dvi_0_0",
+    "gen_directory": ".",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "video_out_pynq_z2_rgb2dvi_0_0", "resolve_type": "user", "usage": "all" } ],
@@ -46,8 +46,9 @@
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "8" } ],
+        "LOCKEDBYUSER": [ { "value": "TRUE" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_rgb2dvi_0_0" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2024.1" } ],
