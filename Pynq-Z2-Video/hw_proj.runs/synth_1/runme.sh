@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/synth_1'
+HD_PWD='C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

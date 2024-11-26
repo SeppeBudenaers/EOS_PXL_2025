@@ -103,7 +103,7 @@ video_out_pynq_z2_processing_system7_0_0_sc::video_out_pynq_z2_processing_system
     model_param_props.addLong("C_USE_M_AXI_GP1", "0");
     model_param_props.addLong("C_USE_S_AXI_GP0", "0");
     model_param_props.addLong("C_USE_S_AXI_GP1", "0");
-    model_param_props.addLong("C_USE_S_AXI_HP0", "0");
+    model_param_props.addLong("C_USE_S_AXI_HP0", "1");
     model_param_props.addLong("C_USE_S_AXI_HP1", "0");
     model_param_props.addLong("C_USE_S_AXI_HP2", "0");
     model_param_props.addLong("C_USE_S_AXI_HP3", "0");
@@ -124,6 +124,8 @@ video_out_pynq_z2_processing_system7_0_0_sc::video_out_pynq_z2_processing_system
   // initialize AXI sockets
   M_AXI_GP0_rd_socket = mp_impl->M_AXI_GP0_rd_socket;
   M_AXI_GP0_wr_socket = mp_impl->M_AXI_GP0_wr_socket;
+  S_AXI_HP0_rd_socket = mp_impl->S_AXI_HP0_rd_socket;
+  S_AXI_HP0_wr_socket = mp_impl->S_AXI_HP0_wr_socket;
 }
 
 video_out_pynq_z2_processing_system7_0_0_sc::~video_out_pynq_z2_processing_system7_0_0_sc()

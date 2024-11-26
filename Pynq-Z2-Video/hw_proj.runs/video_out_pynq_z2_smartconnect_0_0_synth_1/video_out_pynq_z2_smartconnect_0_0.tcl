@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0.tcl"
+  variable script "C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "video_out_pynq_z2_smartconnect_0_0_synth_1" START { ROLLUP_AUTO }
+set_param bd.open.in_stealth_mode 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -65,97 +66,108 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.cache/wt [current_project]
-set_property parent.project_path C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.xpr [current_project]
+set_property webtalk.parent_dir C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.cache/wt [current_project]
+set_property parent.project_path C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths c:/Users/Cey/test/Pynq-Z2-Video/vivado-library [current_project]
+set_property ip_repo_paths c:/PXL/EOS_PXL_2025/vivado-library [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.cache/ip [current_project]
+set_property ip_output_repo c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.srcs/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_1/bd_98e7_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_1/bd_98e7_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_2/bd_98e7_arinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_3/bd_98e7_rinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_4/bd_98e7_awinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_5/bd_98e7_winsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_6/bd_98e7_binsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_7/bd_98e7_aroutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_8/bd_98e7_routsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_9/bd_98e7_awoutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_10/bd_98e7_woutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_11/bd_98e7_boutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_12/bd_98e7_arni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_12/bd_98e7_arni_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_13/bd_98e7_rni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_13/bd_98e7_rni_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_14/bd_98e7_awni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_14/bd_98e7_awni_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_15/bd_98e7_wni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_15/bd_98e7_wni_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_16/bd_98e7_bni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_16/bd_98e7_bni_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_20/bd_98e7_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_21/bd_98e7_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_21/bd_98e7_sarn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_22/bd_98e7_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_22/bd_98e7_srn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_23/bd_98e7_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_23/bd_98e7_sawn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_24/bd_98e7_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_24/bd_98e7_swn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_25/bd_98e7_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_25/bd_98e7_sbn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_26/bd_98e7_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_27/bd_98e7_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_27/bd_98e7_m00arn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_28/bd_98e7_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_28/bd_98e7_m00rn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_29/bd_98e7_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_29/bd_98e7_m00awn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_30/bd_98e7_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_30/bd_98e7_m00wn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_31/bd_98e7_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_31/bd_98e7_m00bn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_33/bd_98e7_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_34/bd_98e7_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_34/bd_98e7_m01arn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_35/bd_98e7_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_35/bd_98e7_m01rn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_36/bd_98e7_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_36/bd_98e7_m01awn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_37/bd_98e7_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_37/bd_98e7_m01wn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_38/bd_98e7_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_38/bd_98e7_m01bn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_40/bd_98e7_m02s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_41/bd_98e7_m02arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_41/bd_98e7_m02arn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_42/bd_98e7_m02rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_42/bd_98e7_m02rn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_43/bd_98e7_m02awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_43/bd_98e7_m02awn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_44/bd_98e7_m02wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_44/bd_98e7_m02wn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_45/bd_98e7_m02bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_45/bd_98e7_m02bn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_47/bd_98e7_m03s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_48/bd_98e7_m03arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_48/bd_98e7_m03arn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_49/bd_98e7_m03rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_49/bd_98e7_m03rn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_50/bd_98e7_m03awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_50/bd_98e7_m03awn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_51/bd_98e7_m03wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_51/bd_98e7_m03wn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_52/bd_98e7_m03bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_52/bd_98e7_m03bn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/smartconnect.xdc]
+read_ip -quiet C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.srcs/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.xci
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_1/bd_98e7_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_1/bd_98e7_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_2/bd_98e7_arinsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_3/bd_98e7_rinsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_4/bd_98e7_awinsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_5/bd_98e7_winsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_6/bd_98e7_binsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_7/bd_98e7_aroutsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_8/bd_98e7_routsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_9/bd_98e7_awoutsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_10/bd_98e7_woutsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_11/bd_98e7_boutsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_12/bd_98e7_arni_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_12/bd_98e7_arni_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_13/bd_98e7_rni_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_13/bd_98e7_rni_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_14/bd_98e7_awni_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_14/bd_98e7_awni_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_15/bd_98e7_wni_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_15/bd_98e7_wni_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_16/bd_98e7_bni_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_16/bd_98e7_bni_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_20/bd_98e7_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_21/bd_98e7_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_21/bd_98e7_sarn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_22/bd_98e7_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_22/bd_98e7_srn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_23/bd_98e7_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_23/bd_98e7_sawn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_24/bd_98e7_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_24/bd_98e7_swn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_25/bd_98e7_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_25/bd_98e7_sbn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_26/bd_98e7_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_27/bd_98e7_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_27/bd_98e7_m00arn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_28/bd_98e7_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_28/bd_98e7_m00rn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_29/bd_98e7_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_29/bd_98e7_m00awn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_30/bd_98e7_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_30/bd_98e7_m00wn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_31/bd_98e7_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_31/bd_98e7_m00bn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_33/bd_98e7_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_34/bd_98e7_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_34/bd_98e7_m01arn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_35/bd_98e7_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_35/bd_98e7_m01rn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_36/bd_98e7_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_36/bd_98e7_m01awn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_37/bd_98e7_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_37/bd_98e7_m01wn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_38/bd_98e7_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_38/bd_98e7_m01bn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_40/bd_98e7_m02s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_41/bd_98e7_m02arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_41/bd_98e7_m02arn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_42/bd_98e7_m02rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_42/bd_98e7_m02rn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_43/bd_98e7_m02awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_43/bd_98e7_m02awn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_44/bd_98e7_m02wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_44/bd_98e7_m02wn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_45/bd_98e7_m02bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_45/bd_98e7_m02bn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_47/bd_98e7_m03s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_48/bd_98e7_m03arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_48/bd_98e7_m03arn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_49/bd_98e7_m03rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_49/bd_98e7_m03rn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_50/bd_98e7_m03awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_50/bd_98e7_m03awn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_51/bd_98e7_m03wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_51/bd_98e7_m03wn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_52/bd_98e7_m03bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_52/bd_98e7_m03bn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_54/bd_98e7_m04s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_55/bd_98e7_m04arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_55/bd_98e7_m04arn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_56/bd_98e7_m04rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_56/bd_98e7_m04rn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_57/bd_98e7_m04awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_57/bd_98e7_m04awn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_58/bd_98e7_m04wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_58/bd_98e7_m04wn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_59/bd_98e7_m04bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/bd_0/ip/ip_59/bd_98e7_m04bn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/smartconnect.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -171,7 +183,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cacheID [config_ip_cache -export -no_bom  -dir C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1 -new_name video_out_pynq_z2_smartconnect_0_0 -ip [get_ips video_out_pynq_z2_smartconnect_0_0]]
+set cacheID [config_ip_cache -export -no_bom  -dir C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1 -new_name video_out_pynq_z2_smartconnect_0_0 -ip [get_ips video_out_pynq_z2_smartconnect_0_0]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cacheID == "" } {
@@ -226,32 +238,32 @@ generate_parallel_reports -reports { "report_utilization -file video_out_pynq_z2
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0.dcp c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.dcp
+  file copy -force C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0.dcp c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v
+  write_verilog -force -mode synth_stub c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -261,32 +273,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0.dcp c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.dcp
+  file copy -force C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0.dcp c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_stub.v c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v
+  file rename -force C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_stub.v c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_stub.vhdl c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.vhdl
+  file rename -force C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_stub.vhdl c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_sim_netlist.v c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.v
+  file rename -force C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_sim_netlist.v c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_sim_netlist.vhdl c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.vhdl
+  file rename -force C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_smartconnect_0_0_synth_1/video_out_pynq_z2_smartconnect_0_0_sim_netlist.vhdl c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -294,15 +306,15 @@ if { [catch {
 close [open .end.used_ip_cache.rst w]
 }; # end if cacheID 
 
-if {[file isdir C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0]} {
+if {[file isdir C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0]} {
   catch { 
-    file copy -force c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0
+    file copy -force c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0
   }
 }
 
-if {[file isdir C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0]} {
+if {[file isdir C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0]} {
   catch { 
-    file copy -force c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.vhdl C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0
+    file copy -force c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.vhdl C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.ip_user_files/ip/video_out_pynq_z2_smartconnect_0_0
   }
 }
 file delete __synthesis_is_running__

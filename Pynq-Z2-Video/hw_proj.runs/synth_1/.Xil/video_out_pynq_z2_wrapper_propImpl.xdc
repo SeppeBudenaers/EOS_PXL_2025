@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.srcs/constrs_1/imports/constr/hw_constr.xdc rfile:../../../hw_proj.srcs/constrs_1/imports/constr/hw_constr.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.srcs/constrs_1/imports/constr/hw_constr.xdc rfile:../../../hw_proj.srcs/constrs_1/imports/constr/hw_constr.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:37 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { locked }];  #IO_L6N_T0_VREF_34 Sch=led[0]
 set_property src_info {type:XDC file:1 line:42 export:INPUT save:INPUT read:READ} [current_design]

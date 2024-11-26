@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1732013961">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1732624951">
   <File Type="ROUTE-PWR" Name="video_out_pynq_z2_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="video_out_pynq_z2_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="video_out_pynq_z2_wrapper_power_summary_routed.pb"/>
@@ -122,6 +122,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/video_out_pynq_z2_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -150,4 +158,7 @@
   <BlockFileSet Type="BlockSrcs" Name="video_out_pynq_z2_proc_sys_vid_clk_0"/>
   <BlockFileSet Type="BlockSrcs" Name="video_out_pynq_z2_v_axi4s_vid_out_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="video_out_pynq_z2_v_tpg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="video_out_pynq_z2_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="video_out_pynq_z2_axi_vdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="video_out_pynq_z2_auto_pc_0"/>
 </GenRun>

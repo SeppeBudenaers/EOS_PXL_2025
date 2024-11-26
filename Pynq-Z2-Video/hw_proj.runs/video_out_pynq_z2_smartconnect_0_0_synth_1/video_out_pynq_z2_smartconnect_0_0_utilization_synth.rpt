@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Nov 19 11:55:27 2024
-| Host         : MSI running 64-bit major release  (build 9200)
+| Date         : Tue Nov 26 13:41:17 2024
+| Host         : Weathly running 64-bit major release  (build 9200)
 | Command      : report_utilization -file video_out_pynq_z2_smartconnect_0_0_utilization_synth.rpt -pb video_out_pynq_z2_smartconnect_0_0_utilization_synth.pb
 | Design       : video_out_pynq_z2_smartconnect_0_0
 | Device       : xc7z020clg400-1
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  731 |     0 |          0 |     53200 |  1.37 |
-|   LUT as Logic             |  730 |     0 |          0 |     53200 |  1.37 |
+| Slice LUTs*                |  878 |     0 |          0 |     53200 |  1.65 |
+|   LUT as Logic             |  877 |     0 |          0 |     53200 |  1.65 |
 |   LUT as Memory            |    1 |     0 |          0 |     17400 | <0.01 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |    1 |     0 |            |           |       |
-| Slice Registers            |  906 |     0 |          0 |    106400 |  0.85 |
-|   Register as Flip Flop    |  906 |     0 |          0 |    106400 |  0.85 |
+| Slice Registers            |  977 |     0 |          0 |    106400 |  0.92 |
+|   Register as Flip Flop    |  977 |     0 |          0 |    106400 |  0.92 |
 |   Register as Latch        |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                   |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |     13300 |  0.00 |
@@ -60,9 +60,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 201   |          Yes |           - |        Reset |
-| 44    |          Yes |         Set |            - |
-| 661   |          Yes |       Reset |            - |
+| 234   |          Yes |           - |        Reset |
+| 51    |          Yes |         Set |            - |
+| 692   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,15 +151,15 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  661 |        Flop & Latch |
-| FDCE     |  201 |        Flop & Latch |
-| LUT6     |  196 |                 LUT |
-| LUT1     |  181 |                 LUT |
-| LUT3     |  178 |                 LUT |
-| LUT2     |  139 |                 LUT |
-| LUT5     |  120 |                 LUT |
-| LUT4     |   90 |                 LUT |
-| FDSE     |   44 |        Flop & Latch |
+| FDRE     |  692 |        Flop & Latch |
+| FDCE     |  234 |        Flop & Latch |
+| LUT6     |  223 |                 LUT |
+| LUT1     |  210 |                 LUT |
+| LUT3     |  197 |                 LUT |
+| LUT2     |  153 |                 LUT |
+| LUT5     |  148 |                 LUT |
+| LUT4     |  124 |                 LUT |
+| FDSE     |   51 |        Flop & Latch |
 | CARRY4   |    5 |          CarryLogic |
 | SRL16E   |    1 |  Distributed Memory |
 +----------+------+---------------------+

@@ -42,4 +42,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_p
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_tpg_0_0/video_out_pynq_z2_v_tpg_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_v_tpg_0_0 || ORIG_REF_NAME==video_out_pynq_z2_v_tpg_0_0} -quiet] -quiet
 
-# XDC: c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/video_out_pynq_z2_ooc.xdc
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_vdma_0_0/video_out_pynq_z2_axi_vdma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_axi_vdma_0_0 || ORIG_REF_NAME==video_out_pynq_z2_axi_vdma_0_0} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_xbar_0/video_out_pynq_z2_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_xbar_0 || ORIG_REF_NAME==video_out_pynq_z2_xbar_0} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_mem_intercon_0/video_out_pynq_z2_axi_mem_intercon_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_axi_mem_intercon_0 || ORIG_REF_NAME==video_out_pynq_z2_axi_mem_intercon_0} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_auto_pc_0/video_out_pynq_z2_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_auto_pc_0 || ORIG_REF_NAME==video_out_pynq_z2_auto_pc_0} -quiet] -quiet
+
+# XDC: c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/video_out_pynq_z2_ooc.xdc
