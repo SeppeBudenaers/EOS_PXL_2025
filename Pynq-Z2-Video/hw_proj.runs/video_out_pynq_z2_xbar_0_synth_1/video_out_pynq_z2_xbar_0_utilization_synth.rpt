@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Nov 26 13:40:11 2024
+| Date         : Mon Dec  2 16:34:35 2024
 | Host         : Weathly running 64-bit major release  (build 9200)
 | Command      : report_utilization -file video_out_pynq_z2_xbar_0_utilization_synth.rpt -pb video_out_pynq_z2_xbar_0_utilization_synth.pb
 | Design       : video_out_pynq_z2_xbar_0

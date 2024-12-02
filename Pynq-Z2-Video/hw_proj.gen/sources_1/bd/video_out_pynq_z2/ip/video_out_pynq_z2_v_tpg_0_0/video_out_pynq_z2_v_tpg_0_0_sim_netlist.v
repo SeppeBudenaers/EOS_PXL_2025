@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Tue Nov 19 11:58:14 2024
-// Host        : MSI running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_tpg_0_0/video_out_pynq_z2_v_tpg_0_0_sim_netlist.v
+// Date        : Mon Dec  2 15:44:09 2024
+// Host        : Weathly running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top video_out_pynq_z2_v_tpg_0_0 -prefix
+//               video_out_pynq_z2_v_tpg_0_0_ video_out_pynq_z2_v_tpg_0_0_sim_netlist.v
 // Design      : video_out_pynq_z2_v_tpg_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -64,8 +64,8 @@ module video_out_pynq_z2_v_tpg_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RDATA" *) output [31:0]s_axi_CTRL_RDATA;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RRESP" *) output [1:0]s_axi_CTRL_RRESP;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RVALID" *) output s_axi_CTRL_RVALID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 8, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_CTRL_RREADY;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 8, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 1e+08, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s_axi_CTRL_RREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input ap_clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ap_rst_n;
   output [0:0]fid;
   input [0:0]fid_in;
@@ -78,7 +78,7 @@ module video_out_pynq_z2_v_tpg_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *) output [0:0]m_axis_video_TUSER;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *) output [0:0]m_axis_video_TLAST;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TID" *) output [0:0]m_axis_video_TID;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [0:0]m_axis_video_TDEST;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [0:0]m_axis_video_TDEST;
 
   wire \<const0> ;
   wire \<const1> ;
@@ -158,7 +158,7 @@ module video_out_pynq_z2_v_tpg_0_0
   (* ap_ST_fsm_state3 = "5'b00100" *) 
   (* ap_ST_fsm_state4 = "5'b01000" *) 
   (* ap_ST_fsm_state5 = "5'b10000" *) 
-  video_out_pynq_z2_v_tpg_0_0_v_tpg inst
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg inst
        (.ap_clk(ap_clk),
         .ap_rst_n(ap_rst_n),
         .fid(fid),
@@ -192,7 +192,7 @@ module video_out_pynq_z2_v_tpg_0_0
         .s_axi_CTRL_WVALID(s_axi_CTRL_WVALID));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi
    (SR,
     interrupt,
     \FSM_onehot_rstate_reg[1]_0 ,
@@ -7115,7 +7115,7 @@ module video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo
    (MultiPixStream2AXIvideo_U0_field_id_val8_read,
     Q,
     CO,
@@ -7761,7 +7761,7 @@ module video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo
         .I1(Q),
         .I2(CO),
         .O(empty_n_reg));
-  video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171
        (.CO(CO),
         .D(ap_NS_fsm[3:2]),
         .E(E),
@@ -8271,7 +8271,7 @@ module video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
    (\sof_2_reg_239_reg[0]_0 ,
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TLAST,
     E,
@@ -9174,7 +9174,7 @@ module video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_9
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -9189,14 +9189,14 @@ module video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1
   wire ap_block_pp0_stage0_subdone;
   wire ap_clk;
 
-  video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U
        (.B(B),
         .P(P),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -9301,7 +9301,7 @@ module video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_entry_proc
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_entry_proc
    (start_once_reg,
     SR,
     start_once_reg_reg_0,
@@ -9326,7 +9326,7 @@ module video_out_pynq_z2_v_tpg_0_0_entry_proc
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
    (D,
     height_val4_c_empty_n,
     height_val4_c_full_n,
@@ -9374,7 +9374,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
   wire push;
   wire [5:0]y_fu_114_reg;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
        (.D(D),
         .S(S),
         .\SRL_SIG_reg[1][11]_0 (\SRL_SIG_reg[1][11] ),
@@ -9487,7 +9487,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
    (D,
     S,
     \SRL_SIG_reg[1][11]_0 ,
@@ -9778,7 +9778,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
         .O(\SRL_SIG_reg[1][11]_0 [9]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S
    (\SRL_SIG_reg[0][12] ,
     width_val7_c_empty_n,
     S,
@@ -9879,7 +9879,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S
   wire width_val7_c_full_n;
   wire [2:0]width_val7_c_num_data_valid;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
        (.D(\SRL_SIG_reg[0][12] ),
         .DI(DI),
         .MultiPixStream2AXIvideo_U0_field_id_val8_read(MultiPixStream2AXIvideo_U0_field_id_val8_read),
@@ -10020,7 +10020,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
    (D,
     S,
     \icmp_ln979_reg_321_reg[0] ,
@@ -10582,7 +10582,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
         .O(\SRL_SIG_reg[0][0]_0 ));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
    (height_val4_c3_empty_n,
     height_val4_c3_full_n,
     S,
@@ -10648,7 +10648,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
        (.D(D),
         .DI(DI),
         .Q(Q),
@@ -10768,7 +10768,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
    (width_val7_c4_empty_n,
     full_n_reg_0,
     \addr_reg[0]_0 ,
@@ -10844,7 +10844,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
   wire width_val7_c4_full_n;
   wire [2:0]width_val7_c4_num_data_valid;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
        (.DI(DI),
         .\SRL_SIG_reg[0][0]_0 (\addr_reg_n_3_[0] ),
         .\SRL_SIG_reg[0][15]_0 (\SRL_SIG_reg[0][15] ),
@@ -10971,7 +10971,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
    (\addr_reg[0] ,
     \addr_reg[0]_0 ,
     \addr_reg[0]_1 ,
@@ -11574,7 +11574,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25
    (S,
     \addr_reg[0] ,
     \addr_reg[0]_0 ,
@@ -12176,7 +12176,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25
         .O(S[0]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
    (boxSize_val24_c_empty_n,
     full_n_reg_0,
     start_once_reg_reg,
@@ -12247,7 +12247,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
   wire start_once_reg_reg;
   wire start_once_reg_reg_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .boxColorG_val26_c_full_n(boxColorG_val26_c_full_n),
@@ -12390,7 +12390,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
    (crossHairX_val18_c_empty_n,
     crossHairX_val18_c_full_n,
     out,
@@ -12430,7 +12430,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .\crossHairX_val_read_reg_465_reg[15] (\crossHairX_val_read_reg_465_reg[15] ),
@@ -12557,7 +12557,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
    (crossHairY_val19_c_empty_n,
     full_n_reg_0,
     out,
@@ -12613,7 +12613,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .boxColorB_val27_c_full_n(boxColorB_val27_c_full_n),
@@ -12746,7 +12746,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
    (full_n_reg,
     out,
     crossHairY_val19_c_full_n,
@@ -13006,7 +13006,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26
    (out,
     push,
     \crossHairX_val_read_reg_465_reg[15] ,
@@ -13235,7 +13235,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29
    (full_n_reg,
     out,
     boxSize_val24_c_full_n,
@@ -13490,7 +13490,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29
         .O(full_n_reg));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
    (field_id_val8_c_empty_n,
     field_id_val8_c_full_n,
     out,
@@ -13531,7 +13531,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
   wire [15:0]out;
   wire push;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .\field_id_val8_read_reg_298_reg[15] (\field_id_val8_read_reg_298_reg[15] ),
@@ -13664,7 +13664,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
    (out,
     push,
     \field_id_val8_read_reg_298_reg[15] ,
@@ -13892,7 +13892,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
         .Q(out[9]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
    (fid_in_val9_c_dout,
     fid_in_val9_c_full_n,
     empty_n_reg_0,
@@ -13943,7 +13943,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
   wire \mOutPtr[2]_i_1__10_n_3 ;
   wire push;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .fid_in(fid_in),
@@ -14084,7 +14084,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
    (fid_in_val9_c_dout,
     push,
     fid_in,
@@ -14117,7 +14117,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
         .Q(fid_in_val9_c_dout));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
    (bckgndYUV_empty_n,
     bckgndYUV_full_n,
     \mOutPtr_reg[2]_0 ,
@@ -14214,7 +14214,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
   wire p_9_in;
   wire push;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
        (.Q(addr_reg),
         .ap_clk(ap_clk),
         .in(in),
@@ -14460,7 +14460,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
    (ovrlayYUV_empty_n,
     ovrlayYUV_full_n,
     D,
@@ -14515,7 +14515,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
   wire p_9_in;
   wire push;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
        (.D(D),
         .Q(addr_reg),
         .ap_clk(ap_clk),
@@ -14719,7 +14719,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
    (D,
     out,
     \data_p2_reg[0] ,
@@ -15250,7 +15250,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33
    (out,
     push,
     in,
@@ -15582,7 +15582,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33
         .Q(out[9]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
    (colorFormat_val17_c5_empty_n,
     colorFormat_val17_c5_full_n,
     icmp_fu_352_p2,
@@ -15642,7 +15642,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
        (.\SRL_SIG_reg[0][0]_0 (\SRL_SIG_reg[0][0] ),
         .\SRL_SIG_reg[0][7]_0 (\SRL_SIG_reg[0][7] ),
         .\SRL_SIG_reg[1][5]_0 (icmp_fu_352_p2),
@@ -15761,7 +15761,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
    (\SRL_SIG_reg[0][3] ,
     colorFormat_val17_c_empty_n,
     colorFormat_val17_c_full_n,
@@ -15806,7 +15806,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
   wire \mOutPtr[2]_i_1__16_n_3 ;
   wire push;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
        (.\SRL_SIG_reg[0][3]_0 (\SRL_SIG_reg[0][3] ),
         .\SRL_SIG_reg[0][4]_0 (\SRL_SIG_reg[0][4] ),
         .\SRL_SIG_reg[1][7]_0 (\SRL_SIG_reg[1][7] ),
@@ -15919,7 +15919,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
    (full_n_reg_0,
     push,
     E,
@@ -15984,7 +15984,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
   wire push_0;
   wire width_val7_c4_empty_n;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
        (.E(push),
         .\SRL_SIG_reg[0][7]_0 (\SRL_SIG_reg[0][7]_1 ),
         .ap_clk(ap_clk),
@@ -16123,7 +16123,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
    (motionSpeed_val14_c_dout,
     E,
     \SRL_SIG_reg[0][7]_0 ,
@@ -16306,7 +16306,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27
    (\SRL_SIG_reg[0][3]_0 ,
     \SRL_SIG_reg[0][4]_0 ,
     \SRL_SIG_reg[1][7]_0 ,
@@ -16505,7 +16505,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28
    (\SRL_SIG_reg[1][5]_0 ,
     colorFormat_val17_c5_dout,
     and4_i_fu_308_p2,
@@ -16792,7 +16792,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28
         .O(\icmp_reg_530[0]_i_4_n_3 ));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
    (boxColorB_val27_c_empty_n,
     boxColorB_val27_c_full_n,
     out,
@@ -16832,7 +16832,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .\boxColorB_val_read_reg_440_reg[7] (\boxColorB_val_read_reg_440_reg[7] ),
@@ -16959,7 +16959,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
    (boxColorG_val26_c_empty_n,
     boxColorG_val26_c_full_n,
     out,
@@ -16999,7 +16999,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .\boxColorG_val_read_reg_445_reg[7] (\boxColorG_val_read_reg_445_reg[7] ),
@@ -17126,7 +17126,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
    (boxColorR_val25_c_empty_n,
     boxColorR_val25_c_full_n,
     out,
@@ -17166,7 +17166,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
   wire push;
   wire push_0;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .\boxColorR_val_read_reg_450_reg[7] (\boxColorR_val_read_reg_450_reg[7] ),
@@ -17293,7 +17293,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
    (maskId_val12_c_empty_n,
     maskId_val12_c_full_n,
     \maskId_read_reg_763_reg[0] ,
@@ -17336,7 +17336,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
   wire push_0;
   wire [7:0]\tobool_reg_495[0]_i_3 ;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .\maskId_read_reg_763_reg[0] (\maskId_read_reg_763_reg[0] ),
@@ -17464,7 +17464,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
    (ovrlayId_val11_c_full_n,
     empty_n_reg_0,
     out,
@@ -17514,7 +17514,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
   wire push_0;
   wire tpgForeground_U0_ap_start;
 
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
        (.addr(addr),
         .ap_clk(ap_clk),
         .out(out),
@@ -17648,7 +17648,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
    (out,
     push,
     \patternId_val_read_reg_480_reg[7] ,
@@ -17773,7 +17773,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24
    (\maskId_read_reg_763_reg[0] ,
     out,
     push,
@@ -17920,7 +17920,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30
    (out,
     push_0,
     \boxColorR_val_read_reg_450_reg[7] ,
@@ -18045,7 +18045,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31
    (out,
     push,
     \boxColorG_val_read_reg_445_reg[7] ,
@@ -18170,7 +18170,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg" *) 
-module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32
    (out,
     push,
     \boxColorB_val_read_reg_440_reg[7] ,
@@ -18294,7 +18294,7 @@ module video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32
         .Q(out[7]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init
    (ap_loop_init_int,
     full_n_reg,
     D,
@@ -19727,7 +19727,7 @@ module video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init" *) 
-module video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12
    (ap_done_cache,
     ap_loop_init_int_reg_0,
     D,
@@ -21115,7 +21115,7 @@ module video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12
         .O(grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_484_ap_start_reg_reg_8));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1
    (P,
     ap_block_pp0_stage0_subdone,
     p_reg_reg,
@@ -21142,7 +21142,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1
   wire [15:0]p_reg_reg_1;
   wire [15:0]phi_mul_fu_480_reg;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0_U
        (.P(P),
         .ZplateHorContDelta_val(ZplateHorContDelta_val),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -21153,7 +21153,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1
         .phi_mul_fu_480_reg(phi_mul_fu_480_reg));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0
    (P,
     ap_block_pp0_stage0_subdone,
     p_reg_reg_0,
@@ -21454,7 +21454,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0
         .O(p_reg_reg_i_9__0_n_3));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1
    (\r_reg_4982_pp0_iter19_reg_reg[7]__0 ,
     ap_predicate_pred2586_state21_reg,
     ap_predicate_pred2606_state21_reg,
@@ -21562,7 +21562,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1
   wire [7:0]r_reg_4982_pp0_iter19_reg;
   wire \r_reg_4982_pp0_iter19_reg_reg[7]__0 ;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U
        (.D(D),
         .P(P),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -21600,7 +21600,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1
         .\r_reg_4982_pp0_iter19_reg_reg[7]__0 (\r_reg_4982_pp0_iter19_reg_reg[7]__0 ));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
    (\r_reg_4982_pp0_iter19_reg_reg[7]__0 ,
     ap_predicate_pred2586_state21_reg,
     ap_predicate_pred2606_state21_reg,
@@ -21960,7 +21960,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
         .UNDERFLOW(NLW_p_reg_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1
    (P,
     SS,
     D,
@@ -22011,7 +22011,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1
   wire bckgndYUV_full_n;
   wire cmp2_i_reg_1308;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U
        (.C(C),
         .D(D),
         .DI(DI),
@@ -22030,7 +22030,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1
         .cmp2_i_reg_1308(cmp2_i_reg_1308));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
    (P,
     SS,
     D,
@@ -22642,7 +22642,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
         .O(grp_fu_4524_p0[0]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1
    (P,
     \tmp_reg_4967_reg[8] ,
     ap_block_pp0_stage0_subdone,
@@ -22663,7 +22663,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1
   wire ap_clk;
   wire [6:0]\tmp_reg_4967_reg[8] ;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U
        (.A(A),
         .P(P),
         .Q(Q),
@@ -22672,7 +22672,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1
         .\tmp_reg_4967_reg[8] (\tmp_reg_4967_reg[8] ));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
    (P,
     \tmp_reg_4967_reg[8] ,
     ap_block_pp0_stage0_subdone,
@@ -22831,7 +22831,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
         .O(\tmp_reg_4967_reg[8] [0]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1
    (PCOUT,
     A,
     ap_block_pp0_stage0_subdone,
@@ -22852,7 +22852,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1
   wire ap_clk;
   wire [6:0]p_reg_reg;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U
        (.A(A),
         .PCOUT(PCOUT),
         .Q(Q),
@@ -22861,7 +22861,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1
         .p_reg_reg_0(p_reg_reg));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
    (PCOUT,
     A,
     ap_block_pp0_stage0_subdone,
@@ -22976,7 +22976,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
         .O(A));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1
    (P,
     \tmp_3_reg_4972_reg[8] ,
     ap_block_pp0_stage0_subdone,
@@ -23000,7 +23000,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1
   wire [14:0]p_reg_reg;
   wire [6:0]\tmp_3_reg_4972_reg[8] ;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U
        (.A(A),
         .P(P),
         .Q(Q),
@@ -23010,7 +23010,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1
         .\tmp_3_reg_4972_reg[8] (\tmp_3_reg_4972_reg[8] ));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
    (P,
     \tmp_3_reg_4972_reg[8] ,
     ap_block_pp0_stage0_subdone,
@@ -23172,7 +23172,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
         .O(\tmp_3_reg_4972_reg[8] [0]));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1
    (p_reg_reg,
     A,
     p_reg_reg_0,
@@ -23208,7 +23208,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1
   wire [0:0]p_reg_reg_1;
   wire [6:0]p_reg_reg_2;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
        (.A(A),
         .DI(DI),
         .P(P),
@@ -23223,7 +23223,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1" *) 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13
    (SS,
     D,
     ap_block_pp0_stage0_subdone,
@@ -23259,7 +23259,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13
   wire \g_2_reg_5195_reg[0] ;
   wire [7:0]g_reg_4988_pp0_iter18_reg;
 
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U
        (.A(A),
         .D(D),
         .PCOUT(PCOUT),
@@ -23273,7 +23273,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13
         .g_reg_4988_pp0_iter18_reg(g_reg_4988_pp0_iter18_reg));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
    (SS,
     D,
     ap_block_pp0_stage0_subdone,
@@ -23581,7 +23581,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0" *) 
-module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23
    (p_reg_reg_0,
     A,
     p_reg_reg_1,
@@ -23735,7 +23735,7 @@ module video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23
         .O(A));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -23856,7 +23856,7 @@ module video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1" *) 
-module video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -23977,7 +23977,7 @@ module video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1" *) 
-module video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15
    (P,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -24097,7 +24097,7 @@ module video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15
         .UNDERFLOW(NLW_tmp_product_UNDERFLOW_UNCONNECTED));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s
    (\ap_phi_reg_pp0_iter3_hHatch_reg_1346_reg[0] ,
     SR,
     E,
@@ -24562,7 +24562,7 @@ module video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s
         .S({1'b0,1'b0,1'b0,\xCount_4_0[9]_i_17_n_3 }));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s
    (s,
     \count_reg[12] ,
     \count_reg[8] ,
@@ -25125,7 +25125,7 @@ module video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s
         .S({\s[0]_i_15_n_3 ,\s[0]_i_16_n_3 ,\s[0]_i_17_n_3 ,\s[0]_i_18_n_3 }));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_regslice_both
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both
    (m_axis_video_TREADY_int_regslice,
     m_axis_video_TVALID,
     D,
@@ -25874,7 +25874,7 @@ module video_out_pynq_z2_v_tpg_0_0_regslice_both
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_regslice_both" *) 
-module video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1
    (ack_in_t_reg_0,
     data_p2,
     m_axis_video_TLAST,
@@ -25990,7 +25990,7 @@ module video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_regslice_both" *) 
-module video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0
    (ack_in_t_reg_0,
     data_p2,
     m_axis_video_TUSER,
@@ -26105,7 +26105,7 @@ module video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0
    (MultiPixStream2AXIvideo_U0_ap_start,
     start_for_MultiPixStream2AXIvideo_U0_full_n,
     E,
@@ -26344,7 +26344,7 @@ module video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0
    (tpgForeground_U0_ap_start,
     start_for_tpgForeground_U0_full_n,
     SR,
@@ -26444,7 +26444,7 @@ module video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0
         .R(SR));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground
    (\colorFormat_read_reg_773_reg[4] ,
     ap_enable_reg_pp0_iter21,
     \ap_CS_fsm_reg[2]_0 ,
@@ -27867,7 +27867,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground
         .D(\empty_94_reg_1385_reg[2]_0 [2]),
         .Q(empty_94_reg_1385[2]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_484
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_484
        (.CO(icmp_ln563_fu_1026_p2),
         .D(ap_NS_fsm[3:2]),
         .DPtpgBarArray_address0(DPtpgBarArray_address0),
@@ -30852,7 +30852,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
    (ap_loop_exit_ready_pp0_iter20_reg,
     ap_enable_reg_pp0_iter20,
     ap_enable_reg_pp0_iter21_reg_0,
@@ -33227,7 +33227,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
   wire [3:3]\NLW_zonePlateVAddr_reg[15]_i_3_CO_UNCONNECTED ;
   wire [3:3]\NLW_zonePlateVDelta_reg[12]_i_1_CO_UNCONNECTED ;
 
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R DPtpgBarArray_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R DPtpgBarArray_U
        (.D({DPtpgBarArray_U_n_3,DPtpgBarArray_U_n_4}),
         .DPtpgBarArray_address0(DPtpgBarArray_address0),
         .DPtpgBarArray_ce0_local(DPtpgBarArray_ce0_local),
@@ -33242,7 +33242,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[2]_0 (DPtpgBarArray_U_n_15),
         .\q0_reg[2]_1 ({DPtpgBarArray_U_n_16,DPtpgBarArray_U_n_17}),
         .\q0_reg[6] (ap_enable_reg_pp0_iter21_reg_0));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R DPtpgBarSelRgb_CEA_g_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R DPtpgBarSelRgb_CEA_g_U
        (.Q(Q[2]),
         .ap_clk(ap_clk),
         .\outpix_0_1_0_0_0_load215_lcssa223_fu_266_reg[4] (\outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_18_n_3 ),
@@ -33252,12 +33252,12 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\outpix_0_1_0_0_0_load215_lcssa223_fu_266_reg[4]_3 (\outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_22_n_3 ),
         .\q0_reg[4]_0 (DPtpgBarSelRgb_CEA_g_U_n_3),
         .\q0_reg[4]_1 (DPtpgBarSelRgb_CEA_b_ce0_local));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R DPtpgBarSelRgb_CEA_r_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R DPtpgBarSelRgb_CEA_r_U
        (.Q(Q[1]),
         .ap_clk(ap_clk),
         .\q0_reg[4]_0 (DPtpgBarSelRgb_CEA_r_U_n_3),
         .\q0_reg[4]_1 (DPtpgBarSelRgb_CEA_b_ce0_local));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R DPtpgBarSelRgb_VESA_b_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R DPtpgBarSelRgb_VESA_b_U
        (.ap_clk(ap_clk),
         .ap_predicate_pred2165_state21(ap_predicate_pred2165_state21),
         .ap_predicate_pred2165_state21_reg(DPtpgBarSelRgb_VESA_b_U_n_5),
@@ -33275,7 +33275,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[1]_1 (DPtpgBarSelRgb_CEA_b_ce0_local),
         .\q0_reg[1]_2 (\q0_reg[3]_0 ),
         .trunc_ln565_9_reg_4780_pp0_iter19_reg(trunc_ln565_9_reg_4780_pp0_iter19_reg));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R DPtpgBarSelRgb_VESA_r_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R DPtpgBarSelRgb_VESA_r_U
        (.Q(DPtpgBarSelYuv_709_y_U_n_10),
         .ap_clk(ap_clk),
         .ap_predicate_pred2170_state21(ap_predicate_pred2170_state21),
@@ -33315,7 +33315,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .tmp_26_reg_5145({tmp_26_reg_5145[6],tmp_26_reg_5145[1]}),
         .trunc_ln565_9_reg_4780_pp0_iter19_reg(trunc_ln565_9_reg_4780_pp0_iter19_reg),
         .\trunc_ln565_9_reg_4780_pp0_iter19_reg_reg[0] (DPtpgBarSelRgb_VESA_r_U_n_8));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R DPtpgBarSelYuv_601_u_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R DPtpgBarSelYuv_601_u_U
        (.D({\q0_reg[5]_0 ,DPtpgBarArray_U_n_9}),
         .Q({DPtpgBarSelYuv_601_u_U_n_4,DPtpgBarSelYuv_601_u_U_n_5}),
         .ap_clk(ap_clk),
@@ -33327,7 +33327,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[7]_0 (DPtpgBarSelYuv_601_u_U_n_6),
         .\q0_reg[7]_1 (Q),
         .\q0_reg[7]_2 (ap_enable_reg_pp0_iter21_reg_1));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R DPtpgBarSelYuv_601_v_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R DPtpgBarSelYuv_601_v_U
        (.Q(b_2_reg_5061_pp0_iter19_reg[2]),
         .ap_clk(ap_clk),
         .ap_predicate_pred2153_state21(ap_predicate_pred2153_state21),
@@ -33369,7 +33369,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[4]_2 (\q0_reg[4] ),
         .\q0_reg[5]_0 (DPtpgBarSelYuv_601_v_U_n_4),
         .\q0_reg[5]_1 (\q0_reg[5] ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R DPtpgBarSelYuv_601_y_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R DPtpgBarSelYuv_601_y_U
        (.D({DPtpgBarArray_U_n_3,DPtpgBarArray_U_n_4}),
         .Q(Q[0]),
         .\Sel_cast_cast_reg_4735_reg[1] (DPtpgBarSelYuv_601_y_U_n_12),
@@ -33425,7 +33425,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[7]_2 (DPtpgBarArray_U_n_15),
         .tmp_26_reg_5145({tmp_26_reg_5145[7:3],tmp_26_reg_5145[1:0]}),
         .trunc_ln565_9_reg_4780_pp0_iter19_reg(trunc_ln565_9_reg_4780_pp0_iter19_reg));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R DPtpgBarSelYuv_709_u_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R DPtpgBarSelYuv_709_u_U
        (.Q(DPtpgBarSelYuv_709_v_U_n_11),
         .ap_clk(ap_clk),
         .ap_enable_reg_pp0_iter19(ap_enable_reg_pp0_iter19),
@@ -33451,7 +33451,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[7]_1 (ap_enable_reg_pp0_iter21_reg_0),
         .\q0_reg[7]_2 (Q),
         .trunc_ln565_9_reg_4780_pp0_iter19_reg(trunc_ln565_9_reg_4780_pp0_iter19_reg));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R DPtpgBarSelYuv_709_v_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R DPtpgBarSelYuv_709_v_U
        (.D({DPtpgBarArray_U_n_16,DPtpgBarArray_U_n_17}),
         .Q(DPtpgBarSelYuv_601_u_U_n_4),
         .ap_clk(ap_clk),
@@ -33507,7 +33507,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[6]_4 (\q0_reg[6]_2 ),
         .\q0_reg[7]_0 (DPtpgBarSelYuv_709_v_U_n_13),
         .\q0_reg[7]_1 (\q0_reg[7]_1 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R DPtpgBarSelYuv_709_y_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R DPtpgBarSelYuv_709_y_U
        (.D({DPtpgBarArray_U_n_10,DPtpgBarArray_U_n_11,DPtpgBarArray_U_n_12,DPtpgBarArray_U_n_13,DPtpgBarArray_U_n_14}),
         .Q(DPtpgBarSelYuv_709_y_U_n_10),
         .ap_clk(ap_clk),
@@ -34495,7 +34495,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(\add_ln549_reg_4798_pp0_iter8_reg_reg[9]_srl6_n_3 ),
         .Q(add_ln549_reg_4798_pp0_iter9_reg[9]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1 am_addmul_16ns_1s_16ns_17_4_1_U40
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1 am_addmul_16ns_1s_16ns_17_4_1_U40
        (.B({flow_control_loop_pipe_sequential_init_U_n_21,flow_control_loop_pipe_sequential_init_U_n_22,flow_control_loop_pipe_sequential_init_U_n_23,flow_control_loop_pipe_sequential_init_U_n_24,flow_control_loop_pipe_sequential_init_U_n_25,trunc_ln565_11_fu_1563_p1}),
         .P(d),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -37387,7 +37387,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(trunc_ln1289_1_fu_2414_p1),
         .Q(b_reg_4993[7]),
         .S(\b_reg_4993[7]_i_1_n_3 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R blkYuv_1_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R blkYuv_1_U
        (.ap_clk(ap_clk),
         .ap_predicate_pred2600_state21(ap_predicate_pred2600_state21),
         .ap_predicate_pred2600_state21_reg(blkYuv_1_U_n_3),
@@ -37397,12 +37397,12 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_6_1 (\outpix_0_1_0_0_0_load215_lcssa223_fu_266[5]_i_5_n_3 ),
         .\q0_reg[7]_0 (DPtpgBarSelRgb_CEA_b_ce0_local),
         .\q0_reg[7]_1 (\q0_reg[7]_0 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 blkYuv_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 blkYuv_U
        (.ap_clk(ap_clk),
         .\q0_reg[7]_0 (blkYuv_U_n_3),
         .\q0_reg[7]_1 (DPtpgBarSelRgb_CEA_b_ce0_local),
         .\q0_reg[7]_2 (\q0_reg[7] ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R bluYuv_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R bluYuv_U
        (.Q(grnYuv_U_n_7),
         .ap_clk(ap_clk),
         .ap_phi_reg_pp0_iter19_phi_ln1186_reg_1412(ap_phi_reg_pp0_iter19_phi_ln1186_reg_1412),
@@ -37472,7 +37472,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(conv2_i_i10_i239_reg_1323),
         .Q(conv2_i_i_i_cast_cast_reg_4753),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 flow_control_loop_pipe_sequential_init_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 flow_control_loop_pipe_sequential_init_U
        (.B({flow_control_loop_pipe_sequential_init_U_n_21,flow_control_loop_pipe_sequential_init_U_n_22,flow_control_loop_pipe_sequential_init_U_n_23,flow_control_loop_pipe_sequential_init_U_n_24,flow_control_loop_pipe_sequential_init_U_n_25,trunc_ln565_11_fu_1563_p1}),
         .CO(icmp_ln565_fu_1533_p2179_in),
         .D(D),
@@ -37919,7 +37919,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(trunc_ln1285_1_fu_2389_p1),
         .Q(g_reg_4988[7]),
         .S(\g_reg_4988[7]_i_1_n_3 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R grnYuv_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R grnYuv_U
        (.Q(grnYuv_U_n_7),
         .ap_clk(ap_clk),
         .ap_phi_reg_pp0_iter19_phi_ln1165_reg_1423(ap_phi_reg_pp0_iter19_phi_ln1165_reg_1423),
@@ -37940,7 +37940,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[5]_0 (grnYuv_U_n_5),
         .\q0_reg[6] (\cmp2_i_reg_1308_reg[0] [5]),
         .\q0_reg[6]_0 (grnYuv_U_n_4));
-  video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s grp_reg_ap_uint_10_s_fu_1988
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s grp_reg_ap_uint_10_s_fu_1988
        (.D(xCount_4_01_in),
         .E(grp_reg_ap_uint_10_s_fu_1988_n_5),
         .Q(xCount_4_0),
@@ -39535,7 +39535,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .RSTREGB(1'b0),
         .WEA({1'b0,1'b0}),
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 mac_muladd_16s_16s_16ns_16_4_1_U41
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 mac_muladd_16s_16s_16ns_16_4_1_U41
        (.P({mac_muladd_16s_16s_16ns_16_4_1_U41_n_3,mac_muladd_16s_16s_16ns_16_4_1_U41_n_4,mac_muladd_16s_16s_16ns_16_4_1_U41_n_5,mac_muladd_16s_16s_16ns_16_4_1_U41_n_6,mac_muladd_16s_16s_16ns_16_4_1_U41_n_7,mac_muladd_16s_16s_16ns_16_4_1_U41_n_8,mac_muladd_16s_16s_16ns_16_4_1_U41_n_9,mac_muladd_16s_16s_16ns_16_4_1_U41_n_10,mac_muladd_16s_16s_16ns_16_4_1_U41_n_11,mac_muladd_16s_16s_16ns_16_4_1_U41_n_12,mac_muladd_16s_16s_16ns_16_4_1_U41_n_13}),
         .ZplateHorContDelta_val(ZplateHorContDelta_val),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -39544,7 +39544,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .p_reg_reg_0(d),
         .p_reg_reg_1(\zonePlateVAddr_loc_0_fu_318_reg[15]_0 ),
         .phi_mul_fu_480_reg(phi_mul_fu_480_reg));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 mac_muladd_8ns_5ns_16ns_17_4_1_U48
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 mac_muladd_8ns_5ns_16ns_17_4_1_U48
        (.D(b_reg_4993),
         .P({mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_3,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_4,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_5,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_6,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_7,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_8,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_9,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_10,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_11,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_12,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_13,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_14,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_15,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_16,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_17,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_18}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -39580,7 +39580,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .p_reg_reg(mac_muladd_8ns_5ns_16ns_17_4_1_U48_n_10),
         .r_reg_4982_pp0_iter19_reg(r_reg_4982_pp0_iter19_reg),
         .\r_reg_4982_pp0_iter19_reg_reg[7]__0 (mac_muladd_8ns_5ns_16ns_17_4_1_U48_n_3));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 mac_muladd_8ns_6s_15ns_16_4_1_U45
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 mac_muladd_8ns_6s_15ns_16_4_1_U45
        (.C(r_reg_4982),
         .D(b_2_fu_2871_p3),
         .DI(mac_muladd_8ns_8s_16s_16_4_1_U44_n_22),
@@ -39597,21 +39597,21 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\b_2_reg_5061_reg[7]_i_4 ({mac_muladd_8ns_8s_16s_16_4_1_U44_n_3,mac_muladd_8ns_8s_16s_16_4_1_U44_n_4,mac_muladd_8ns_8s_16s_16_4_1_U44_n_5,mac_muladd_8ns_8s_16s_16_4_1_U44_n_6,mac_muladd_8ns_8s_16s_16_4_1_U44_n_7,mac_muladd_8ns_8s_16s_16_4_1_U44_n_8,mac_muladd_8ns_8s_16s_16_4_1_U44_n_9,mac_muladd_8ns_8s_16s_16_4_1_U44_n_10,mac_muladd_8ns_8s_16s_16_4_1_U44_n_11,mac_muladd_8ns_8s_16s_16_4_1_U44_n_12,mac_muladd_8ns_8s_16s_16_4_1_U44_n_13,mac_muladd_8ns_8s_16s_16_4_1_U44_n_14,mac_muladd_8ns_8s_16s_16_4_1_U44_n_15,mac_muladd_8ns_8s_16s_16_4_1_U44_n_16,mac_muladd_8ns_8s_16s_16_4_1_U44_n_17}),
         .bckgndYUV_full_n(bckgndYUV_full_n),
         .cmp2_i_reg_1308(cmp2_i_reg_1308));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 mac_muladd_8ns_7ns_13ns_15_4_1_U42
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 mac_muladd_8ns_7ns_13ns_15_4_1_U42
        (.A(mac_muladd_8ns_7s_16s_16_4_1_U43_n_51),
         .P({mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_3,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_4,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_5,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_6,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_7,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_8,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_9,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_10,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_11,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_12,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_13,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_14,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_15,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_16,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_17}),
         .Q(tmp_reg_4967),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk),
         .\tmp_reg_4967_reg[8] (grp_fu_4497_p0));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 mac_muladd_8ns_7s_16s_16_4_1_U43
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 mac_muladd_8ns_7s_16s_16_4_1_U43
        (.A(mac_muladd_8ns_7s_16s_16_4_1_U43_n_51),
         .PCOUT({mac_muladd_8ns_7s_16s_16_4_1_U43_n_3,mac_muladd_8ns_7s_16s_16_4_1_U43_n_4,mac_muladd_8ns_7s_16s_16_4_1_U43_n_5,mac_muladd_8ns_7s_16s_16_4_1_U43_n_6,mac_muladd_8ns_7s_16s_16_4_1_U43_n_7,mac_muladd_8ns_7s_16s_16_4_1_U43_n_8,mac_muladd_8ns_7s_16s_16_4_1_U43_n_9,mac_muladd_8ns_7s_16s_16_4_1_U43_n_10,mac_muladd_8ns_7s_16s_16_4_1_U43_n_11,mac_muladd_8ns_7s_16s_16_4_1_U43_n_12,mac_muladd_8ns_7s_16s_16_4_1_U43_n_13,mac_muladd_8ns_7s_16s_16_4_1_U43_n_14,mac_muladd_8ns_7s_16s_16_4_1_U43_n_15,mac_muladd_8ns_7s_16s_16_4_1_U43_n_16,mac_muladd_8ns_7s_16s_16_4_1_U43_n_17,mac_muladd_8ns_7s_16s_16_4_1_U43_n_18,mac_muladd_8ns_7s_16s_16_4_1_U43_n_19,mac_muladd_8ns_7s_16s_16_4_1_U43_n_20,mac_muladd_8ns_7s_16s_16_4_1_U43_n_21,mac_muladd_8ns_7s_16s_16_4_1_U43_n_22,mac_muladd_8ns_7s_16s_16_4_1_U43_n_23,mac_muladd_8ns_7s_16s_16_4_1_U43_n_24,mac_muladd_8ns_7s_16s_16_4_1_U43_n_25,mac_muladd_8ns_7s_16s_16_4_1_U43_n_26,mac_muladd_8ns_7s_16s_16_4_1_U43_n_27,mac_muladd_8ns_7s_16s_16_4_1_U43_n_28,mac_muladd_8ns_7s_16s_16_4_1_U43_n_29,mac_muladd_8ns_7s_16s_16_4_1_U43_n_30,mac_muladd_8ns_7s_16s_16_4_1_U43_n_31,mac_muladd_8ns_7s_16s_16_4_1_U43_n_32,mac_muladd_8ns_7s_16s_16_4_1_U43_n_33,mac_muladd_8ns_7s_16s_16_4_1_U43_n_34,mac_muladd_8ns_7s_16s_16_4_1_U43_n_35,mac_muladd_8ns_7s_16s_16_4_1_U43_n_36,mac_muladd_8ns_7s_16s_16_4_1_U43_n_37,mac_muladd_8ns_7s_16s_16_4_1_U43_n_38,mac_muladd_8ns_7s_16s_16_4_1_U43_n_39,mac_muladd_8ns_7s_16s_16_4_1_U43_n_40,mac_muladd_8ns_7s_16s_16_4_1_U43_n_41,mac_muladd_8ns_7s_16s_16_4_1_U43_n_42,mac_muladd_8ns_7s_16s_16_4_1_U43_n_43,mac_muladd_8ns_7s_16s_16_4_1_U43_n_44,mac_muladd_8ns_7s_16s_16_4_1_U43_n_45,mac_muladd_8ns_7s_16s_16_4_1_U43_n_46,mac_muladd_8ns_7s_16s_16_4_1_U43_n_47,mac_muladd_8ns_7s_16s_16_4_1_U43_n_48,mac_muladd_8ns_7s_16s_16_4_1_U43_n_49,mac_muladd_8ns_7s_16s_16_4_1_U43_n_50}),
         .Q(tmp_reg_4967[8:7]),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk),
         .p_reg_reg(grp_fu_4497_p0));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 mac_muladd_8ns_8ns_15ns_16_4_1_U46
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 mac_muladd_8ns_8ns_15ns_16_4_1_U46
        (.A(mac_muladd_8ns_8s_16s_16_4_1_U44_n_18),
         .P({mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_3,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_4,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_5,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_6,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_7,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_8,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_9,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_10,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_11,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_12,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_13,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_14,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_15,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_16,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_17,mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_18}),
         .Q(tmp_3_reg_4972),
@@ -39619,7 +39619,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .ap_clk(ap_clk),
         .p_reg_reg({mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_3,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_4,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_5,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_6,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_7,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_8,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_9,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_10,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_11,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_12,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_13,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_14,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_15,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_16,mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_17}),
         .\tmp_3_reg_4972_reg[8] (grp_fu_4514_p0));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 mac_muladd_8ns_8s_16s_16_4_1_U44
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 mac_muladd_8ns_8s_16s_16_4_1_U44
        (.A(mac_muladd_8ns_8s_16s_16_4_1_U44_n_18),
         .DI(mac_muladd_8ns_8s_16s_16_4_1_U44_n_22),
         .P(mac_muladd_8ns_6s_15ns_16_4_1_U45_n_3),
@@ -39631,7 +39631,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .p_reg_reg_0(mac_muladd_8ns_8s_16s_16_4_1_U44_n_19),
         .p_reg_reg_1(mac_muladd_8ns_8s_16s_16_4_1_U44_n_21),
         .p_reg_reg_2(grp_fu_4514_p0));
-  video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 mac_muladd_8ns_8s_16s_16_4_1_U47
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 mac_muladd_8ns_8s_16s_16_4_1_U47
        (.A({mac_muladd_8ns_8s_16s_16_4_1_U44_n_18,grp_fu_4514_p0}),
         .D(g_2_fu_3094_p3),
         .PCOUT({mac_muladd_8ns_7s_16s_16_4_1_U43_n_3,mac_muladd_8ns_7s_16s_16_4_1_U43_n_4,mac_muladd_8ns_7s_16s_16_4_1_U43_n_5,mac_muladd_8ns_7s_16s_16_4_1_U43_n_6,mac_muladd_8ns_7s_16s_16_4_1_U43_n_7,mac_muladd_8ns_7s_16s_16_4_1_U43_n_8,mac_muladd_8ns_7s_16s_16_4_1_U43_n_9,mac_muladd_8ns_7s_16s_16_4_1_U43_n_10,mac_muladd_8ns_7s_16s_16_4_1_U43_n_11,mac_muladd_8ns_7s_16s_16_4_1_U43_n_12,mac_muladd_8ns_7s_16s_16_4_1_U43_n_13,mac_muladd_8ns_7s_16s_16_4_1_U43_n_14,mac_muladd_8ns_7s_16s_16_4_1_U43_n_15,mac_muladd_8ns_7s_16s_16_4_1_U43_n_16,mac_muladd_8ns_7s_16s_16_4_1_U43_n_17,mac_muladd_8ns_7s_16s_16_4_1_U43_n_18,mac_muladd_8ns_7s_16s_16_4_1_U43_n_19,mac_muladd_8ns_7s_16s_16_4_1_U43_n_20,mac_muladd_8ns_7s_16s_16_4_1_U43_n_21,mac_muladd_8ns_7s_16s_16_4_1_U43_n_22,mac_muladd_8ns_7s_16s_16_4_1_U43_n_23,mac_muladd_8ns_7s_16s_16_4_1_U43_n_24,mac_muladd_8ns_7s_16s_16_4_1_U43_n_25,mac_muladd_8ns_7s_16s_16_4_1_U43_n_26,mac_muladd_8ns_7s_16s_16_4_1_U43_n_27,mac_muladd_8ns_7s_16s_16_4_1_U43_n_28,mac_muladd_8ns_7s_16s_16_4_1_U43_n_29,mac_muladd_8ns_7s_16s_16_4_1_U43_n_30,mac_muladd_8ns_7s_16s_16_4_1_U43_n_31,mac_muladd_8ns_7s_16s_16_4_1_U43_n_32,mac_muladd_8ns_7s_16s_16_4_1_U43_n_33,mac_muladd_8ns_7s_16s_16_4_1_U43_n_34,mac_muladd_8ns_7s_16s_16_4_1_U43_n_35,mac_muladd_8ns_7s_16s_16_4_1_U43_n_36,mac_muladd_8ns_7s_16s_16_4_1_U43_n_37,mac_muladd_8ns_7s_16s_16_4_1_U43_n_38,mac_muladd_8ns_7s_16s_16_4_1_U43_n_39,mac_muladd_8ns_7s_16s_16_4_1_U43_n_40,mac_muladd_8ns_7s_16s_16_4_1_U43_n_41,mac_muladd_8ns_7s_16s_16_4_1_U43_n_42,mac_muladd_8ns_7s_16s_16_4_1_U43_n_43,mac_muladd_8ns_7s_16s_16_4_1_U43_n_44,mac_muladd_8ns_7s_16s_16_4_1_U43_n_45,mac_muladd_8ns_7s_16s_16_4_1_U43_n_46,mac_muladd_8ns_7s_16s_16_4_1_U43_n_47,mac_muladd_8ns_7s_16s_16_4_1_U43_n_48,mac_muladd_8ns_7s_16s_16_4_1_U43_n_49,mac_muladd_8ns_7s_16s_16_4_1_U43_n_50}),
@@ -39643,17 +39643,17 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .cmp2_i_reg_1308(cmp2_i_reg_1308),
         .\g_2_reg_5195_reg[0] (ap_enable_reg_pp0_iter21_reg_0),
         .g_reg_4988_pp0_iter18_reg(g_reg_4988_pp0_iter18_reg));
-  video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1 mul_11ns_13ns_23_1_1_U27
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1 mul_11ns_13ns_23_1_1_U27
        (.A({trunc_ln565_11_reg_4792_pp0_iter9_reg,add_ln549_reg_4798_pp0_iter9_reg[1:0]}),
         .P({mul_11ns_13ns_23_1_1_U27_n_3,mul_11ns_13ns_23_1_1_U27_n_4,mul_11ns_13ns_23_1_1_U27_n_5,mul_11ns_13ns_23_1_1_U27_n_6,mul_11ns_13ns_23_1_1_U27_n_7,mul_11ns_13ns_23_1_1_U27_n_8,mul_11ns_13ns_23_1_1_U27_n_9,mul_11ns_13ns_23_1_1_U27_n_10,mul_11ns_13ns_23_1_1_U27_n_11,mul_11ns_13ns_23_1_1_U27_n_12}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk));
-  video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 mul_11ns_13ns_23_1_1_U28
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 mul_11ns_13ns_23_1_1_U28
        (.A({add_ln549_1_reg_4804_pp0_iter9_reg,add_ln549_reg_4798_pp0_iter9_reg[0]}),
         .P({mul_11ns_13ns_23_1_1_U28_n_3,mul_11ns_13ns_23_1_1_U28_n_4,mul_11ns_13ns_23_1_1_U28_n_5,mul_11ns_13ns_23_1_1_U28_n_6,mul_11ns_13ns_23_1_1_U28_n_7,mul_11ns_13ns_23_1_1_U28_n_8,mul_11ns_13ns_23_1_1_U28_n_9,mul_11ns_13ns_23_1_1_U28_n_10,mul_11ns_13ns_23_1_1_U28_n_11,mul_11ns_13ns_23_1_1_U28_n_12}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
         .ap_clk(ap_clk));
-  video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 mul_11ns_13ns_23_1_1_U29
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 mul_11ns_13ns_23_1_1_U29
        (.A(add_ln549_reg_4798_pp0_iter9_reg),
         .P({mul_11ns_13ns_23_1_1_U29_n_3,mul_11ns_13ns_23_1_1_U29_n_4,mul_11ns_13ns_23_1_1_U29_n_5,mul_11ns_13ns_23_1_1_U29_n_6,mul_11ns_13ns_23_1_1_U29_n_7,mul_11ns_13ns_23_1_1_U29_n_8,mul_11ns_13ns_23_1_1_U29_n_9,mul_11ns_13ns_23_1_1_U29_n_10,mul_11ns_13ns_23_1_1_U29_n_11,mul_11ns_13ns_23_1_1_U29_n_12}),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -42553,7 +42553,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .I4(\rampVal_loc_0_fu_326_reg[7]_0 [7]),
         .I5(ap_predicate_pred2279_state20),
         .O(\rampVal_loc_0_fu_326[7]_i_3_n_3 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R redYuv_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R redYuv_U
        (.ap_clk(ap_clk),
         .ap_phi_reg_pp0_iter19_phi_ln1144_reg_1434(ap_phi_reg_pp0_iter19_phi_ln1144_reg_1434),
         .ap_predicate_pred2246_state21(ap_predicate_pred2246_state21),
@@ -43808,7 +43808,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(\tmp_reg_4967[8]_i_1_n_3 ),
         .Q(tmp_reg_4967[8]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 tpgBarSelRgb_b_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 tpgBarSelRgb_b_U
        (.Q(add_ln1359_reg_5246[5:1]),
         .ap_clk(ap_clk),
         .ap_predicate_pred1820_state21(ap_predicate_pred1820_state21),
@@ -43880,7 +43880,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[1]_0 (\q0_reg[1] ),
         .\q0_reg[1]_1 (ap_predicate_pred2269_state21_reg_0[6:0]),
         .\q0_reg[1]_2 (\q0_reg[1]_3 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R tpgBarSelRgb_g_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R tpgBarSelRgb_g_U
        (.E(tpgBarSelRgb_g_ce0_local),
         .Q(gSerie[21]),
         .ap_clk(ap_clk),
@@ -43926,7 +43926,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[1]_0 (tpgBarSelRgb_g_U_n_3),
         .\q0_reg[1]_1 (tpgBarSelRgb_g_U_n_6),
         .\q0_reg[1]_2 (\q0_reg[1]_1 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 tpgBarSelRgb_r_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 tpgBarSelRgb_r_U
        (.D({xor_ln1839_fu_3553_p2,rSerie[27:22]}),
         .Q(add_ln1359_reg_5246),
         .\add_ln1359_reg_5246_reg[1] (tpgBarSelRgb_r_U_n_12),
@@ -43988,12 +43988,12 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\rampStart_load_reg_1374_reg[7] ({\rampStart_load_reg_1374_reg[7]_0 [7],\rampStart_load_reg_1374_reg[7]_0 [5],\rampStart_load_reg_1374_reg[7]_0 [3],\rampStart_load_reg_1374_reg[7]_0 [0]}),
         .tmp_26_reg_5145({tmp_26_reg_5145[7],tmp_26_reg_5145[5],tmp_26_reg_5145[3:2],tmp_26_reg_5145[0]}),
         .\tmp_26_reg_5145_reg[2] (tpgBarSelRgb_r_U_n_10));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R tpgBarSelYuv_u_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R tpgBarSelYuv_u_U
        (.E(tpgBarSelRgb_g_ce0_local),
         .Q({tpgBarSelYuv_u_U_n_3,tpgBarSelYuv_u_U_n_4}),
         .ap_clk(ap_clk),
         .\q0_reg[7]_0 (\q0_reg[7]_2 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R tpgBarSelYuv_v_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R tpgBarSelYuv_v_U
        (.D({tpgTartanBarArray_U_n_18,tpgTartanBarArray_U_n_19}),
         .E(tpgBarSelRgb_g_ce0_local),
         .Q({tmp_1_fu_3671_p3[6:3],tmp_1_fu_3671_p3[1]}),
@@ -44079,7 +44079,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\q0_reg[7]_2 (ap_predicate_pred2144_state21),
         .\q0_reg[7]_3 (ap_predicate_pred2213_state21),
         .tmp_26_reg_5145({tmp_26_reg_5145[6],tmp_26_reg_5145[4]}));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R tpgBarSelYuv_y_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R tpgBarSelYuv_y_U
        (.D({tpgCheckerBoardArray_U_n_4,tpgCheckerBoardArray_U_n_5,tpgTartanBarArray_U_n_3,tpgTartanBarArray_U_n_4,tpgTartanBarArray_U_n_5,tpgTartanBarArray_U_n_6,tpgTartanBarArray_U_n_7,tpgTartanBarArray_U_n_8}),
         .Q({tpgBarSelYuv_y_U_n_3,tpgBarSelYuv_y_U_n_4,tpgBarSelYuv_y_U_n_5,tpgBarSelYuv_y_U_n_6,tpgBarSelYuv_y_U_n_7,tpgBarSelYuv_y_U_n_8,tpgBarSelYuv_y_U_n_9,tpgBarSelYuv_y_U_n_10}),
         .ap_clk(ap_clk),
@@ -44089,7 +44089,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .ap_predicate_pred2218_state21(ap_predicate_pred2218_state21),
         .bckgndYUV_full_n(bckgndYUV_full_n),
         .\q0_reg[0]_0 (ap_enable_reg_pp0_iter21_reg_0));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R tpgCheckerBoardArray_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R tpgCheckerBoardArray_U
        (.D({tpgCheckerBoardArray_U_n_4,tpgCheckerBoardArray_U_n_5}),
         .DPtpgBarArray_ce0_local(DPtpgBarArray_ce0_local),
         .Q(\q0_reg[2] [2:1]),
@@ -44100,7 +44100,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .hBarSel_4_0_loc_0_fu_322(hBarSel_4_0_loc_0_fu_322[2:1]),
         .\q0_reg[0]_0 (\q0_reg[0] ),
         .tpgCheckerBoardArray_address0(tpgCheckerBoardArray_address0));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R tpgTartanBarArray_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R tpgTartanBarArray_U
        (.D({tpgTartanBarArray_U_n_3,tpgTartanBarArray_U_n_4,tpgTartanBarArray_U_n_5,tpgTartanBarArray_U_n_6,tpgTartanBarArray_U_n_7,tpgTartanBarArray_U_n_8}),
         .DPtpgBarArray_ce0_local(DPtpgBarArray_ce0_local),
         .Q(\q0_reg[2] ),
@@ -44511,7 +44511,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(trunc_ln565_9_reg_4780_pp0_iter18_reg),
         .Q(trunc_ln565_9_reg_4780_pp0_iter19_reg),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 urem_11ns_3ns_2_15_1_U24
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 urem_11ns_3ns_2_15_1_U24
        (.A(trunc_ln565_11_reg_4792_pp0_iter9_reg[2]),
         .DI(trunc_ln565_11_reg_4792_pp0_iter2_reg),
         .Q(grp_fu_1733_p2),
@@ -44525,7 +44525,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\loop[9].remd_tmp_reg[10][0] (urem_11ns_3ns_2_15_1_U26_n_3),
         .p_1_in(trunc_ln565_11_reg_4792_pp0_iter7_reg),
         .trunc_ln565_9_reg_4780_pp0_iter11_reg(trunc_ln565_9_reg_4780_pp0_iter11_reg));
-  video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 urem_11ns_3ns_2_15_1_U25
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 urem_11ns_3ns_2_15_1_U25
        (.A(add_ln549_1_reg_4804_pp0_iter9_reg[2:1]),
         .DI(add_ln549_1_reg_4804_pp0_iter2_reg),
         .Q(grp_fu_1739_p2),
@@ -44538,7 +44538,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\loop[7].remd_tmp_reg[8][0] (add_ln549_1_reg_4804_pp0_iter8_reg[3]),
         .p_1_in(add_ln549_1_reg_4804_pp0_iter7_reg),
         .trunc_ln565_9_reg_4780_pp0_iter11_reg(trunc_ln565_9_reg_4780_pp0_iter11_reg));
-  video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 urem_11ns_3ns_2_15_1_U26
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 urem_11ns_3ns_2_15_1_U26
        (.A(add_ln549_reg_4798_pp0_iter9_reg[2:1]),
         .DI(add_ln549_reg_4798_pp0_iter2_reg),
         .ap_block_pp0_stage0_subdone(ap_block_pp0_stage0_subdone),
@@ -44733,7 +44733,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .D(\vHatch[0]_i_1_n_3 ),
         .Q(vHatch),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R whiYuv_1_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R whiYuv_1_U
        (.Q({\g_2_reg_5195_reg_n_3_[5] ,\g_2_reg_5195_reg_n_3_[4] ,\g_2_reg_5195_reg_n_3_[3] ,\g_2_reg_5195_reg_n_3_[1] ,\g_2_reg_5195_reg_n_3_[0] }),
         .ap_clk(ap_clk),
         .ap_enable_reg_pp0_iter20_reg(whiYuv_1_U_n_5),
@@ -44759,7 +44759,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .\outpix_0_1_0_0_0_load215_lcssa223_fu_266_reg[4]_1 (\outpix_0_1_0_0_0_load215_lcssa223_fu_266[4]_i_18_n_3 ),
         .\q0_reg[6]_0 (DPtpgBarSelRgb_CEA_b_ce0_local),
         .\q0_reg[6]_1 (\q0_reg[6]_0 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 whiYuv_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 whiYuv_U
        (.ap_clk(ap_clk),
         .ap_predicate_pred2226_state21(ap_predicate_pred2226_state21),
         .ap_predicate_pred2231_state21(ap_predicate_pred2231_state21),
@@ -47684,7 +47684,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
    (D,
     Q,
     ap_enable_reg_pp0_iter21_reg,
@@ -47861,7 +47861,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     \q0_reg[4]_1 ,
     Q,
@@ -47910,7 +47910,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     \q0_reg[4]_1 ,
     Q,
@@ -47933,7 +47933,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
    (\q0_reg[3]_0 ,
     Q,
     \q0_reg[7]_0 ,
@@ -48006,7 +48006,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     \q0_reg[5]_0 ,
     \q0_reg[3]_0 ,
@@ -48236,7 +48236,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
    (\q0_reg[4]_0 ,
     \q0_reg[7]_0 ,
     ap_predicate_pred2389_state21_reg,
@@ -48618,7 +48618,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
    (\q0_reg[3]_0 ,
     ap_enable_reg_pp0_iter21_reg,
     \q0_reg[3]_1 ,
@@ -48765,7 +48765,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .O(ap_enable_reg_pp0_iter21_reg));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
    (\q0_reg[6]_0 ,
     ap_predicate_pred2158_state21_reg,
     ap_predicate_pred2269_state21_reg,
@@ -49122,7 +49122,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
    (\q0_reg[2]_0 ,
     ap_enable_reg_pp0_iter19_reg,
     \rampStart_load_reg_1374_reg[4] ,
@@ -49368,7 +49368,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
    (ap_predicate_pred2600_state21_reg,
     \q0_reg[7]_0 ,
     \q0_reg[7]_1 ,
@@ -49418,7 +49418,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYu
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R" *) 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11
    (\q0_reg[7]_0 ,
     \q0_reg[7]_1 ,
     \q0_reg[7]_2 ,
@@ -49441,7 +49441,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYu
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
    (\q0_reg[7]_0 ,
     \q0_reg[6]_0 ,
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266_reg[7] ,
@@ -49546,7 +49546,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYu
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
    (\q0_reg[6] ,
     \q0_reg[6]_0 ,
     \q0_reg[5]_0 ,
@@ -49683,7 +49683,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYu
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
    (\cmp2_i_reg_1308_reg[0] ,
     \cmp2_i_reg_1308_reg[0]_0 ,
     \cmp2_i_reg_1308_reg[0]_1 ,
@@ -49939,7 +49939,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYu
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     \outpix_0_2_0_0_0_load217_lcssa226_fu_270_reg[0] ,
     ap_predicate_pred2165_state21_reg,
@@ -50038,7 +50038,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R" *) 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16
    (\q0_reg[1]_0 ,
     \q0_reg[1]_1 ,
     \cmp2_i_reg_1308_reg[0] ,
@@ -50566,7 +50566,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     \cmp2_i_reg_1308_reg[0] ,
     ap_predicate_pred2568_state21_reg,
@@ -50826,7 +50826,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
    (\q0_reg[1]_0 ,
     \rampStart_load_reg_1374_reg[6] ,
     ap_predicate_pred2170_state21_reg,
@@ -51048,7 +51048,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R" *) 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17
    (\q0_reg[1]_0 ,
     \rampStart_load_reg_1374_reg[7] ,
     \q0_reg[1]_1 ,
@@ -51586,7 +51586,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
    (Q,
     E,
     \q0_reg[7]_0 ,
@@ -51615,7 +51615,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
    (\q0_reg[0]_0 ,
     E,
     \q0_reg[6]_0 ,
@@ -52155,7 +52155,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
    (Q,
     \q0_reg[0]_0 ,
     bckgndYUV_full_n,
@@ -52246,7 +52246,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
    (\q0_reg[0]_0 ,
     D,
     DPtpgBarArray_ce0_local,
@@ -52312,7 +52312,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCh
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
    (D,
     DPtpgBarArray_ce0_local,
     tpgBarSelRgb_r_address0_local,
@@ -52576,7 +52576,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTa
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
    (\g_2_reg_5195_reg[5] ,
     ap_predicate_pred2600_state21_reg,
     ap_enable_reg_pp0_iter20_reg,
@@ -52756,7 +52756,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYu
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R" *) 
-module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20
    (ap_predicate_pred2236_state21_reg,
     \q0_reg[4] ,
     ap_predicate_pred2640_state21_reg,
@@ -52929,7 +52929,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYu
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgForeground
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground
    (push,
     Q,
     D,
@@ -54762,7 +54762,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgForeground
         .I1(Q),
         .I2(CO),
         .O(empty_n_reg_0));
-  video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220
        (.D({ap_NS_fsm[3],ap_NS_fsm[1]}),
         .DI(grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_n_79),
         .E(E),
@@ -55584,7 +55584,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgForeground
         .R(push));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
    (\boxHCoord_loc_1_fu_140_reg[7]_0 ,
     \boxVCoord_loc_1_fu_136_reg[7]_0 ,
     empty_n_reg,
@@ -58294,7 +58294,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
         .I4(\addr[3]_i_4_n_3 ),
         .I5(push_2),
         .O(empty_n_reg_0));
-  video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U
        (.CO(icmp_ln774_fu_429_p2),
         .D(D),
         .E(x_fu_132),
@@ -59768,7 +59768,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
         .D(\vDir[0]_i_1_n_3 ),
         .Q(vDir),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R whiYuv_2_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R whiYuv_2_U
        (.ap_clk(ap_clk),
         .ap_enable_reg_pp0_iter1(ap_enable_reg_pp0_iter1),
         .ap_enable_reg_pp0_iter2(ap_enable_reg_pp0_iter2),
@@ -60182,7 +60182,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
    (q0,
     whiYuv_2_ce0_local,
     ap_clk,
@@ -60243,7 +60243,7 @@ module video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYu
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1
    (Q,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -60298,7 +60298,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1
         .D(remd[1]),
         .Q(Q[1]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u
        (.A(A),
         .DI(DI),
         .Q(remd),
@@ -60315,7 +60315,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1" *) 
-module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18
    (Q,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -60367,7 +60367,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18
         .D(remd[1]),
         .Q(Q[1]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u
        (.A(A),
         .DI(DI),
         .Q(remd),
@@ -60383,7 +60383,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1" *) 
-module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19
    (p_1_in,
     dout,
     ap_block_pp0_stage0_subdone,
@@ -60438,7 +60438,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19
         .D(remd[1]),
         .Q(dout[1]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u
        (.A(A),
         .DI(DI),
         .Q(remd),
@@ -60454,7 +60454,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19
         .trunc_ln565_9_reg_4780_pp0_iter11_reg(trunc_ln565_9_reg_4780_pp0_iter11_reg));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider
    (p_1_in,
     Q,
     ap_block_pp0_stage0_subdone,
@@ -61970,7 +61970,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider" *) 
-module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21
    (Q,
     ap_block_pp0_stage0_subdone,
     A,
@@ -63484,7 +63484,7 @@ module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21
 endmodule
 
 (* ORIG_REF_NAME = "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider" *) 
-module video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22
    (Q,
     ap_block_pp0_stage0_subdone,
     ap_clk,
@@ -64997,7 +64997,7 @@ endmodule
 (* C_S_AXI_DATA_WIDTH = "32" *) (* C_S_AXI_WSTRB_WIDTH = "4" *) (* ap_ST_fsm_state1 = "5'b00001" *) 
 (* ap_ST_fsm_state2 = "5'b00010" *) (* ap_ST_fsm_state3 = "5'b00100" *) (* ap_ST_fsm_state4 = "5'b01000" *) 
 (* ap_ST_fsm_state5 = "5'b10000" *) (* hls_module = "yes" *) 
-module video_out_pynq_z2_v_tpg_0_0_v_tpg
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg
    (ap_clk,
     ap_rst_n,
     fid_in,
@@ -65299,7 +65299,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
   assign s_axi_CTRL_RDATA[15:0] = \^s_axi_CTRL_RDATA [15:0];
   assign s_axi_CTRL_RRESP[1] = \<const0> ;
   assign s_axi_CTRL_RRESP[0] = \<const0> ;
-  video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi CTRL_s_axi_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi CTRL_s_axi_U
        (.D(ap_NS_fsm[1]),
         .\FSM_onehot_rstate_reg[1]_0 (s_axi_CTRL_ARREADY),
         .\FSM_onehot_wstate_reg[1]_0 (s_axi_CTRL_AWREADY),
@@ -66886,7 +66886,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
         .D(field_id[9]),
         .Q(field_id_read_reg_743[9]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s grp_reg_unsigned_short_s_fu_632
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s grp_reg_unsigned_short_s_fu_632
        (.D(add_ln502_fu_648_p2),
         .E(count_new_0_reg_4280),
         .Q(ap_CS_fsm_state2),
@@ -66902,7 +66902,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
         .icmp_ln500_reg_721(icmp_ln500_reg_721),
         .s(s),
         .tmp_1_fu_664_p4(tmp_1_fu_664_p4));
-  video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_439
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow grp_v_tpgHlsDataFlow_fu_439
        (.D(grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TDATA),
         .Q(height_read_reg_733),
         .SR(ap_rst_n_inv),
@@ -67203,7 +67203,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
         .D(ovrlayId[7]),
         .Q(ovrlayId_read_reg_758[7]),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_regslice_both regslice_both_m_axis_video_V_data_V_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both regslice_both_m_axis_video_V_data_V_U
        (.D({ap_NS_fsm[4],ap_NS_fsm[0]}),
         .Q({ap_CS_fsm_state5,ap_CS_fsm_state4,\ap_CS_fsm_reg_n_3_[0] }),
         .SR(ap_rst_n_inv),
@@ -67220,7 +67220,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
         .m_axis_video_TREADY_int_regslice(m_axis_video_TREADY_int_regslice),
         .m_axis_video_TVALID(m_axis_video_TVALID),
         .out(ovrlayYUV_dout));
-  video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1 regslice_both_m_axis_video_V_last_V_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1 regslice_both_m_axis_video_V_last_V_U
        (.SR(ap_rst_n_inv),
         .ack_in_t_reg_0(regslice_both_m_axis_video_V_last_V_U_n_3),
         .ap_clk(ap_clk),
@@ -67230,7 +67230,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
         .load_p2(load_p2),
         .m_axis_video_TLAST(m_axis_video_TLAST),
         .m_axis_video_TREADY(m_axis_video_TREADY));
-  video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0 regslice_both_m_axis_video_V_user_V_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0 regslice_both_m_axis_video_V_user_V_U
        (.SR(ap_rst_n_inv),
         .ack_in_t_reg_0(regslice_both_m_axis_video_V_user_V_U_n_3),
         .ap_clk(ap_clk),
@@ -67671,7 +67671,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpg
         .R(1'b0));
 endmodule
 
-module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
+module video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
    (grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TUSER,
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TLAST,
     load_p2,
@@ -68031,7 +68031,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
   wire [15:0]\zonePlateVDelta_reg[15] ;
   wire [15:0]\zonePlateVDelta_reg[15]_0 ;
 
-  video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo MultiPixStream2AXIvideo_U0
        (.CO(icmp_ln979_1_fu_240_p2),
         .D(sub_i_fu_211_p2),
         .DI({width_val7_c_U_n_39,width_val7_c_U_n_40,width_val7_c_U_n_41,width_val7_c_U_n_42}),
@@ -68095,7 +68095,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .D(start_for_MultiPixStream2AXIvideo_U0_U_n_11),
         .Q(ap_sync_reg_tpgBackground_U0_ap_ready_reg_n_3),
         .R(1'b0));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S bckgndYUV_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S bckgndYUV_U
        (.E(tpgForeground_U0_n_24),
         .Q(ap_CS_fsm_state3),
         .SR(SR),
@@ -68123,7 +68123,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(bckgndYUV_dout),
         .p_9_in(p_9_in_3),
         .push(push_1));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S boxColorB_val27_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S boxColorB_val27_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68133,7 +68133,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(boxColorB_val27_c_dout),
         .push(push_0),
         .push_0(push_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 boxColorG_val26_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 boxColorG_val26_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68143,7 +68143,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(boxColorG_val26_c_dout),
         .push(push_0),
         .push_0(push_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 boxColorR_val25_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 boxColorR_val25_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68153,7 +68153,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(boxColorR_val25_c_dout),
         .push(push_5),
         .push_0(push_0));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S boxSize_val24_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S boxSize_val24_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68173,7 +68173,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .start_once_reg(start_once_reg),
         .start_once_reg_reg(boxSize_val24_c_U_n_5),
         .start_once_reg_reg_0(crossHairY_val19_c_U_n_4));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S colorFormat_val17_c5_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S colorFormat_val17_c5_U
        (.E(motionSpeed_val14_c_U_n_5),
         .SR(SR),
         .\SRL_SIG_reg[0][0] (colorFormat_val17_c5_U_n_17),
@@ -68190,7 +68190,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(maskId_val12_c_dout),
         .push(push),
         .push_0(push_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 colorFormat_val17_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 colorFormat_val17_c_U
        (.E(tpgForeground_U0_n_28),
         .MultiPixStream2AXIvideo_U0_field_id_val8_read(MultiPixStream2AXIvideo_U0_field_id_val8_read),
         .SR(SR),
@@ -68202,7 +68202,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .colorFormat_val17_c_empty_n(colorFormat_val17_c_empty_n),
         .colorFormat_val17_c_full_n(colorFormat_val17_c_full_n),
         .push(push_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 crossHairX_val18_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 crossHairX_val18_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68212,7 +68212,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(crossHairX_val18_c_dout),
         .push(push_0),
         .push_0(push_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 crossHairY_val19_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 crossHairY_val19_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68227,12 +68227,12 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .out(crossHairY_val19_c_dout),
         .push(push_0),
         .push_0(push_5));
-  video_out_pynq_z2_v_tpg_0_0_entry_proc entry_proc_U0
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_entry_proc entry_proc_U0
        (.SR(SR),
         .ap_clk(ap_clk),
         .start_once_reg(start_once_reg),
         .start_once_reg_reg_0(boxSize_val24_c_U_n_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S fid_in_val9_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S fid_in_val9_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_5),
         .MultiPixStream2AXIvideo_U0_field_id_val8_read(MultiPixStream2AXIvideo_U0_field_id_val8_read),
         .SR(SR),
@@ -68245,7 +68245,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .fid_in_val9_c_full_n(fid_in_val9_c_full_n),
         .field_id_val8_c_empty_n(field_id_val8_c_empty_n),
         .push(push_0));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S field_id_val8_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S field_id_val8_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_5),
         .MultiPixStream2AXIvideo_U0_field_id_val8_read(MultiPixStream2AXIvideo_U0_field_id_val8_read),
         .SR(SR),
@@ -68255,7 +68255,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .\field_id_val8_read_reg_298_reg[15] (\field_id_val8_read_reg_298_reg[15] ),
         .out(field_id_val8_c_dout),
         .push(push_0));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S height_val4_c3_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S height_val4_c3_U
        (.D(boxSize_val24_c_dout),
         .DI({height_val4_c3_U_n_37,height_val4_c3_U_n_38,height_val4_c3_U_n_39,height_val4_c3_U_n_40}),
         .E(motionSpeed_val14_c_U_n_5),
@@ -68274,7 +68274,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .height_val4_c3_full_n(height_val4_c3_full_n),
         .push(push),
         .push_0(push_5));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S height_val4_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S height_val4_c_U
        (.D(\SRL_SIG_reg[0]_2 ),
         .E(tpgForeground_U0_n_28),
         .MultiPixStream2AXIvideo_U0_field_id_val8_read(MultiPixStream2AXIvideo_U0_field_id_val8_read),
@@ -68287,7 +68287,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .height_val4_c_full_n(height_val4_c_full_n),
         .push(push_5),
         .y_fu_114_reg({y_fu_114_reg[11:9],y_fu_114_reg[2:0]}));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 maskId_val12_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 maskId_val12_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68298,7 +68298,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .push(push_0),
         .push_0(push_5),
         .\tobool_reg_495[0]_i_3 (\tobool_reg_495[0]_i_3 ));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 motionSpeed_val14_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 motionSpeed_val14_c_U
        (.E(motionSpeed_val14_c_U_n_5),
         .SR(SR),
         .\SRL_SIG_reg[0][7] (ap_sync_reg_tpgBackground_U0_ap_ready_reg_n_3),
@@ -68316,7 +68316,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .push(push),
         .push_0(push_5),
         .width_val7_c4_empty_n(width_val7_c4_empty_n));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 ovrlayId_val11_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 ovrlayId_val11_c_U
        (.E(start_for_MultiPixStream2AXIvideo_U0_U_n_7),
         .SR(SR),
         .ap_clk(ap_clk),
@@ -68329,7 +68329,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .push(push_0),
         .push_0(push_5),
         .tpgForeground_U0_ap_start(tpgForeground_U0_ap_start));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 ovrlayYUV_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 ovrlayYUV_U
        (.D(D),
         .E(MultiPixStream2AXIvideo_U0_n_10),
         .SR(SR),
@@ -68342,7 +68342,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .ovrlayYUV_full_n(ovrlayYUV_full_n),
         .p_9_in(p_9_in),
         .push(push_2));
-  video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 start_for_MultiPixStream2AXIvideo_U0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 start_for_MultiPixStream2AXIvideo_U0_U
        (.CO(icmp_ln979_1_fu_240_p2),
         .E(start_for_MultiPixStream2AXIvideo_U0_U_n_5),
         .MultiPixStream2AXIvideo_U0_ap_ready(MultiPixStream2AXIvideo_U0_ap_ready),
@@ -68371,7 +68371,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .start_for_tpgForeground_U0_full_n(start_for_tpgForeground_U0_full_n),
         .start_once_reg(start_once_reg),
         .width_val7_c_empty_n(width_val7_c_empty_n));
-  video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 start_for_tpgForeground_U0_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 start_for_tpgForeground_U0_U
        (.CO(icmp_ln772_fu_392_p2),
         .Q(ap_CS_fsm_state2_4),
         .SR(SR),
@@ -68380,7 +68380,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .\mOutPtr_reg[1]_0 (start_for_MultiPixStream2AXIvideo_U0_U_n_8),
         .start_for_tpgForeground_U0_full_n(start_for_tpgForeground_U0_full_n),
         .tpgForeground_U0_ap_start(tpgForeground_U0_ap_start));
-  video_out_pynq_z2_v_tpg_0_0_tpgBackground tpgBackground_U0
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground tpgBackground_U0
        (.E(tpgBackground_U0_ap_ready),
         .Q(Q),
         .SR(SR),
@@ -68424,7 +68424,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .\sub35_i_reg_1395_reg[16]_0 (\SRL_SIG_reg[0][15] ),
         .\zonePlateVDelta_reg[15] (\zonePlateVDelta_reg[15] ),
         .\zonePlateVDelta_reg[15]_0 (\zonePlateVDelta_reg[15]_0 ));
-  video_out_pynq_z2_v_tpg_0_0_tpgForeground tpgForeground_U0
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground tpgForeground_U0
        (.CO(icmp_ln772_fu_392_p2),
         .D(\grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_sig_allocacmp_x_1 ),
         .DI({width_val7_c4_U_n_37,width_val7_c4_U_n_38,width_val7_c4_U_n_39,width_val7_c4_U_n_40}),
@@ -68491,7 +68491,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .\vMax_reg_510_reg[7]_0 ({height_val4_c3_U_n_41,height_val4_c3_U_n_42,height_val4_c3_U_n_43,height_val4_c3_U_n_44}),
         .\vMax_reg_510_reg[7]_1 ({height_val4_c3_U_n_9,height_val4_c3_U_n_10,height_val4_c3_U_n_11,height_val4_c3_U_n_12}),
         .\y_fu_114_reg[11]_0 ({y_fu_114_reg[11:9],y_fu_114_reg[2:0]}));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 width_val7_c4_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 width_val7_c4_U
        (.DI({width_val7_c4_U_n_37,width_val7_c4_U_n_38,width_val7_c4_U_n_39,width_val7_c4_U_n_40}),
         .E(motionSpeed_val14_c_U_n_5),
         .SR(SR),
@@ -68513,7 +68513,7 @@ module video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
         .push_0(push_5),
         .width_val7_c4_dout(width_val7_c4_dout),
         .width_val7_c4_empty_n(width_val7_c4_empty_n));
-  video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S width_val7_c_U
+  video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S width_val7_c_U
        (.D(\grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_sig_allocacmp_x_1 ),
         .DI({width_val7_c_U_n_39,width_val7_c_U_n_40,width_val7_c_U_n_41,width_val7_c_U_n_42}),
         .E(tpgForeground_U0_n_28),

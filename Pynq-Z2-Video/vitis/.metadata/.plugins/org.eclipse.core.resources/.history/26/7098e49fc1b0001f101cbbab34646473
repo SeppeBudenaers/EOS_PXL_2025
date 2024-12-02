@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="VDMA_test" location="C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_test" platform="C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_Pynq-Z2-Video/export/VDMA_Pynq-Z2-Video/VDMA_Pynq-Z2-Video.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="VDMA_test_system" sysConfig="VDMA_Pynq-Z2-Video" runtime="cpp" cpu="freertos10_xilinx_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="freertos10_xilinx" mssSignature="c289156ce16673ec75561a6012dd1533">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.410290544">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2133994086" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="freertos_hello_world" hasBspSettings="true"/>
+</sdkproject:SdkProject>

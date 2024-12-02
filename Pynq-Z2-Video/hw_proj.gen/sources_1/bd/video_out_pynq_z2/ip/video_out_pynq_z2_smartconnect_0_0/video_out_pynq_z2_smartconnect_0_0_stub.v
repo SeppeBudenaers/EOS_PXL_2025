@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Tue Nov 26 13:41:17 2024
+// Date        : Mon Dec  2 16:30:43 2024
 // Host        : Weathly running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0_stub.v

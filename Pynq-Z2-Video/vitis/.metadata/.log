@@ -1,0 +1,389 @@
+!SESSION 2024-12-02 16:25:46.010 -----------------------------------------------
+eclipse.buildId=2023.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\.metadata\.bak_0.log
+Created Time: 2024-12-02 16:32:05.163
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:05.163
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:05.166
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:05.194
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:05.196
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.199
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.222
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.228
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.229
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.240
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.241
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.262
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:08.263
+!MESSAGE XSCT Command: [fpga -file C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.639
+!MESSAGE XSCT command with result: [fpga -file C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.681
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.694
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.694
+!MESSAGE XSCT Command: [loadhw -hw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.711
+!MESSAGE XSCT command with result: [loadhw -hw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_1]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.711
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.714
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.716
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.724
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.725
+!MESSAGE XSCT Command: [source C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.727
+!MESSAGE XSCT command with result: [source C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:10.728
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.137
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.138
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.144
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.145
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.154
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.155
+!MESSAGE XSCT Command: [dow C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.476
+!MESSAGE XSCT command with result: [dow C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.477
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.515
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.557
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.565
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.566
+!MESSAGE XSCT Command: [con], Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:32:11.579
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-6: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-02 16:32:11.582
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:15.907
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:15.912
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:15.913
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:15.917
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.15",
+}]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-02 16:39:15.918
+!MESSAGE Generating MD5 hash for file: C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:15.921
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:15.923
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-18: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:41.450
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-629
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:41.455
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-629
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.456
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.464
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.465
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.474
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.475
+!MESSAGE XSCT Command: [version -server], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.477
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2024.1.0]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.478
+!MESSAGE XSCT Command: [version], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.479
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2024.1.0
+SW Build 0 on 2024-05-19-14:06:15
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.479
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.485
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.486
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.498
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.499
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.504
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.505
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.517
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.518
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.524
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.524
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.535
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.536
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.542
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.543
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.554
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.555
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.561
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.562
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.574
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.574
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.580
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:42.581
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.498
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6)]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.499
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.514
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.515
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.517
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.518
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.529
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.529
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.557
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:43.558
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.560
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.590
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.595
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.596
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.611
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.612
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.633
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:46.634
+!MESSAGE XSCT Command: [fpga -file C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:48.961
+!MESSAGE XSCT command with result: [fpga -file C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:48.993
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.007
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.008
+!MESSAGE XSCT Command: [loadhw -hw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.028
+!MESSAGE XSCT command with result: [loadhw -hw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_1]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.029
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.031
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.032
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.043
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.043
+!MESSAGE XSCT Command: [source C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.048
+!MESSAGE XSCT command with result: [source C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.049
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.465
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.466
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.474
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.474
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.483
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.485
+!MESSAGE XSCT Command: [dow C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.824
+!MESSAGE XSCT command with result: [dow C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.824
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.865
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.916
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.934
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.934
+!MESSAGE XSCT Command: [con], Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-02 16:39:49.956
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-7: Launching Debugger_VDMA_TEST_2-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-02 16:39:49.957
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'

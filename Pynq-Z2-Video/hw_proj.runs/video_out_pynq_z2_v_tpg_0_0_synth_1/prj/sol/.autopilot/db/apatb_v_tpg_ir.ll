@@ -1,4 +1,4 @@
-; ModuleID = 'C:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc'
+; ModuleID = 'C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc'
 source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"

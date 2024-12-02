@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Tue Nov 19 11:58:14 2024
--- Host        : MSI running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Cey/test/Pynq-Z2-Video/hw/hw_proj/hw_proj.gen/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_tpg_0_0/video_out_pynq_z2_v_tpg_0_0_sim_netlist.vhdl
+-- Date        : Mon Dec  2 15:44:10 2024
+-- Host        : Weathly running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top video_out_pynq_z2_v_tpg_0_0 -prefix
+--               video_out_pynq_z2_v_tpg_0_0_ video_out_pynq_z2_v_tpg_0_0_sim_netlist.vhdl
 -- Design      : video_out_pynq_z2_v_tpg_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,7 +15,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     interrupt : out STD_LOGIC;
@@ -62,9 +62,9 @@ entity video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi is
     ap_done : in STD_LOGIC;
     s_axi_CTRL_AWADDR : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi is
   signal \FSM_onehot_rstate[1]_i_1_n_3\ : STD_LOGIC;
   signal \FSM_onehot_rstate[2]_i_1_n_3\ : STD_LOGIC;
   signal \^fsm_onehot_rstate_reg[1]_0\ : STD_LOGIC;
@@ -9267,7 +9267,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
   port (
     \sof_2_reg_239_reg[0]_0\ : out STD_LOGIC;
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TLAST : out STD_LOGIC;
@@ -9311,9 +9311,9 @@ entity video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_9
     \sof_2_reg_239_reg[0]_2\ : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2 is
   signal \ap_CS_fsm[1]_i_2_n_3\ : STD_LOGIC;
   signal \ap_CS_fsm[2]_i_2_n_3\ : STD_LOGIC;
   signal ap_CS_fsm_pp0_stage0 : STD_LOGIC;
@@ -10373,16 +10373,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     B : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0 is
   signal p_reg_reg_n_108 : STD_LOGIC;
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -10484,16 +10484,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_entry_proc is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_entry_proc is
   port (
     start_once_reg : out STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     start_once_reg_reg_0 : in STD_LOGIC;
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_entry_proc;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_entry_proc;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_entry_proc is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_entry_proc is
 begin
 start_once_reg_reg: unisim.vcomponents.FDRE
     generic map(
@@ -10511,7 +10511,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg is
   port (
     D : out STD_LOGIC_VECTOR ( 5 downto 0 );
     S : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -10522,9 +10522,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg is
     y_fu_114_reg : in STD_LOGIC_VECTOR ( 5 downto 0 );
     addr : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg is
   signal \^d\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \SRL_SIG_reg[0]_2\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \SRL_SIG_reg[1]_11\ : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -10886,7 +10886,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg is
   port (
     D : out STD_LOGIC_VECTOR ( 3 downto 0 );
     S : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -10907,9 +10907,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg is
     MultiPixStream2AXIvideo_U0_field_id_val8_read : in STD_LOGIC;
     addr : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg is
   signal \^d\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \SRL_SIG_reg[0]_0\ : STD_LOGIC_VECTOR ( 11 downto 3 );
   signal \^srl_sig_reg[1][12]_0\ : STD_LOGIC_VECTOR ( 12 downto 0 );
@@ -11608,7 +11608,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg is
   port (
     \addr_reg[0]\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \addr_reg[0]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -11625,9 +11625,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg is
     \SRL_SIG_reg[0][15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg is
   signal \SRL_SIG_reg[0]_5\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \SRL_SIG_reg[1]_6\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   attribute SOFT_HLUTNM : string;
@@ -12395,7 +12395,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 is
   port (
     S : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \addr_reg[0]\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -12413,10 +12413,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25 is
   signal \SRL_SIG_reg[0]_3\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \SRL_SIG_reg[1]_4\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   attribute SOFT_HLUTNM : string;
@@ -13184,7 +13184,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg is
   port (
     full_n_reg : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -13199,9 +13199,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg is
     addr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/crossHairY_val19_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -13479,7 +13479,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 15 downto 0 );
     push : in STD_LOGIC;
@@ -13488,10 +13488,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/crossHairX_val18_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -13756,7 +13756,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 is
   port (
     full_n_reg : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -13771,10 +13771,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/boxSize_val24_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -14051,7 +14051,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 15 downto 0 );
     push : in STD_LOGIC;
@@ -14059,9 +14059,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg is
     addr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[3][0]_srl4\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/field_id_val8_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg/SRL_SIG_reg[3] ";
   attribute srl_name : string;
@@ -14326,7 +14326,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg is
   port (
     fid_in_val9_c_dout : out STD_LOGIC;
     push : in STD_LOGIC;
@@ -14334,9 +14334,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg is
     addr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[3][0]_srl4\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/fid_in_val9_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg/SRL_SIG_reg[3] ";
   attribute srl_name : string;
@@ -14361,7 +14361,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg is
   port (
     D : out STD_LOGIC_VECTOR ( 23 downto 0 );
     \out\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -14371,9 +14371,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg is
   signal \^out\ : STD_LOGIC_VECTOR ( 23 downto 0 );
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[15][0]_srl16\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/ovrlayYUV_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg/SRL_SIG_reg[15] ";
@@ -15033,7 +15033,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     push : in STD_LOGIC;
@@ -15042,10 +15042,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[15][0]_srl16\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/bckgndYUV_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg/SRL_SIG_reg[15] ";
   attribute srl_name : string;
@@ -15438,7 +15438,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg is
   port (
     motionSpeed_val14_c_dout : out STD_LOGIC_VECTOR ( 7 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -15446,9 +15446,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg is
     ap_clk : in STD_LOGIC;
     \shl_i_reg_535_reg[1]\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg is
   signal \SRL_SIG_reg[0]_7\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \SRL_SIG_reg[1]_8\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   attribute SOFT_HLUTNM : string;
@@ -15674,7 +15674,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 is
   port (
     \SRL_SIG_reg[0][3]_0\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \SRL_SIG_reg[0][4]_0\ : out STD_LOGIC;
@@ -15685,10 +15685,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 is
     \colorFormat_val17_read_reg_288_reg[0]\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27 is
   signal \^srl_sig_reg[0][3]_0\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \SRL_SIG_reg[0]_1\ : STD_LOGIC_VECTOR ( 7 downto 1 );
   signal \SRL_SIG_reg[1]_13\ : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -15929,7 +15929,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 is
   port (
     \SRL_SIG_reg[1][5]_0\ : out STD_LOGIC;
     colorFormat_val17_c5_dout : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -15946,10 +15946,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28 is
   signal \SRL_SIG_reg[0]_9\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \^srl_sig_reg[1][5]_0\ : STD_LOGIC;
   signal \SRL_SIG_reg[1]_10\ : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -16282,7 +16282,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     push : in STD_LOGIC;
@@ -16290,9 +16290,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg is
     addr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/ovrlayId_val11_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -16429,7 +16429,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 is
   port (
     \maskId_read_reg_763_reg[0]\ : out STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -16439,10 +16439,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24 is
   signal maskId_val12_c_dout : STD_LOGIC_VECTOR ( 7 downto 3 );
   signal \^out\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \tobool_reg_495[0]_i_3_n_3\ : STD_LOGIC;
@@ -16606,7 +16606,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     push_0 : in STD_LOGIC;
@@ -16615,10 +16615,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/boxColorR_val25_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -16755,7 +16755,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     push : in STD_LOGIC;
@@ -16764,10 +16764,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/boxColorG_val26_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -16904,7 +16904,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     push : in STD_LOGIC;
@@ -16913,10 +16913,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32 is
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_v_tpgHlsDataFlow_fu_439/boxColorB_val27_c_U/U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg/SRL_SIG_reg[2] ";
   attribute srl_name : string;
@@ -17053,7 +17053,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init is
   port (
     ap_loop_init_int : out STD_LOGIC;
     full_n_reg : out STD_LOGIC;
@@ -17120,9 +17120,9 @@ entity video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init is
     \boxHCoord_loc_1_fu_140_reg[7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \boxVCoord_loc_1_fu_136_reg[7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ap_done_cache : STD_LOGIC;
   signal ap_done_cache_i_1_n_3 : STD_LOGIC;
@@ -18844,7 +18844,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 is
   port (
     ap_done_cache : out STD_LOGIC;
     ap_loop_init_int_reg_0 : out STD_LOGIC;
@@ -18947,10 +18947,10 @@ entity video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 is
     \icmp_ln1473_reg_4843_reg[0]\ : in STD_LOGIC_VECTOR ( 16 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 : entity is "video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init";
-end video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 : entity is "video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12 is
   signal \^b\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \add_ln549_1_reg_4804_pp0_iter1_reg_reg[10]_srl2_i_2_n_3\ : STD_LOGIC;
@@ -20449,7 +20449,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 10 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -20460,9 +20460,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 is
     p_reg_reg_2 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     phi_mul_fu_480_reg : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0 is
   signal \p_reg_reg_i_10__0_n_3\ : STD_LOGIC;
   signal \p_reg_reg_i_11__0_n_3\ : STD_LOGIC;
   signal \p_reg_reg_i_12__0_n_3\ : STD_LOGIC;
@@ -20877,7 +20877,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
   port (
     \r_reg_4982_pp0_iter19_reg_reg[7]__0\ : out STD_LOGIC;
     ap_predicate_pred2586_state21_reg : out STD_LOGIC;
@@ -20915,9 +20915,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
     \outpix_0_0_0_0_0_load213_lcssa220_fu_262[1]_i_4_0\ : in STD_LOGIC;
     ap_predicate_pred2586_state21 : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0 is
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[1]_i_7_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[2]_i_10_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[3]_i_10_n_3\ : STD_LOGIC;
@@ -21238,7 +21238,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 0 to 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -21257,9 +21257,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
     \b_2_reg_5061_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \b_2_reg_5061_reg[7]_i_4_0\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0 is
   signal add_ln1304_2_fu_2839_p2 : STD_LOGIC_VECTOR ( 16 to 16 );
   signal add_ln1304_3_fu_2835_p2 : STD_LOGIC_VECTOR ( 15 downto 8 );
   signal \b_2_reg_5061[3]_i_10_n_3\ : STD_LOGIC;
@@ -22084,7 +22084,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 14 downto 0 );
     \tmp_reg_4967_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -22093,9 +22093,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
     A : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0 is
   signal \^tmp_reg_4967_reg[8]\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -22267,7 +22267,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
   port (
     PCOUT : out STD_LOGIC_VECTOR ( 47 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -22276,9 +22276,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 6 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0 is
   signal \^a\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -22387,7 +22387,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     \tmp_3_reg_4972_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -22397,9 +22397,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
     p_reg_reg_0 : in STD_LOGIC_VECTOR ( 14 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0 is
   signal \^tmp_3_reg_4972_reg[8]\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
   signal NLW_p_reg_reg_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
@@ -22572,7 +22572,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
   port (
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
     D : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -22586,9 +22586,9 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
     g_reg_4988_pp0_iter18_reg : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0 is
   signal add_ln1303_2_fu_3062_p2 : STD_LOGIC_VECTOR ( 16 to 16 );
   signal \add_ln1303_2_fu_3062_p2__0\ : STD_LOGIC_VECTOR ( 15 downto 8 );
   signal \g_2_reg_5195[1]_i_3_n_3\ : STD_LOGIC;
@@ -22969,7 +22969,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 is
   port (
     p_reg_reg_0 : out STD_LOGIC_VECTOR ( 14 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -22984,10 +22984,10 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 is
     P : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 : entity is "video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0";
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 : entity is "video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23 is
   signal \^a\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal p_reg_reg_n_93 : STD_LOGIC;
   signal NLW_p_reg_reg_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
@@ -23134,16 +23134,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     A : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1 is
   signal tmp_product_n_100 : STD_LOGIC;
   signal tmp_product_n_101 : STD_LOGIC;
   signal tmp_product_n_102 : STD_LOGIC;
@@ -23274,149 +23274,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 is
-  port (
-    P : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    ap_block_pp0_stage0_subdone : in STD_LOGIC;
-    ap_clk : in STD_LOGIC;
-    A : in STD_LOGIC_VECTOR ( 10 downto 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 : entity is "video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1";
-end video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14;
-
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 is
-  signal tmp_product_n_100 : STD_LOGIC;
-  signal tmp_product_n_101 : STD_LOGIC;
-  signal tmp_product_n_102 : STD_LOGIC;
-  signal tmp_product_n_103 : STD_LOGIC;
-  signal tmp_product_n_104 : STD_LOGIC;
-  signal tmp_product_n_105 : STD_LOGIC;
-  signal tmp_product_n_106 : STD_LOGIC;
-  signal tmp_product_n_107 : STD_LOGIC;
-  signal tmp_product_n_108 : STD_LOGIC;
-  signal tmp_product_n_84 : STD_LOGIC;
-  signal tmp_product_n_85 : STD_LOGIC;
-  signal tmp_product_n_96 : STD_LOGIC;
-  signal tmp_product_n_97 : STD_LOGIC;
-  signal tmp_product_n_98 : STD_LOGIC;
-  signal tmp_product_n_99 : STD_LOGIC;
-  signal NLW_tmp_product_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_OVERFLOW_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_PATTERNBDETECT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_PATTERNDETECT_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_UNDERFLOW_UNCONNECTED : STD_LOGIC;
-  signal NLW_tmp_product_ACOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 29 downto 0 );
-  signal NLW_tmp_product_BCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 0 );
-  signal NLW_tmp_product_CARRYOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_tmp_product_P_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 25 );
-  signal NLW_tmp_product_PCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 0 );
-  attribute METHODOLOGY_DRC_VIOS : string;
-  attribute METHODOLOGY_DRC_VIOS of tmp_product : label is "{SYNTH-11 {cell *THIS*}}";
-begin
-tmp_product: unisim.vcomponents.DSP48E1
-    generic map(
-      ACASCREG => 2,
-      ADREG => 1,
-      ALUMODEREG => 0,
-      AREG => 2,
-      AUTORESET_PATDET => "NO_RESET",
-      A_INPUT => "DIRECT",
-      BCASCREG => 0,
-      BREG => 0,
-      B_INPUT => "DIRECT",
-      CARRYINREG => 0,
-      CARRYINSELREG => 0,
-      CREG => 1,
-      DREG => 1,
-      INMODEREG => 0,
-      MASK => X"3FFFFFFFFFFF",
-      MREG => 0,
-      OPMODEREG => 0,
-      PATTERN => X"000000000000",
-      PREG => 0,
-      SEL_MASK => "MASK",
-      SEL_PATTERN => "PATTERN",
-      USE_DPORT => false,
-      USE_MULT => "MULTIPLY",
-      USE_PATTERN_DETECT => "NO_PATDET",
-      USE_SIMD => "ONE48"
-    )
-        port map (
-      A(29 downto 11) => B"0000000000000000000",
-      A(10 downto 0) => A(10 downto 0),
-      ACIN(29 downto 0) => B"000000000000000000000000000000",
-      ACOUT(29 downto 0) => NLW_tmp_product_ACOUT_UNCONNECTED(29 downto 0),
-      ALUMODE(3 downto 0) => B"0000",
-      B(17 downto 0) => B"000000101010101011",
-      BCIN(17 downto 0) => B"000000000000000000",
-      BCOUT(17 downto 0) => NLW_tmp_product_BCOUT_UNCONNECTED(17 downto 0),
-      C(47 downto 0) => B"111111111111111111111111111111111111111111111111",
-      CARRYCASCIN => '0',
-      CARRYCASCOUT => NLW_tmp_product_CARRYCASCOUT_UNCONNECTED,
-      CARRYIN => '0',
-      CARRYINSEL(2 downto 0) => B"000",
-      CARRYOUT(3 downto 0) => NLW_tmp_product_CARRYOUT_UNCONNECTED(3 downto 0),
-      CEA1 => ap_block_pp0_stage0_subdone,
-      CEA2 => ap_block_pp0_stage0_subdone,
-      CEAD => '0',
-      CEALUMODE => '0',
-      CEB1 => '0',
-      CEB2 => '0',
-      CEC => '0',
-      CECARRYIN => '0',
-      CECTRL => '0',
-      CED => '0',
-      CEINMODE => '0',
-      CEM => '0',
-      CEP => '0',
-      CLK => ap_clk,
-      D(24 downto 0) => B"0000000000000000000000000",
-      INMODE(4 downto 0) => B"00000",
-      MULTSIGNIN => '0',
-      MULTSIGNOUT => NLW_tmp_product_MULTSIGNOUT_UNCONNECTED,
-      OPMODE(6 downto 0) => B"0000101",
-      OVERFLOW => NLW_tmp_product_OVERFLOW_UNCONNECTED,
-      P(47 downto 25) => NLW_tmp_product_P_UNCONNECTED(47 downto 25),
-      P(24) => tmp_product_n_84,
-      P(23) => tmp_product_n_85,
-      P(22 downto 13) => P(9 downto 0),
-      P(12) => tmp_product_n_96,
-      P(11) => tmp_product_n_97,
-      P(10) => tmp_product_n_98,
-      P(9) => tmp_product_n_99,
-      P(8) => tmp_product_n_100,
-      P(7) => tmp_product_n_101,
-      P(6) => tmp_product_n_102,
-      P(5) => tmp_product_n_103,
-      P(4) => tmp_product_n_104,
-      P(3) => tmp_product_n_105,
-      P(2) => tmp_product_n_106,
-      P(1) => tmp_product_n_107,
-      P(0) => tmp_product_n_108,
-      PATTERNBDETECT => NLW_tmp_product_PATTERNBDETECT_UNCONNECTED,
-      PATTERNDETECT => NLW_tmp_product_PATTERNDETECT_UNCONNECTED,
-      PCIN(47 downto 0) => B"000000000000000000000000000000000000000000000000",
-      PCOUT(47 downto 0) => NLW_tmp_product_PCOUT_UNCONNECTED(47 downto 0),
-      RSTA => '0',
-      RSTALLCARRYIN => '0',
-      RSTALUMODE => '0',
-      RSTB => '0',
-      RSTC => '0',
-      RSTCTRL => '0',
-      RSTD => '0',
-      RSTINMODE => '0',
-      RSTM => '0',
-      RSTP => '0',
-      UNDERFLOW => NLW_tmp_product_UNDERFLOW_UNCONNECTED
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 is
   port (
     P : out STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -23424,10 +23282,10 @@ entity video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 is
     A : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 : entity is "video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1";
-end video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 : entity is "video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14 is
   signal tmp_product_n_100 : STD_LOGIC;
   signal tmp_product_n_101 : STD_LOGIC;
   signal tmp_product_n_102 : STD_LOGIC;
@@ -23558,7 +23416,149 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 is
+  port (
+    P : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    ap_block_pp0_stage0_subdone : in STD_LOGIC;
+    ap_clk : in STD_LOGIC;
+    A : in STD_LOGIC_VECTOR ( 10 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 : entity is "video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15;
+
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15 is
+  signal tmp_product_n_100 : STD_LOGIC;
+  signal tmp_product_n_101 : STD_LOGIC;
+  signal tmp_product_n_102 : STD_LOGIC;
+  signal tmp_product_n_103 : STD_LOGIC;
+  signal tmp_product_n_104 : STD_LOGIC;
+  signal tmp_product_n_105 : STD_LOGIC;
+  signal tmp_product_n_106 : STD_LOGIC;
+  signal tmp_product_n_107 : STD_LOGIC;
+  signal tmp_product_n_108 : STD_LOGIC;
+  signal tmp_product_n_84 : STD_LOGIC;
+  signal tmp_product_n_85 : STD_LOGIC;
+  signal tmp_product_n_96 : STD_LOGIC;
+  signal tmp_product_n_97 : STD_LOGIC;
+  signal tmp_product_n_98 : STD_LOGIC;
+  signal tmp_product_n_99 : STD_LOGIC;
+  signal NLW_tmp_product_CARRYCASCOUT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_MULTSIGNOUT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_OVERFLOW_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_PATTERNBDETECT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_PATTERNDETECT_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_UNDERFLOW_UNCONNECTED : STD_LOGIC;
+  signal NLW_tmp_product_ACOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 29 downto 0 );
+  signal NLW_tmp_product_BCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 0 );
+  signal NLW_tmp_product_CARRYOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_tmp_product_P_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 25 );
+  signal NLW_tmp_product_PCOUT_UNCONNECTED : STD_LOGIC_VECTOR ( 47 downto 0 );
+  attribute METHODOLOGY_DRC_VIOS : string;
+  attribute METHODOLOGY_DRC_VIOS of tmp_product : label is "{SYNTH-11 {cell *THIS*}}";
+begin
+tmp_product: unisim.vcomponents.DSP48E1
+    generic map(
+      ACASCREG => 2,
+      ADREG => 1,
+      ALUMODEREG => 0,
+      AREG => 2,
+      AUTORESET_PATDET => "NO_RESET",
+      A_INPUT => "DIRECT",
+      BCASCREG => 0,
+      BREG => 0,
+      B_INPUT => "DIRECT",
+      CARRYINREG => 0,
+      CARRYINSELREG => 0,
+      CREG => 1,
+      DREG => 1,
+      INMODEREG => 0,
+      MASK => X"3FFFFFFFFFFF",
+      MREG => 0,
+      OPMODEREG => 0,
+      PATTERN => X"000000000000",
+      PREG => 0,
+      SEL_MASK => "MASK",
+      SEL_PATTERN => "PATTERN",
+      USE_DPORT => false,
+      USE_MULT => "MULTIPLY",
+      USE_PATTERN_DETECT => "NO_PATDET",
+      USE_SIMD => "ONE48"
+    )
+        port map (
+      A(29 downto 11) => B"0000000000000000000",
+      A(10 downto 0) => A(10 downto 0),
+      ACIN(29 downto 0) => B"000000000000000000000000000000",
+      ACOUT(29 downto 0) => NLW_tmp_product_ACOUT_UNCONNECTED(29 downto 0),
+      ALUMODE(3 downto 0) => B"0000",
+      B(17 downto 0) => B"000000101010101011",
+      BCIN(17 downto 0) => B"000000000000000000",
+      BCOUT(17 downto 0) => NLW_tmp_product_BCOUT_UNCONNECTED(17 downto 0),
+      C(47 downto 0) => B"111111111111111111111111111111111111111111111111",
+      CARRYCASCIN => '0',
+      CARRYCASCOUT => NLW_tmp_product_CARRYCASCOUT_UNCONNECTED,
+      CARRYIN => '0',
+      CARRYINSEL(2 downto 0) => B"000",
+      CARRYOUT(3 downto 0) => NLW_tmp_product_CARRYOUT_UNCONNECTED(3 downto 0),
+      CEA1 => ap_block_pp0_stage0_subdone,
+      CEA2 => ap_block_pp0_stage0_subdone,
+      CEAD => '0',
+      CEALUMODE => '0',
+      CEB1 => '0',
+      CEB2 => '0',
+      CEC => '0',
+      CECARRYIN => '0',
+      CECTRL => '0',
+      CED => '0',
+      CEINMODE => '0',
+      CEM => '0',
+      CEP => '0',
+      CLK => ap_clk,
+      D(24 downto 0) => B"0000000000000000000000000",
+      INMODE(4 downto 0) => B"00000",
+      MULTSIGNIN => '0',
+      MULTSIGNOUT => NLW_tmp_product_MULTSIGNOUT_UNCONNECTED,
+      OPMODE(6 downto 0) => B"0000101",
+      OVERFLOW => NLW_tmp_product_OVERFLOW_UNCONNECTED,
+      P(47 downto 25) => NLW_tmp_product_P_UNCONNECTED(47 downto 25),
+      P(24) => tmp_product_n_84,
+      P(23) => tmp_product_n_85,
+      P(22 downto 13) => P(9 downto 0),
+      P(12) => tmp_product_n_96,
+      P(11) => tmp_product_n_97,
+      P(10) => tmp_product_n_98,
+      P(9) => tmp_product_n_99,
+      P(8) => tmp_product_n_100,
+      P(7) => tmp_product_n_101,
+      P(6) => tmp_product_n_102,
+      P(5) => tmp_product_n_103,
+      P(4) => tmp_product_n_104,
+      P(3) => tmp_product_n_105,
+      P(2) => tmp_product_n_106,
+      P(1) => tmp_product_n_107,
+      P(0) => tmp_product_n_108,
+      PATTERNBDETECT => NLW_tmp_product_PATTERNBDETECT_UNCONNECTED,
+      PATTERNDETECT => NLW_tmp_product_PATTERNDETECT_UNCONNECTED,
+      PCIN(47 downto 0) => B"000000000000000000000000000000000000000000000000",
+      PCOUT(47 downto 0) => NLW_tmp_product_PCOUT_UNCONNECTED(47 downto 0),
+      RSTA => '0',
+      RSTALLCARRYIN => '0',
+      RSTALUMODE => '0',
+      RSTB => '0',
+      RSTC => '0',
+      RSTCTRL => '0',
+      RSTD => '0',
+      RSTINMODE => '0',
+      RSTM => '0',
+      RSTP => '0',
+      UNDERFLOW => NLW_tmp_product_UNDERFLOW_UNCONNECTED
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s is
   port (
     \ap_phi_reg_pp0_iter3_hHatch_reg_1346_reg[0]\ : out STD_LOGIC;
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -23581,9 +23581,9 @@ entity video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s is
     \d_read_reg_22_reg[9]_0\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^sr\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal d_read_reg_22 : STD_LOGIC_VECTOR ( 9 downto 0 );
@@ -24152,7 +24152,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s is
   port (
     s : out STD_LOGIC;
     \count_reg[12]\ : out STD_LOGIC;
@@ -24170,9 +24170,9 @@ entity video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s is
     \d_read_reg_22_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s is
   signal \^d\ : STD_LOGIC_VECTOR ( 30 downto 0 );
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \count_new_0_reg_428[31]_i_10_n_3\ : STD_LOGIC;
@@ -24912,7 +24912,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_regslice_both is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both is
   port (
     m_axis_video_TREADY_int_regslice : out STD_LOGIC;
     m_axis_video_TVALID : out STD_LOGIC;
@@ -24931,9 +24931,9 @@ entity video_out_pynq_z2_v_tpg_0_0_regslice_both is
     \data_p1_reg[0]_0\ : in STD_LOGIC;
     \data_p2_reg[23]_0\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_regslice_both;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_regslice_both is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both is
   signal ack_in_t_i_1_n_3 : STD_LOGIC;
   signal \^ap_done\ : STD_LOGIC;
   signal \data_p1[0]_i_1_n_3\ : STD_LOGIC;
@@ -25848,7 +25848,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ is
+entity \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ is
   port (
     ack_in_t_reg_0 : out STD_LOGIC;
     data_p2 : out STD_LOGIC;
@@ -25861,10 +25861,10 @@ entity \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ is
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TLAST : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ : entity is "video_out_pynq_z2_v_tpg_0_0_regslice_both";
-end \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\;
+  attribute ORIG_REF_NAME of \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ : entity is "video_out_pynq_z2_v_tpg_0_0_regslice_both";
+end \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\;
 
-architecture STRUCTURE of \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ is
+architecture STRUCTURE of \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\ is
   signal \ack_in_t_i_1__1_n_3\ : STD_LOGIC;
   signal \^ack_in_t_reg_0\ : STD_LOGIC;
   signal \data_p1[0]_i_1__1_n_3\ : STD_LOGIC;
@@ -25987,7 +25987,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ is
+entity \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ is
   port (
     ack_in_t_reg_0 : out STD_LOGIC;
     data_p2 : out STD_LOGIC;
@@ -26000,10 +26000,10 @@ entity \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ is
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TUSER : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ : entity is "video_out_pynq_z2_v_tpg_0_0_regslice_both";
-end \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\;
+  attribute ORIG_REF_NAME of \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ : entity is "video_out_pynq_z2_v_tpg_0_0_regslice_both";
+end \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\;
 
-architecture STRUCTURE of \video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ is
+architecture STRUCTURE of \video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\ is
   signal \ack_in_t_i_1__0_n_3\ : STD_LOGIC;
   signal \^ack_in_t_reg_0\ : STD_LOGIC;
   signal \data_p1[0]_i_1__0_n_3\ : STD_LOGIC;
@@ -26126,7 +26126,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 is
   port (
     MultiPixStream2AXIvideo_U0_ap_start : out STD_LOGIC;
     start_for_MultiPixStream2AXIvideo_U0_full_n : out STD_LOGIC;
@@ -26157,9 +26157,9 @@ entity video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 is
     CO : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0 is
   signal \^multipixstream2axivideo_u0_ap_start\ : STD_LOGIC;
   signal \^ap_sync_reg_entry_proc_u0_ap_ready_reg_0\ : STD_LOGIC;
   signal \empty_n_i_1__19_n_3\ : STD_LOGIC;
@@ -26373,7 +26373,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 is
   port (
     tpgForeground_U0_ap_start : out STD_LOGIC;
     start_for_tpgForeground_U0_full_n : out STD_LOGIC;
@@ -26384,9 +26384,9 @@ entity video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 is
     \mOutPtr_reg[1]_0\ : in STD_LOGIC;
     full_n_reg_0 : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0 is
   signal \empty_n_i_1__18_n_3\ : STD_LOGIC;
   signal \full_n_i_1__18_n_3\ : STD_LOGIC;
   signal mOutPtr : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -26490,7 +26490,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -26507,9 +26507,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     hBarSel_5_0_loc_0_fu_278 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     DPtpgBarArray_address0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R is
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \q0[1]_i_1__0__0_n_3\ : STD_LOGIC;
   signal \q0[2]_i_2_n_3\ : STD_LOGIC;
@@ -26697,7 +26697,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     \q0_reg[4]_1\ : in STD_LOGIC;
@@ -26709,9 +26709,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266_reg[4]_2\ : in STD_LOGIC;
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266_reg[4]_3\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R is
   signal \q0_reg_n_3_[4]\ : STD_LOGIC;
 begin
 \outpix_0_1_0_0_0_load215_lcssa223_fu_266[4]_i_5\: unisim.vcomponents.LUT6
@@ -26740,16 +26740,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     \q0_reg[4]_1\ : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R is
 begin
 \q0_reg[4]\: unisim.vcomponents.FDRE
      port map (
@@ -26764,7 +26764,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
   port (
     \q0_reg[3]_0\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -26778,9 +26778,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     ap_enable_reg_pp0_iter19 : in STD_LOGIC;
     \q0_reg[7]_2\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R is
   signal \q0[7]_i_1_n_3\ : STD_LOGIC;
   signal \^q0_reg[7]_0\ : STD_LOGIC;
 begin
@@ -26835,7 +26835,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     \q0_reg[5]_0\ : out STD_LOGIC;
@@ -26879,9 +26879,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[3]_i_10_2\ : in STD_LOGIC;
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[3]_i_10_3\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[3]_i_14_n_3\ : STD_LOGIC;
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_270[2]_i_7_n_3\ : STD_LOGIC;
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_270[2]_i_9_n_3\ : STD_LOGIC;
@@ -27026,7 +27026,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
   port (
     \q0_reg[4]_0\ : out STD_LOGIC;
     \q0_reg[7]_0\ : out STD_LOGIC;
@@ -27084,9 +27084,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     trunc_ln565_9_reg_4780_pp0_iter19_reg : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R is
   signal \^ap_predicate_pred2170_state21_reg\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[0]_i_11_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[1]_i_7_n_3\ : STD_LOGIC;
@@ -27371,7 +27371,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
   port (
     \q0_reg[3]_0\ : out STD_LOGIC;
     ap_enable_reg_pp0_iter21_reg : out STD_LOGIC;
@@ -27399,9 +27399,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     \q0_reg[7]_2\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     ap_enable_reg_pp0_iter19 : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R is
   signal \^ap_enable_reg_pp0_iter21_reg\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[2]_i_13_n_3\ : STD_LOGIC;
   signal \q0[7]_i_1_n_3\ : STD_LOGIC;
@@ -27502,7 +27502,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
   port (
     \q0_reg[6]_0\ : out STD_LOGIC;
     ap_predicate_pred2158_state21_reg : out STD_LOGIC;
@@ -27560,9 +27560,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[5]_i_9_3\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[5]_i_17_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[6]_i_16_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_33_n_3\ : STD_LOGIC;
@@ -27815,7 +27815,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
   port (
     \q0_reg[2]_0\ : out STD_LOGIC;
     ap_enable_reg_pp0_iter19_reg : out STD_LOGIC;
@@ -27855,9 +27855,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpg
     \outpix_0_0_0_0_0_load213_lcssa220_fu_262[4]_i_6_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R is
   signal \^ap_enable_reg_pp0_iter19_reg\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[4]_i_12_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[4]_i_4_n_3\ : STD_LOGIC;
@@ -28037,7 +28037,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
   port (
     ap_predicate_pred2600_state21_reg : out STD_LOGIC;
     \q0_reg[7]_0\ : in STD_LOGIC;
@@ -28049,9 +28049,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYu
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_6_0\ : in STD_LOGIC;
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_6_1\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R is
   signal \q0_reg_n_3_[7]\ : STD_LOGIC;
 begin
 \outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_15\: unisim.vcomponents.LUT6
@@ -28080,7 +28080,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 is
   port (
     \q0_reg[7]_0\ : out STD_LOGIC;
     \q0_reg[7]_1\ : in STD_LOGIC;
@@ -28088,10 +28088,10 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYu
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R";
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11 is
 begin
 \q0_reg[7]\: unisim.vcomponents.FDRE
      port map (
@@ -28106,7 +28106,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
   port (
     \q0_reg[7]_0\ : out STD_LOGIC;
     \q0_reg[6]_0\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -28124,9 +28124,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYu
     ap_phi_reg_pp0_iter19_phi_ln1186_reg_1412 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_27_n_3\ : STD_LOGIC;
   signal \q0[4]_i_1__1_n_3\ : STD_LOGIC;
   signal \q0[6]_i_1__3_n_3\ : STD_LOGIC;
@@ -28207,7 +28207,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
   port (
     \q0_reg[6]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     \q0_reg[6]_0\ : out STD_LOGIC;
@@ -28230,9 +28230,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYu
     ap_clk : in STD_LOGIC;
     ap_phi_reg_pp0_iter19_phi_ln1165_reg_1423 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R is
   signal \q0[4]_i_1__0__0_n_3\ : STD_LOGIC;
   signal \q0[7]_i_1__3_n_3\ : STD_LOGIC;
   signal \^q0_reg[5]_0\ : STD_LOGIC;
@@ -28340,7 +28340,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
   port (
     \cmp2_i_reg_1308_reg[0]\ : out STD_LOGIC;
     \cmp2_i_reg_1308_reg[0]_0\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -28380,9 +28380,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYu
     ap_phi_reg_pp0_iter19_phi_ln1144_reg_1434 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[0]_i_2_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[1]_i_12_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[3]_i_2_n_3\ : STD_LOGIC;
@@ -28572,7 +28572,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \outpix_0_2_0_0_0_load217_lcssa226_fu_270_reg[0]\ : out STD_LOGIC;
@@ -28592,9 +28592,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     \outpix_0_2_0_0_0_load217_lcssa226_fu_270[2]_i_7\ : in STD_LOGIC;
     trunc_ln565_9_reg_4780_pp0_iter19_reg : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R is
   signal \^ap_predicate_pred2165_state21_reg\ : STD_LOGIC;
   signal \^q0_reg[1]_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
@@ -28662,7 +28662,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \q0_reg[1]_1\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -28737,10 +28737,10 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     ap_predicate_pred1820_state21 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R";
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16 is
   signal \^ap_predicate_pred2175_state20_reg\ : STD_LOGIC;
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_270[0]_i_3_n_3\ : STD_LOGIC;
   signal \outpix_0_2_0_0_0_load217_lcssa226_fu_270[1]_i_2_n_3\ : STD_LOGIC;
@@ -29150,7 +29150,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \cmp2_i_reg_1308_reg[0]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -29198,9 +29198,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     or_ln565_reg_5277 : in STD_LOGIC;
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[7]_i_8_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R is
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[0]_i_10_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[0]_i_12_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[0]_i_6_n_3\ : STD_LOGIC;
@@ -29364,7 +29364,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \rampStart_load_reg_1374_reg[6]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -29406,9 +29406,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     ap_predicate_pred2529_state21 : in STD_LOGIC;
     \outpix_0_0_0_0_0_load213_lcssa220_fu_262[4]_i_6\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R is
   signal \^ap_predicate_pred2170_state21_reg\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[1]_i_3_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[2]_i_5_n_3\ : STD_LOGIC;
@@ -29549,7 +29549,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 is
   port (
     \q0_reg[1]_0\ : out STD_LOGIC;
     \rampStart_load_reg_1374_reg[7]\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -29614,10 +29614,10 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     ap_predicate_pred1820_state21 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R";
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17 is
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[0]_i_10_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[0]_i_3_n_3\ : STD_LOGIC;
   signal \outpix_0_0_0_0_0_load213_lcssa220_fu_262[0]_i_4_n_3\ : STD_LOGIC;
@@ -30081,16 +30081,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \q0_reg[7]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R is
 begin
 \q0_reg[5]\: unisim.vcomponents.FDRE
      port map (
@@ -30113,7 +30113,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
   port (
     \q0_reg[0]_0\ : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -30201,9 +30201,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     ap_predicate_pred2389_state21 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^ap_predicate_pred2218_state20_reg\ : STD_LOGIC;
   signal \^ap_predicate_pred2218_state20_reg_0\ : STD_LOGIC;
@@ -30591,7 +30591,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
   port (
     Q : out STD_LOGIC_VECTOR ( 7 downto 0 );
     \q0_reg[0]_0\ : in STD_LOGIC;
@@ -30603,9 +30603,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBa
     D : in STD_LOGIC_VECTOR ( 7 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R is
   signal tpgBarSelYuv_y_ce0_local : STD_LOGIC;
 begin
 \q0[7]_i_1__2__0\: unisim.vcomponents.LUT6
@@ -30690,7 +30690,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
   port (
     \q0_reg[0]_0\ : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -30703,9 +30703,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCh
     ap_predicate_pred2218_state21 : in STD_LOGIC;
     hBarSel_4_0_loc_0_fu_322 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R is
   signal g0_b0_n_3 : STD_LOGIC;
   signal \^q0_reg[0]_0\ : STD_LOGIC;
 begin
@@ -30756,7 +30756,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
   port (
     D : out STD_LOGIC_VECTOR ( 5 downto 0 );
     DPtpgBarArray_ce0_local : out STD_LOGIC;
@@ -30779,9 +30779,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTa
     \q0_reg[4]_2\ : in STD_LOGIC;
     sel : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R is
   signal \^dptpgbararray_ce0_local\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \g0_b0__0_n_3\ : STD_LOGIC;
@@ -31060,7 +31060,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
   port (
     \g_2_reg_5195_reg[5]\ : out STD_LOGIC;
     ap_predicate_pred2600_state21_reg : out STD_LOGIC;
@@ -31088,9 +31088,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYu
     ap_predicate_pred2600_state21 : in STD_LOGIC;
     ap_predicate_pred2606_state21 : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R is
   signal \^ap_predicate_pred2600_state21_reg\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[1]_i_10_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[3]_i_8_n_3\ : STD_LOGIC;
@@ -31227,7 +31227,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 is
   port (
     ap_predicate_pred2236_state21_reg : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \q0_reg[4]\ : out STD_LOGIC;
@@ -31261,10 +31261,10 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYu
     \outpix_0_1_0_0_0_load215_lcssa223_fu_266[6]_i_2_0\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R";
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 : entity is "video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20 is
   signal \^ap_predicate_pred2640_state21_reg\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[6]_i_2_n_3\ : STD_LOGIC;
   signal \outpix_0_1_0_0_0_load215_lcssa223_fu_266[6]_i_7_n_3\ : STD_LOGIC;
@@ -31376,7 +31376,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
   port (
     q0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     whiYuv_2_ce0_local : out STD_LOGIC;
@@ -31390,9 +31390,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYu
     \q0_reg[6]_1\ : in STD_LOGIC;
     \q0_reg[6]_2\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R is
   signal \q0[6]_i_1__2_n_3\ : STD_LOGIC;
   signal \^whiyuv_2_ce0_local\ : STD_LOGIC;
 begin
@@ -31432,7 +31432,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider is
   port (
     p_1_in : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -31448,9 +31448,9 @@ entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider is
     \loop[7].remd_tmp_reg[8][0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     trunc_ln565_9_reg_4780_pp0_iter11_reg : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider is
   signal \cal_tmp[10]_43\ : STD_LOGIC_VECTOR ( 11 to 11 );
   signal \cal_tmp[10]_carry__0_i_1__1_n_3\ : STD_LOGIC;
   signal \cal_tmp[10]_carry__0_i_2__1_n_3\ : STD_LOGIC;
@@ -33603,7 +33603,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -33619,10 +33619,10 @@ entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 is
     trunc_ln565_9_reg_4780_pp0_iter11_reg : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider";
-end video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21 is
   signal \cal_tmp[10]_33\ : STD_LOGIC_VECTOR ( 11 to 11 );
   signal \cal_tmp[10]_carry__0_i_1__0_n_3\ : STD_LOGIC;
   signal \cal_tmp[10]_carry__0_i_2__0_n_3\ : STD_LOGIC;
@@ -35774,7 +35774,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -35791,10 +35791,10 @@ entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 is
     trunc_ln565_9_reg_4780_pp0_iter11_reg : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider";
-end video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22 is
   signal \cal_tmp[10]_23\ : STD_LOGIC_VECTOR ( 11 to 11 );
   signal \cal_tmp[10]_carry__0_i_1_n_3\ : STD_LOGIC;
   signal \cal_tmp[10]_carry__0_i_2_n_3\ : STD_LOGIC;
@@ -37937,7 +37937,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo is
   port (
     MultiPixStream2AXIvideo_U0_field_id_val8_read : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -37987,9 +37987,9 @@ entity video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo is
     \out\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \rows_reg_308_reg[11]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo is
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^multipixstream2axivideo_u0_ap_ready\ : STD_LOGIC;
   signal \^multipixstream2axivideo_u0_field_id_val8_read\ : STD_LOGIC;
@@ -38672,7 +38672,7 @@ full_n_i_2: unisim.vcomponents.LUT3
       I2 => \^co\(0),
       O => empty_n_reg
     );
-grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171: entity work.video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
+grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2
      port map (
       CO(0) => \^co\(0),
       D(1 downto 0) => ap_NS_fsm(3 downto 2),
@@ -39354,18 +39354,18 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
     ap_clk : in STD_LOGIC;
     B : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1_DSP48_0
      port map (
       B(15 downto 0) => B(15 downto 0),
       P(15 downto 0) => P(15 downto 0),
@@ -39377,7 +39377,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S is
   port (
     D : out STD_LOGIC_VECTOR ( 5 downto 0 );
     height_val4_c_empty_n : out STD_LOGIC;
@@ -39392,9 +39392,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S is
     MultiPixStream2AXIvideo_U0_field_id_val8_read : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S is
   signal addr : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \addr[0]_i_1__3_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__5_n_3\ : STD_LOGIC;
@@ -39414,7 +39414,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S is
 begin
   height_val4_c_empty_n <= \^height_val4_c_empty_n\;
   height_val4_c_full_n <= \^height_val4_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S_ShiftReg
      port map (
       D(5 downto 0) => D(5 downto 0),
       S(1 downto 0) => S(1 downto 0),
@@ -39563,7 +39563,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S is
   port (
     \SRL_SIG_reg[0][12]\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     width_val7_c_empty_n : out STD_LOGIC;
@@ -39595,9 +39595,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S is
     MultiPixStream2AXIvideo_U0_field_id_val8_read : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S is
   signal addr : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \addr[0]_i_1__4_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__6_n_3\ : STD_LOGIC;
@@ -39617,7 +39617,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S is
   attribute SOFT_HLUTNM of \mOutPtr[2]_i_1__17\ : label is "soft_lutpair555";
 begin
   width_val7_c_empty_n <= \^width_val7_c_empty_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S_ShiftReg
      port map (
       D(3 downto 0) => \SRL_SIG_reg[0][12]\(3 downto 0),
       DI(3 downto 0) => DI(3 downto 0),
@@ -39800,7 +39800,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S is
   port (
     height_val4_c3_empty_n : out STD_LOGIC;
     height_val4_c3_full_n : out STD_LOGIC;
@@ -39821,9 +39821,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S is
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__1_n_3\ : STD_LOGIC;
   signal \addr_reg_n_3_[0]\ : STD_LOGIC;
@@ -39843,7 +39843,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S is
 begin
   height_val4_c3_empty_n <= \^height_val4_c3_empty_n\;
   height_val4_c3_full_n <= \^height_val4_c3_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg_25
      port map (
       D(15 downto 0) => D(15 downto 0),
       DI(3 downto 0) => DI(3 downto 0),
@@ -39998,7 +39998,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 is
   port (
     width_val7_c4_empty_n : out STD_LOGIC;
     full_n_reg_0 : out STD_LOGIC;
@@ -40023,10 +40023,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 is
     \SRL_SIG_reg[0][15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 is
   signal \addr[0]_i_1__0_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__2_n_3\ : STD_LOGIC;
   signal \addr_reg_n_3_[0]\ : STD_LOGIC;
@@ -40045,7 +40045,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10 is
   attribute SOFT_HLUTNM of \mOutPtr[2]_i_1__13\ : label is "soft_lutpair546";
 begin
   width_val7_c4_empty_n <= \^width_val7_c4_empty_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_ShiftReg
      port map (
       DI(3 downto 0) => DI(3 downto 0),
       \SRL_SIG_reg[0][0]_0\ => \addr_reg_n_3_[0]\,
@@ -40211,7 +40211,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S is
   port (
     boxSize_val24_c_empty_n : out STD_LOGIC;
     full_n_reg_0 : out STD_LOGIC;
@@ -40233,9 +40233,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S is
     \boxSize_val_read_reg_455_reg[15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -40257,7 +40257,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S is
 begin
   boxSize_val24_c_empty_n <= \^boxsize_val24_c_empty_n\;
   full_n_reg_0 <= \^full_n_reg_0\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_29
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -40443,7 +40443,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 is
   port (
     crossHairX_val18_c_empty_n : out STD_LOGIC;
     crossHairX_val18_c_full_n : out STD_LOGIC;
@@ -40456,10 +40456,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -40480,7 +40480,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4 is
 begin
   crossHairX_val18_c_empty_n <= \^crosshairx_val18_c_empty_n\;
   crossHairX_val18_c_full_n <= \^crosshairx_val18_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg_26
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -40647,7 +40647,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 is
   port (
     crossHairY_val19_c_empty_n : out STD_LOGIC;
     full_n_reg_0 : out STD_LOGIC;
@@ -40665,10 +40665,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -40688,7 +40688,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5 is
   attribute SOFT_HLUTNM of \mOutPtr[2]_i_1__1\ : label is "soft_lutpair191";
 begin
   crossHairY_val19_c_empty_n <= \^crosshairy_val19_c_empty_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_ShiftReg
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -40862,7 +40862,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S is
   port (
     field_id_val8_c_empty_n : out STD_LOGIC;
     field_id_val8_c_full_n : out STD_LOGIC;
@@ -40874,9 +40874,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S is
     \field_id_val8_read_reg_298_reg[15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__0_n_3\ : STD_LOGIC;
@@ -40898,7 +40898,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S is
 begin
   field_id_val8_c_empty_n <= \^field_id_val8_c_empty_n\;
   field_id_val8_c_full_n <= \^field_id_val8_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S_ShiftReg
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -41075,7 +41075,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S is
   port (
     fid_in_val9_c_dout : out STD_LOGIC;
     fid_in_val9_c_full_n : out STD_LOGIC;
@@ -41090,9 +41090,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S is
     field_id_val8_c_empty_n : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2_n_3\ : STD_LOGIC;
@@ -41113,7 +41113,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S is
   attribute SOFT_HLUTNM of \mOutPtr[2]_i_1__10\ : label is "soft_lutpair193";
 begin
   fid_in_val9_c_full_n <= \^fid_in_val9_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S_ShiftReg
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -41301,7 +41301,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S is
   port (
     bckgndYUV_empty_n : out STD_LOGIC;
     bckgndYUV_full_n : out STD_LOGIC;
@@ -41331,9 +41331,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \addr_reg[3]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S is
   signal \addr[0]_i_1__6_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1__0_n_3\ : STD_LOGIC;
   signal \addr[2]_i_1__0_n_3\ : STD_LOGIC;
@@ -41365,7 +41365,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S is
   attribute SOFT_HLUTNM of \mOutPtr[3]_i_1\ : label is "soft_lutpair160";
 begin
   bckgndYUV_full_n <= \^bckgndyuv_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg_33
      port map (
       Q(3 downto 0) => addr_reg(3 downto 0),
       ap_clk => ap_clk,
@@ -41682,7 +41682,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 is
   port (
     ovrlayYUV_empty_n : out STD_LOGIC;
     ovrlayYUV_full_n : out STD_LOGIC;
@@ -41698,10 +41698,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 is
   signal \addr[0]_i_1__7_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
   signal \addr[2]_i_1_n_3\ : STD_LOGIC;
@@ -41730,7 +41730,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9 is
 begin
   ovrlayYUV_empty_n <= \^ovrlayyuv_empty_n\;
   ovrlayYUV_full_n <= \^ovrlayyuv_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_ShiftReg
      port map (
       D(23 downto 0) => D(23 downto 0),
       Q(3 downto 0) => addr_reg(3 downto 0),
@@ -41999,7 +41999,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S is
   port (
     colorFormat_val17_c5_empty_n : out STD_LOGIC;
     colorFormat_val17_c5_full_n : out STD_LOGIC;
@@ -42018,9 +42018,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \SRL_SIG_reg[0][7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S is
   signal \addr[0]_i_1__2_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__4_n_3\ : STD_LOGIC;
   signal \addr_reg_n_3_[0]\ : STD_LOGIC;
@@ -42040,7 +42040,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S is
 begin
   colorFormat_val17_c5_empty_n <= \^colorformat_val17_c5_empty_n\;
   colorFormat_val17_c5_full_n <= \^colorformat_val17_c5_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_28
      port map (
       \SRL_SIG_reg[0][0]_0\ => \SRL_SIG_reg[0][0]\,
       \SRL_SIG_reg[0][7]_0\(7 downto 0) => \SRL_SIG_reg[0][7]\(7 downto 0),
@@ -42194,7 +42194,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 is
   port (
     \SRL_SIG_reg[0][3]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
     colorFormat_val17_c_empty_n : out STD_LOGIC;
@@ -42209,10 +42209,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 is
   signal \addr[0]_i_1__5_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__7_n_3\ : STD_LOGIC;
   signal \addr_reg_n_3_[0]\ : STD_LOGIC;
@@ -42232,7 +42232,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3 is
 begin
   colorFormat_val17_c_empty_n <= \^colorformat_val17_c_empty_n\;
   colorFormat_val17_c_full_n <= \^colorformat_val17_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg_27
      port map (
       \SRL_SIG_reg[0][3]_0\(1 downto 0) => \SRL_SIG_reg[0][3]\(1 downto 0),
       \SRL_SIG_reg[0][4]_0\ => \SRL_SIG_reg[0][4]\,
@@ -42380,7 +42380,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 is
   port (
     full_n_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     push : out STD_LOGIC;
@@ -42401,10 +42401,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 is
     \SRL_SIG_reg[0][7]_1\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \addr[0]_i_1__1_n_3\ : STD_LOGIC;
   signal \addr[0]_i_2__3_n_3\ : STD_LOGIC;
@@ -42426,7 +42426,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7 is
 begin
   E(0) <= \^e\(0);
   push <= \^push\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_ShiftReg
      port map (
       E(0) => \^push\,
       \SRL_SIG_reg[0][7]_0\(7 downto 0) => \SRL_SIG_reg[0][7]_1\(7 downto 0),
@@ -42613,7 +42613,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S is
   port (
     boxColorB_val27_c_empty_n : out STD_LOGIC;
     boxColorB_val27_c_full_n : out STD_LOGIC;
@@ -42625,9 +42625,9 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S is
     \boxColorB_val_read_reg_440_reg[7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -42648,7 +42648,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S is
 begin
   boxColorB_val27_c_empty_n <= \^boxcolorb_val27_c_empty_n\;
   boxColorB_val27_c_full_n <= \^boxcolorb_val27_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_32
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -42815,7 +42815,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 is
   port (
     boxColorG_val26_c_empty_n : out STD_LOGIC;
     boxColorG_val26_c_full_n : out STD_LOGIC;
@@ -42828,10 +42828,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -42852,7 +42852,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1 is
 begin
   boxColorG_val26_c_empty_n <= \^boxcolorg_val26_c_empty_n\;
   boxColorG_val26_c_full_n <= \^boxcolorg_val26_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_31
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -43019,7 +43019,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 is
   port (
     boxColorR_val25_c_empty_n : out STD_LOGIC;
     boxColorR_val25_c_full_n : out STD_LOGIC;
@@ -43032,10 +43032,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -43056,7 +43056,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2 is
 begin
   boxColorR_val25_c_empty_n <= \^boxcolorr_val25_c_empty_n\;
   boxColorR_val25_c_full_n <= \^boxcolorr_val25_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_30
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -43223,7 +43223,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 is
   port (
     maskId_val12_c_empty_n : out STD_LOGIC;
     maskId_val12_c_full_n : out STD_LOGIC;
@@ -43237,10 +43237,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -43261,7 +43261,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6 is
 begin
   maskId_val12_c_empty_n <= \^maskid_val12_c_empty_n\;
   maskId_val12_c_full_n <= \^maskid_val12_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg_24
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -43429,7 +43429,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 is
   port (
     ovrlayId_val11_c_full_n : out STD_LOGIC;
     empty_n_reg_0 : out STD_LOGIC;
@@ -43445,10 +43445,10 @@ entity video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
-end video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 : entity is "video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr[0]_i_1_n_3\ : STD_LOGIC;
   signal \addr[1]_i_1_n_3\ : STD_LOGIC;
@@ -43468,7 +43468,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8 is
   attribute SOFT_HLUTNM of \mOutPtr[2]_i_2\ : label is "soft_lutpair223";
 begin
   ovrlayId_val11_c_full_n <= \^ovrlayid_val11_c_full_n\;
-U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
+U_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_ShiftReg
      port map (
       addr(1 downto 0) => addr(1 downto 0),
       ap_clk => ap_clk,
@@ -43646,7 +43646,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 10 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -43657,11 +43657,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 is
     p_reg_reg_1 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     phi_mul_fu_480_reg : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_0
      port map (
       P(10 downto 0) => P(10 downto 0),
       ZplateHorContDelta_val(15 downto 0) => ZplateHorContDelta_val(15 downto 0),
@@ -43677,7 +43677,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 is
   port (
     \r_reg_4982_pp0_iter19_reg_reg[7]__0\ : out STD_LOGIC;
     ap_predicate_pred2586_state21_reg : out STD_LOGIC;
@@ -43715,11 +43715,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 is
     \outpix_0_0_0_0_0_load213_lcssa220_fu_262[1]_i_4\ : in STD_LOGIC;
     ap_predicate_pred2586_state21 : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_0
      port map (
       D(7 downto 0) => D(7 downto 0),
       P(15 downto 0) => P(15 downto 0),
@@ -43762,7 +43762,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 0 to 0 );
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -43781,11 +43781,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 is
     \b_2_reg_5061_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \b_2_reg_5061_reg[7]_i_4\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1_DSP48_0
      port map (
       C(7 downto 0) => C(7 downto 0),
       D(7 downto 0) => D(7 downto 0),
@@ -43809,7 +43809,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 14 downto 0 );
     \tmp_reg_4967_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -43818,11 +43818,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 is
     A : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1_DSP48_0
      port map (
       A(0) => A(0),
       P(14 downto 0) => P(14 downto 0),
@@ -43836,7 +43836,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 is
   port (
     PCOUT : out STD_LOGIC_VECTOR ( 47 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -43845,11 +43845,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 is
     p_reg_reg : in STD_LOGIC_VECTOR ( 6 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1_DSP48_0
      port map (
       A(0) => A(0),
       PCOUT(47 downto 0) => PCOUT(47 downto 0),
@@ -43863,7 +43863,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 is
   port (
     P : out STD_LOGIC_VECTOR ( 15 downto 0 );
     \tmp_3_reg_4972_reg[8]\ : out STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -43873,11 +43873,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 is
     p_reg_reg : in STD_LOGIC_VECTOR ( 14 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_0
      port map (
       A(0) => A(0),
       P(15 downto 0) => P(15 downto 0),
@@ -43892,7 +43892,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 is
   port (
     p_reg_reg : out STD_LOGIC_VECTOR ( 14 downto 0 );
     A : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -43906,11 +43906,11 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     P : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_23
      port map (
       A(0) => A(0),
       DI(0) => DI(0),
@@ -43929,7 +43929,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 is
   port (
     SS : out STD_LOGIC_VECTOR ( 0 to 0 );
     D : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -43944,12 +43944,12 @@ entity video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 is
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 : entity is "video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1";
-end video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 : entity is "video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13 is
 begin
-video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
+video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_DSP48_0
      port map (
       A(7 downto 0) => A(7 downto 0),
       D(7 downto 0) => D(7 downto 0),
@@ -43968,7 +43968,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
   port (
     \boxHCoord_loc_1_fu_140_reg[7]_0\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     \boxVCoord_loc_1_fu_136_reg[7]_0\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -44038,9 +44038,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
     and10_i_reg_520 : in STD_LOGIC;
     and26_i_reg_525 : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2 is
   signal \_inferred__0/i__carry__0_n_3\ : STD_LOGIC;
   signal \_inferred__0/i__carry__0_n_4\ : STD_LOGIC;
   signal \_inferred__0/i__carry__0_n_5\ : STD_LOGIC;
@@ -47424,7 +47424,7 @@ empty_n_i_1: unisim.vcomponents.LUT6
       I5 => push_2,
       O => empty_n_reg_0
     );
-flow_control_loop_pipe_sequential_init_U: entity work.video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init
+flow_control_loop_pipe_sequential_init_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init
      port map (
       CO(0) => icmp_ln774_fu_429_p2,
       D(1 downto 0) => D(1 downto 0),
@@ -49609,7 +49609,7 @@ icmp_ln1963_fu_457_p2_carry: unisim.vcomponents.CARRY4
       Q => vDir,
       R => '0'
     );
-whiYuv_2_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
+whiYuv_2_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R
      port map (
       ap_clk => ap_clk,
       ap_enable_reg_pp0_iter1 => ap_enable_reg_pp0_iter1,
@@ -50184,7 +50184,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -50200,9 +50200,9 @@ entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 is
     \loop[9].remd_tmp_reg[10][0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     trunc_ln565_9_reg_4780_pp0_iter11_reg : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1 is
   signal remd : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
 \remd_reg[0]\: unisim.vcomponents.FDRE
@@ -50221,7 +50221,7 @@ begin
       Q => Q(1),
       R => '0'
     );
-video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22
+video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_22
      port map (
       A(0) => A(0),
       DI(1 downto 0) => DI(1 downto 0),
@@ -50242,7 +50242,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_block_pp0_stage0_subdone : in STD_LOGIC;
@@ -50258,10 +50258,10 @@ entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 is
     trunc_ln565_9_reg_4780_pp0_iter11_reg : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1";
-end video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18 is
   signal remd : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
 \remd_reg[0]\: unisim.vcomponents.FDRE
@@ -50280,7 +50280,7 @@ begin
       Q => Q(1),
       R => '0'
     );
-video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21
+video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_21
      port map (
       A(1 downto 0) => A(1 downto 0),
       DI(1 downto 0) => DI(1 downto 0),
@@ -50300,7 +50300,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 is
   port (
     p_1_in : out STD_LOGIC_VECTOR ( 0 to 0 );
     dout : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -50317,10 +50317,10 @@ entity video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 is
     trunc_ln565_9_reg_4780_pp0_iter11_reg : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1";
-end video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19;
+  attribute ORIG_REF_NAME of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 : entity is "video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19 is
   signal remd : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
 \remd_reg[0]\: unisim.vcomponents.FDRE
@@ -50339,7 +50339,7 @@ begin
       Q => dout(1),
       R => '0'
     );
-video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider
+video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider_u: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_divider
      port map (
       A(1 downto 0) => A(1 downto 0),
       DI(1 downto 0) => DI(1 downto 0),
@@ -50360,7 +50360,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
   port (
     ap_loop_exit_ready_pp0_iter20_reg : out STD_LOGIC;
     ap_enable_reg_pp0_iter20 : out STD_LOGIC;
@@ -50560,9 +50560,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
     \q0_reg[4]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \q0_reg[4]_1\ : in STD_LOGIC
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2 is
   signal DPtpgBarArray_U_n_10 : STD_LOGIC;
   signal DPtpgBarArray_U_n_11 : STD_LOGIC;
   signal DPtpgBarArray_U_n_12 : STD_LOGIC;
@@ -52958,7 +52958,7 @@ begin
   \rampStart_load_reg_1374_reg[6]\(7 downto 0) <= \^rampstart_load_reg_1374_reg[6]\(7 downto 0);
   \rampStart_load_reg_1374_reg[7]\(15 downto 0) <= \^rampstart_load_reg_1374_reg[7]\(15 downto 0);
   \rampVal_2_loc_0_fu_286_reg[7]\(7 downto 0) <= \^rampval_2_loc_0_fu_286_reg[7]\(7 downto 0);
-DPtpgBarArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
+DPtpgBarArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R
      port map (
       D(1) => DPtpgBarArray_U_n_3,
       D(0) => DPtpgBarArray_U_n_4,
@@ -52981,7 +52981,7 @@ DPtpgBarArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_
       \q0_reg[2]_1\(0) => DPtpgBarArray_U_n_17,
       \q0_reg[6]\ => \^ap_enable_reg_pp0_iter21_reg_0\
     );
-DPtpgBarSelRgb_CEA_g_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
+DPtpgBarSelRgb_CEA_g_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R
      port map (
       Q(0) => \^q\(2),
       ap_clk => ap_clk,
@@ -52993,14 +52993,14 @@ DPtpgBarSelRgb_CEA_g_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       \q0_reg[4]_0\ => DPtpgBarSelRgb_CEA_g_U_n_3,
       \q0_reg[4]_1\ => \^dptpgbarselrgb_cea_b_ce0_local\
     );
-DPtpgBarSelRgb_CEA_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
+DPtpgBarSelRgb_CEA_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R
      port map (
       Q(0) => \^q\(1),
       ap_clk => ap_clk,
       \q0_reg[4]_0\ => DPtpgBarSelRgb_CEA_r_U_n_3,
       \q0_reg[4]_1\ => \^dptpgbarselrgb_cea_b_ce0_local\
     );
-DPtpgBarSelRgb_VESA_b_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
+DPtpgBarSelRgb_VESA_b_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R
      port map (
       ap_clk => ap_clk,
       ap_predicate_pred2165_state21 => ap_predicate_pred2165_state21,
@@ -53020,7 +53020,7 @@ DPtpgBarSelRgb_VESA_b_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_P
       \q0_reg[1]_2\ => \q0_reg[3]_0\,
       trunc_ln565_9_reg_4780_pp0_iter19_reg => trunc_ln565_9_reg_4780_pp0_iter19_reg
     );
-DPtpgBarSelRgb_VESA_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
+DPtpgBarSelRgb_VESA_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R
      port map (
       Q(0) => DPtpgBarSelYuv_709_y_U_n_10,
       ap_clk => ap_clk,
@@ -53064,7 +53064,7 @@ DPtpgBarSelRgb_VESA_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_P
       trunc_ln565_9_reg_4780_pp0_iter19_reg => trunc_ln565_9_reg_4780_pp0_iter19_reg,
       \trunc_ln565_9_reg_4780_pp0_iter19_reg_reg[0]\ => DPtpgBarSelRgb_VESA_r_U_n_8
     );
-DPtpgBarSelYuv_601_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
+DPtpgBarSelYuv_601_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R
      port map (
       D(1) => \q0_reg[5]_0\(0),
       D(0) => DPtpgBarArray_U_n_9,
@@ -53080,7 +53080,7 @@ DPtpgBarSelYuv_601_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       \q0_reg[7]_1\(2 downto 0) => \^q\(2 downto 0),
       \q0_reg[7]_2\ => \^ap_enable_reg_pp0_iter21_reg_1\
     );
-DPtpgBarSelYuv_601_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
+DPtpgBarSelYuv_601_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R
      port map (
       Q(0) => b_2_reg_5061_pp0_iter19_reg(2),
       ap_clk => ap_clk,
@@ -53126,7 +53126,7 @@ DPtpgBarSelYuv_601_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       \q0_reg[5]_0\ => DPtpgBarSelYuv_601_v_U_n_4,
       \q0_reg[5]_1\ => \q0_reg[5]\
     );
-DPtpgBarSelYuv_601_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
+DPtpgBarSelYuv_601_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R
      port map (
       D(1) => DPtpgBarArray_U_n_3,
       D(0) => DPtpgBarArray_U_n_4,
@@ -53187,7 +53187,7 @@ DPtpgBarSelYuv_601_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       tmp_26_reg_5145(1 downto 0) => tmp_26_reg_5145(1 downto 0),
       trunc_ln565_9_reg_4780_pp0_iter19_reg => trunc_ln565_9_reg_4780_pp0_iter19_reg
     );
-DPtpgBarSelYuv_709_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
+DPtpgBarSelYuv_709_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R
      port map (
       Q(0) => DPtpgBarSelYuv_709_v_U_n_11,
       ap_clk => ap_clk,
@@ -53215,7 +53215,7 @@ DPtpgBarSelYuv_709_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       \q0_reg[7]_2\(2 downto 0) => \^q\(2 downto 0),
       trunc_ln565_9_reg_4780_pp0_iter19_reg => trunc_ln565_9_reg_4780_pp0_iter19_reg
     );
-DPtpgBarSelYuv_709_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
+DPtpgBarSelYuv_709_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R
      port map (
       D(1) => DPtpgBarArray_U_n_16,
       D(0) => DPtpgBarArray_U_n_17,
@@ -53279,7 +53279,7 @@ DPtpgBarSelYuv_709_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       \q0_reg[7]_0\ => DPtpgBarSelYuv_709_v_U_n_13,
       \q0_reg[7]_1\ => \q0_reg[7]_1\
     );
-DPtpgBarSelYuv_709_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
+DPtpgBarSelYuv_709_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R
      port map (
       D(4) => DPtpgBarArray_U_n_10,
       D(3) => DPtpgBarArray_U_n_11,
@@ -54533,7 +54533,7 @@ DPtpgBarSelYuv_709_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       Q => add_ln549_reg_4798_pp0_iter9_reg(9),
       R => '0'
     );
-am_addmul_16ns_1s_16ns_17_4_1_U40: entity work.video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1
+am_addmul_16ns_1s_16ns_17_4_1_U40: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1
      port map (
       B(15) => flow_control_loop_pipe_sequential_init_U_n_21,
       B(14) => flow_control_loop_pipe_sequential_init_U_n_22,
@@ -58398,7 +58398,7 @@ ap_predicate_pred590_state19_reg: unisim.vcomponents.FDRE
       Q => b_reg_4993(7),
       S => \b_reg_4993[7]_i_1_n_3\
     );
-blkYuv_1_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
+blkYuv_1_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R
      port map (
       ap_clk => ap_clk,
       ap_predicate_pred2600_state21 => ap_predicate_pred2600_state21,
@@ -58410,14 +58410,14 @@ blkYuv_1_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS
       \q0_reg[7]_0\ => \^dptpgbarselrgb_cea_b_ce0_local\,
       \q0_reg[7]_1\ => \q0_reg[7]_0\
     );
-blkYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11
+blkYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R_11
      port map (
       ap_clk => ap_clk,
       \q0_reg[7]_0\ => blkYuv_U_n_3,
       \q0_reg[7]_1\ => \^dptpgbarselrgb_cea_b_ce0_local\,
       \q0_reg[7]_2\ => \q0_reg[7]\
     );
-bluYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
+bluYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R
      port map (
       Q(0) => grnYuv_U_n_7,
       ap_clk => ap_clk,
@@ -58508,7 +58508,7 @@ bluYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_L
       Q => conv2_i_i_i_cast_cast_reg_4753(7),
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12
+flow_control_loop_pipe_sequential_init_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_flow_control_loop_pipe_sequential_init_12
      port map (
       B(15) => flow_control_loop_pipe_sequential_init_U_n_21,
       B(14) => flow_control_loop_pipe_sequential_init_U_n_22,
@@ -59063,7 +59063,7 @@ flow_control_loop_pipe_sequential_init_U: entity work.video_out_pynq_z2_v_tpg_0_
       Q => g_reg_4988(7),
       S => \g_reg_4988[7]_i_1_n_3\
     );
-grnYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
+grnYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R
      port map (
       Q(0) => grnYuv_U_n_7,
       ap_clk => ap_clk,
@@ -59086,7 +59086,7 @@ grnYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_L
       \q0_reg[6]\(0) => \cmp2_i_reg_1308_reg[0]\(5),
       \q0_reg[6]_0\ => grnYuv_U_n_4
     );
-grp_reg_ap_uint_10_s_fu_1988: entity work.video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s
+grp_reg_ap_uint_10_s_fu_1988: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_ap_uint_10_s
      port map (
       D(9 downto 0) => xCount_4_01_in(9 downto 0),
       E(0) => grp_reg_ap_uint_10_s_fu_1988_n_5,
@@ -61038,7 +61038,7 @@ lshr_ln3_reg_4902_pp0_iter15_reg_reg_1: unisim.vcomponents.RAMB18E1
       WEA(1 downto 0) => B"00",
       WEBWE(3 downto 0) => B"0000"
     );
-mac_muladd_16s_16s_16ns_16_4_1_U41: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1
+mac_muladd_16s_16s_16ns_16_4_1_U41: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1
      port map (
       P(10) => mac_muladd_16s_16s_16ns_16_4_1_U41_n_3,
       P(9) => mac_muladd_16s_16s_16ns_16_4_1_U41_n_4,
@@ -61059,7 +61059,7 @@ mac_muladd_16s_16s_16ns_16_4_1_U41: entity work.video_out_pynq_z2_v_tpg_0_0_mac_
       p_reg_reg_1(15 downto 0) => \zonePlateVAddr_loc_0_fu_318_reg[15]_0\(15 downto 0),
       phi_mul_fu_480_reg(15 downto 0) => phi_mul_fu_480_reg(15 downto 0)
     );
-mac_muladd_8ns_5ns_16ns_17_4_1_U48: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1
+mac_muladd_8ns_5ns_16ns_17_4_1_U48: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1
      port map (
       D(7 downto 0) => b_reg_4993(7 downto 0),
       P(15) => mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_3,
@@ -61112,7 +61112,7 @@ mac_muladd_8ns_5ns_16ns_17_4_1_U48: entity work.video_out_pynq_z2_v_tpg_0_0_mac_
       r_reg_4982_pp0_iter19_reg(7 downto 0) => r_reg_4982_pp0_iter19_reg(7 downto 0),
       \r_reg_4982_pp0_iter19_reg_reg[7]__0\ => mac_muladd_8ns_5ns_16ns_17_4_1_U48_n_3
     );
-mac_muladd_8ns_6s_15ns_16_4_1_U45: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1
+mac_muladd_8ns_6s_15ns_16_4_1_U45: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1
      port map (
       C(7 downto 0) => r_reg_4982(7 downto 0),
       D(7 downto 0) => b_2_fu_2871_p3(7 downto 0),
@@ -61145,7 +61145,7 @@ mac_muladd_8ns_6s_15ns_16_4_1_U45: entity work.video_out_pynq_z2_v_tpg_0_0_mac_m
       bckgndYUV_full_n => bckgndYUV_full_n,
       cmp2_i_reg_1308 => cmp2_i_reg_1308
     );
-mac_muladd_8ns_7ns_13ns_15_4_1_U42: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1
+mac_muladd_8ns_7ns_13ns_15_4_1_U42: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1
      port map (
       A(0) => mac_muladd_8ns_7s_16s_16_4_1_U43_n_51,
       P(14) => mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_3,
@@ -61168,7 +61168,7 @@ mac_muladd_8ns_7ns_13ns_15_4_1_U42: entity work.video_out_pynq_z2_v_tpg_0_0_mac_
       ap_clk => ap_clk,
       \tmp_reg_4967_reg[8]\(6 downto 0) => grp_fu_4497_p0(6 downto 0)
     );
-mac_muladd_8ns_7s_16s_16_4_1_U43: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1
+mac_muladd_8ns_7s_16s_16_4_1_U43: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1
      port map (
       A(0) => mac_muladd_8ns_7s_16s_16_4_1_U43_n_51,
       PCOUT(47) => mac_muladd_8ns_7s_16s_16_4_1_U43_n_3,
@@ -61224,7 +61224,7 @@ mac_muladd_8ns_7s_16s_16_4_1_U43: entity work.video_out_pynq_z2_v_tpg_0_0_mac_mu
       ap_clk => ap_clk,
       p_reg_reg(6 downto 0) => grp_fu_4497_p0(6 downto 0)
     );
-mac_muladd_8ns_8ns_15ns_16_4_1_U46: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1
+mac_muladd_8ns_8ns_15ns_16_4_1_U46: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1
      port map (
       A(0) => mac_muladd_8ns_8s_16s_16_4_1_U44_n_18,
       P(15) => mac_muladd_8ns_8ns_15ns_16_4_1_U46_n_3,
@@ -61263,7 +61263,7 @@ mac_muladd_8ns_8ns_15ns_16_4_1_U46: entity work.video_out_pynq_z2_v_tpg_0_0_mac_
       p_reg_reg(0) => mac_muladd_8ns_7ns_13ns_15_4_1_U42_n_17,
       \tmp_3_reg_4972_reg[8]\(6 downto 0) => grp_fu_4514_p0(6 downto 0)
     );
-mac_muladd_8ns_8s_16s_16_4_1_U44: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1
+mac_muladd_8ns_8s_16s_16_4_1_U44: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1
      port map (
       A(0) => mac_muladd_8ns_8s_16s_16_4_1_U44_n_18,
       DI(0) => mac_muladd_8ns_8s_16s_16_4_1_U44_n_22,
@@ -61291,7 +61291,7 @@ mac_muladd_8ns_8s_16s_16_4_1_U44: entity work.video_out_pynq_z2_v_tpg_0_0_mac_mu
       p_reg_reg_1(0) => mac_muladd_8ns_8s_16s_16_4_1_U44_n_21,
       p_reg_reg_2(6 downto 0) => grp_fu_4514_p0(6 downto 0)
     );
-mac_muladd_8ns_8s_16s_16_4_1_U47: entity work.video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13
+mac_muladd_8ns_8s_16s_16_4_1_U47: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1_13
      port map (
       A(7) => mac_muladd_8ns_8s_16s_16_4_1_U44_n_18,
       A(6 downto 0) => grp_fu_4514_p0(6 downto 0),
@@ -61353,7 +61353,7 @@ mac_muladd_8ns_8s_16s_16_4_1_U47: entity work.video_out_pynq_z2_v_tpg_0_0_mac_mu
       \g_2_reg_5195_reg[0]\ => \^ap_enable_reg_pp0_iter21_reg_0\,
       g_reg_4988_pp0_iter18_reg(7 downto 0) => g_reg_4988_pp0_iter18_reg(7 downto 0)
     );
-mul_11ns_13ns_23_1_1_U27: entity work.video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1
+mul_11ns_13ns_23_1_1_U27: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1
      port map (
       A(10 downto 2) => trunc_ln565_11_reg_4792_pp0_iter9_reg(10 downto 2),
       A(1 downto 0) => add_ln549_reg_4798_pp0_iter9_reg(1 downto 0),
@@ -61370,7 +61370,7 @@ mul_11ns_13ns_23_1_1_U27: entity work.video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_
       ap_block_pp0_stage0_subdone => ap_block_pp0_stage0_subdone,
       ap_clk => ap_clk
     );
-mul_11ns_13ns_23_1_1_U28: entity work.video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14
+mul_11ns_13ns_23_1_1_U28: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_14
      port map (
       A(10 downto 1) => add_ln549_1_reg_4804_pp0_iter9_reg(10 downto 1),
       A(0) => add_ln549_reg_4798_pp0_iter9_reg(0),
@@ -61387,7 +61387,7 @@ mul_11ns_13ns_23_1_1_U28: entity work.video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_
       ap_block_pp0_stage0_subdone => ap_block_pp0_stage0_subdone,
       ap_clk => ap_clk
     );
-mul_11ns_13ns_23_1_1_U29: entity work.video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15
+mul_11ns_13ns_23_1_1_U29: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_mul_11ns_13ns_23_1_1_15
      port map (
       A(10 downto 0) => add_ln549_reg_4798_pp0_iter9_reg(10 downto 0),
       P(9) => mul_11ns_13ns_23_1_1_U29_n_3,
@@ -65209,7 +65209,7 @@ mul_ln1356_reg_5074_reg_i_1: unisim.vcomponents.LUT3
       I5 => ap_predicate_pred2279_state20,
       O => \rampVal_loc_0_fu_326[7]_i_3_n_3\
     );
-redYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
+redYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R
      port map (
       ap_clk => ap_clk,
       ap_phi_reg_pp0_iter19_phi_ln1144_reg_1434(1 downto 0) => ap_phi_reg_pp0_iter19_phi_ln1144_reg_1434(1 downto 0),
@@ -66737,7 +66737,7 @@ tmp_18_reg_4917_reg_rep: unisim.vcomponents.RAMB18E1
       Q => tmp_reg_4967(8),
       R => '0'
     );
-tpgBarSelRgb_b_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16
+tpgBarSelRgb_b_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R_16
      port map (
       Q(4 downto 0) => add_ln1359_reg_5246(5 downto 1),
       ap_clk => ap_clk,
@@ -66812,7 +66812,7 @@ tpgBarSelRgb_b_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline
       \q0_reg[1]_1\(6 downto 0) => ap_predicate_pred2269_state21_reg_0(6 downto 0),
       \q0_reg[1]_2\ => \q0_reg[1]_3\
     );
-tpgBarSelRgb_g_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
+tpgBarSelRgb_g_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R
      port map (
       E(0) => tpgBarSelRgb_g_ce0_local,
       Q(0) => gSerie(21),
@@ -66860,7 +66860,7 @@ tpgBarSelRgb_g_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline
       \q0_reg[1]_1\ => tpgBarSelRgb_g_U_n_6,
       \q0_reg[1]_2\ => \q0_reg[1]_1\
     );
-tpgBarSelRgb_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17
+tpgBarSelRgb_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R_17
      port map (
       D(6) => xor_ln1839_fu_3553_p2,
       D(5 downto 0) => rSerie(27 downto 22),
@@ -66938,7 +66938,7 @@ tpgBarSelRgb_r_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline
       tmp_26_reg_5145(0) => tmp_26_reg_5145(0),
       \tmp_26_reg_5145_reg[2]\ => tpgBarSelRgb_r_U_n_10
     );
-tpgBarSelYuv_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
+tpgBarSelYuv_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R
      port map (
       E(0) => tpgBarSelRgb_g_ce0_local,
       Q(1) => tpgBarSelYuv_u_U_n_3,
@@ -66946,7 +66946,7 @@ tpgBarSelYuv_u_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline
       ap_clk => ap_clk,
       \q0_reg[7]_0\(1 downto 0) => \q0_reg[7]_2\(1 downto 0)
     );
-tpgBarSelYuv_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
+tpgBarSelYuv_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R
      port map (
       D(1) => tpgTartanBarArray_U_n_18,
       D(0) => tpgTartanBarArray_U_n_19,
@@ -67039,7 +67039,7 @@ tpgBarSelYuv_v_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline
       tmp_26_reg_5145(1) => tmp_26_reg_5145(6),
       tmp_26_reg_5145(0) => tmp_26_reg_5145(4)
     );
-tpgBarSelYuv_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
+tpgBarSelYuv_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R
      port map (
       D(7) => tpgCheckerBoardArray_U_n_4,
       D(6) => tpgCheckerBoardArray_U_n_5,
@@ -67065,7 +67065,7 @@ tpgBarSelYuv_y_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline
       bckgndYUV_full_n => bckgndYUV_full_n,
       \q0_reg[0]_0\ => \^ap_enable_reg_pp0_iter21_reg_0\
     );
-tpgCheckerBoardArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
+tpgCheckerBoardArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R
      port map (
       D(1) => tpgCheckerBoardArray_U_n_4,
       D(0) => tpgCheckerBoardArray_U_n_5,
@@ -67079,7 +67079,7 @@ tpgCheckerBoardArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pi
       \q0_reg[0]_0\ => \^q0_reg[0]\,
       tpgCheckerBoardArray_address0(0) => tpgCheckerBoardArray_address0(0)
     );
-tpgTartanBarArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
+tpgTartanBarArray_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R
      port map (
       D(5) => tpgTartanBarArray_U_n_3,
       D(4) => tpgTartanBarArray_U_n_4,
@@ -67604,7 +67604,7 @@ trunc_ln1356_reg_5080_reg: unisim.vcomponents.DSP48E1
       Q => trunc_ln565_9_reg_4780_pp0_iter19_reg,
       R => '0'
     );
-urem_11ns_3ns_2_15_1_U24: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1
+urem_11ns_3ns_2_15_1_U24: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1
      port map (
       A(0) => trunc_ln565_11_reg_4792_pp0_iter9_reg(2),
       DI(1 downto 0) => trunc_ln565_11_reg_4792_pp0_iter2_reg(10 downto 9),
@@ -67620,7 +67620,7 @@ urem_11ns_3ns_2_15_1_U24: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_
       p_1_in(0) => trunc_ln565_11_reg_4792_pp0_iter7_reg(4),
       trunc_ln565_9_reg_4780_pp0_iter11_reg => trunc_ln565_9_reg_4780_pp0_iter11_reg
     );
-urem_11ns_3ns_2_15_1_U25: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18
+urem_11ns_3ns_2_15_1_U25: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_18
      port map (
       A(1 downto 0) => add_ln549_1_reg_4804_pp0_iter9_reg(2 downto 1),
       DI(1 downto 0) => add_ln549_1_reg_4804_pp0_iter2_reg(10 downto 9),
@@ -67635,7 +67635,7 @@ urem_11ns_3ns_2_15_1_U25: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_
       p_1_in(0) => add_ln549_1_reg_4804_pp0_iter7_reg(4),
       trunc_ln565_9_reg_4780_pp0_iter11_reg => trunc_ln565_9_reg_4780_pp0_iter11_reg
     );
-urem_11ns_3ns_2_15_1_U26: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19
+urem_11ns_3ns_2_15_1_U26: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_2_15_1_19
      port map (
       A(1 downto 0) => add_ln549_reg_4798_pp0_iter9_reg(2 downto 1),
       DI(1 downto 0) => add_ln549_reg_4798_pp0_iter2_reg(10 downto 9),
@@ -67890,7 +67890,7 @@ urem_11ns_3ns_2_15_1_U26: entity work.video_out_pynq_z2_v_tpg_0_0_urem_11ns_3ns_
       Q => vHatch,
       R => '0'
     );
-whiYuv_1_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
+whiYuv_1_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R
      port map (
       Q(4) => \g_2_reg_5195_reg_n_3_[5]\,
       Q(3) => \g_2_reg_5195_reg_n_3_[4]\,
@@ -67923,7 +67923,7 @@ whiYuv_1_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS
       \q0_reg[6]_0\ => \^dptpgbarselrgb_cea_b_ce0_local\,
       \q0_reg[6]_1\ => \q0_reg[6]_0\
     );
-whiYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20
+whiYuv_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R_20
      port map (
       ap_clk => ap_clk,
       ap_predicate_pred2226_state21 => ap_predicate_pred2226_state21,
@@ -72017,7 +72017,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgForeground is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground is
   port (
     push : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -72086,9 +72086,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgForeground is
     \patternId_val_read_reg_480_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \crossHairY_val_read_reg_460_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgForeground;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgForeground is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground is
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal and10_i_reg_520 : STD_LOGIC;
@@ -74321,7 +74321,7 @@ cmp2_i_fu_409_p2_carry_i_4: unisim.vcomponents.LUT6
       I2 => \^co\(0),
       O => empty_n_reg_0
     );
-grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220: entity work.video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
+grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2
      port map (
       D(1) => ap_NS_fsm(3),
       D(0) => ap_NS_fsm(1),
@@ -75496,7 +75496,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_tpgBackground is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground is
   port (
     \colorFormat_read_reg_773_reg[4]\ : out STD_LOGIC;
     ap_enable_reg_pp0_iter21 : out STD_LOGIC;
@@ -75542,9 +75542,9 @@ entity video_out_pynq_z2_v_tpg_0_0_tpgBackground is
     \cond_i235_reg_1380_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \empty_94_reg_1385_reg[2]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_tpgBackground;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_tpgBackground is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground is
   signal DPtpgBarArray_address0 : STD_LOGIC_VECTOR ( 3 to 3 );
   signal DPtpgBarArray_q0 : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal DPtpgBarSelRgb_CEA_b_ce0_local : STD_LOGIC;
@@ -77214,7 +77214,7 @@ cmp11_i_fu_1070_p2_carry_i_4: unisim.vcomponents.LUT6
       Q => empty_94_reg_1385(2),
       R => '0'
     );
-grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_484: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
+grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_484: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2
      port map (
       CO(0) => icmp_ln563_fu_1026_p2,
       D(1 downto 0) => ap_NS_fsm(3 downto 2),
@@ -81385,7 +81385,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow is
   port (
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TUSER : out STD_LOGIC;
     grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TLAST : out STD_LOGIC;
@@ -81434,9 +81434,9 @@ entity video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow is
     \zonePlateVDelta_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \phi_mul_fu_480_reg[15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow;
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow is
   signal MultiPixStream2AXIvideo_U0_ap_ready : STD_LOGIC;
   signal MultiPixStream2AXIvideo_U0_ap_start : STD_LOGIC;
   signal MultiPixStream2AXIvideo_U0_field_id_val8_read : STD_LOGIC;
@@ -81661,7 +81661,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow is
 begin
   \colorFormat_val17_read_reg_288_reg[0]\ <= \^colorformat_val17_read_reg_288_reg[0]\;
   load_p2 <= \^load_p2\;
-MultiPixStream2AXIvideo_U0: entity work.video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo
+MultiPixStream2AXIvideo_U0: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_MultiPixStream2AXIvideo
      port map (
       CO(0) => icmp_ln979_1_fu_240_p2,
       D(0) => sub_i_fu_211_p2(0),
@@ -81750,7 +81750,7 @@ ap_sync_reg_tpgBackground_U0_ap_ready_reg: unisim.vcomponents.FDRE
       Q => ap_sync_reg_tpgBackground_U0_ap_ready_reg_n_3,
       R => '0'
     );
-bckgndYUV_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
+bckgndYUV_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
      port map (
       E(0) => tpgForeground_U0_n_24,
       Q(0) => ap_CS_fsm_state3,
@@ -81782,7 +81782,7 @@ bckgndYUV_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S
       p_9_in => p_9_in_3,
       push => push_1
     );
-boxColorB_val27_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
+boxColorB_val27_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -81794,7 +81794,7 @@ boxColorB_val27_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S
       push => push_0,
       push_0 => push_5
     );
-boxColorG_val26_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
+boxColorG_val26_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -81806,7 +81806,7 @@ boxColorG_val26_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_1
       push => push_0,
       push_0 => push_5
     );
-boxColorR_val25_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
+boxColorR_val25_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -81818,7 +81818,7 @@ boxColorR_val25_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_2
       push => push_5,
       push_0 => push_0
     );
-boxSize_val24_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
+boxSize_val24_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -81840,7 +81840,7 @@ boxSize_val24_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S
       start_once_reg_reg => boxSize_val24_c_U_n_5,
       start_once_reg_reg_0 => crossHairY_val19_c_U_n_4
     );
-colorFormat_val17_c5_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
+colorFormat_val17_c5_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
      port map (
       E(0) => motionSpeed_val14_c_U_n_5,
       SR(0) => SR(0),
@@ -81859,7 +81859,7 @@ colorFormat_val17_c5_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S
       push => push,
       push_0 => push_5
     );
-colorFormat_val17_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
+colorFormat_val17_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
      port map (
       E(0) => tpgForeground_U0_n_28,
       MultiPixStream2AXIvideo_U0_field_id_val8_read => MultiPixStream2AXIvideo_U0_field_id_val8_read,
@@ -81874,7 +81874,7 @@ colorFormat_val17_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_3
       colorFormat_val17_c_full_n => colorFormat_val17_c_full_n,
       push => push_5
     );
-crossHairX_val18_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
+crossHairX_val18_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -81886,7 +81886,7 @@ crossHairX_val18_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_4
       push => push_0,
       push_0 => push_5
     );
-crossHairY_val19_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
+crossHairY_val19_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -81903,14 +81903,14 @@ crossHairY_val19_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d3_S_5
       push => push_0,
       push_0 => push_5
     );
-entry_proc_U0: entity work.video_out_pynq_z2_v_tpg_0_0_entry_proc
+entry_proc_U0: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_entry_proc
      port map (
       SR(0) => SR(0),
       ap_clk => ap_clk,
       start_once_reg => start_once_reg,
       start_once_reg_reg_0 => boxSize_val24_c_U_n_5
     );
-fid_in_val9_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
+fid_in_val9_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_5,
       MultiPixStream2AXIvideo_U0_field_id_val8_read => MultiPixStream2AXIvideo_U0_field_id_val8_read,
@@ -81925,7 +81925,7 @@ fid_in_val9_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w1_d4_S
       field_id_val8_c_empty_n => field_id_val8_c_empty_n,
       push => push_0
     );
-field_id_val8_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
+field_id_val8_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_5,
       MultiPixStream2AXIvideo_U0_field_id_val8_read => MultiPixStream2AXIvideo_U0_field_id_val8_read,
@@ -81937,7 +81937,7 @@ field_id_val8_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d4_S
       \out\(15 downto 0) => field_id_val8_c_dout(15 downto 0),
       push => push_0
     );
-height_val4_c3_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
+height_val4_c3_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
      port map (
       D(15 downto 0) => boxSize_val24_c_dout(15 downto 0),
       DI(3) => height_val4_c3_U_n_37,
@@ -81981,7 +81981,7 @@ height_val4_c3_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S
       push => push,
       push_0 => push_5
     );
-height_val4_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
+height_val4_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
      port map (
       D(5 downto 0) => \SRL_SIG_reg[0]_2\(8 downto 3),
       E(0) => tpgForeground_U0_n_28,
@@ -81998,7 +81998,7 @@ height_val4_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w12_d2_S
       y_fu_114_reg(5 downto 3) => y_fu_114_reg(11 downto 9),
       y_fu_114_reg(2 downto 0) => y_fu_114_reg(2 downto 0)
     );
-maskId_val12_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
+maskId_val12_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -82011,7 +82011,7 @@ maskId_val12_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_6
       push_0 => push_5,
       \tobool_reg_495[0]_i_3\(7 downto 0) => \tobool_reg_495[0]_i_3\(7 downto 0)
     );
-motionSpeed_val14_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
+motionSpeed_val14_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
      port map (
       E(0) => motionSpeed_val14_c_U_n_5,
       SR(0) => SR(0),
@@ -82031,7 +82031,7 @@ motionSpeed_val14_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d2_S_7
       push_0 => push_5,
       width_val7_c4_empty_n => width_val7_c4_empty_n
     );
-ovrlayId_val11_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
+ovrlayId_val11_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
      port map (
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_7,
       SR(0) => SR(0),
@@ -82046,7 +82046,7 @@ ovrlayId_val11_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w8_d3_S_8
       push_0 => push_5,
       tpgForeground_U0_ap_start => tpgForeground_U0_ap_start
     );
-ovrlayYUV_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
+ovrlayYUV_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
      port map (
       D(23 downto 0) => D(23 downto 0),
       E(0) => MultiPixStream2AXIvideo_U0_n_10,
@@ -82061,7 +82061,7 @@ ovrlayYUV_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w24_d16_S_9
       p_9_in => p_9_in,
       push => push_2
     );
-start_for_MultiPixStream2AXIvideo_U0_U: entity work.video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0
+start_for_MultiPixStream2AXIvideo_U0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0
      port map (
       CO(0) => icmp_ln979_1_fu_240_p2,
       E(0) => start_for_MultiPixStream2AXIvideo_U0_U_n_5,
@@ -82092,7 +82092,7 @@ start_for_MultiPixStream2AXIvideo_U0_U: entity work.video_out_pynq_z2_v_tpg_0_0_
       start_once_reg => start_once_reg,
       width_val7_c_empty_n => width_val7_c_empty_n
     );
-start_for_tpgForeground_U0_U: entity work.video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0
+start_for_tpgForeground_U0_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_start_for_tpgForeground_U0
      port map (
       CO(0) => icmp_ln772_fu_392_p2,
       Q(0) => ap_CS_fsm_state2_4,
@@ -82103,7 +82103,7 @@ start_for_tpgForeground_U0_U: entity work.video_out_pynq_z2_v_tpg_0_0_start_for_
       start_for_tpgForeground_U0_full_n => start_for_tpgForeground_U0_full_n,
       tpgForeground_U0_ap_start => tpgForeground_U0_ap_start
     );
-tpgBackground_U0: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground
+tpgBackground_U0: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgBackground
      port map (
       E(0) => tpgBackground_U0_ap_ready,
       Q(15 downto 0) => Q(15 downto 0),
@@ -82152,7 +82152,7 @@ tpgBackground_U0: entity work.video_out_pynq_z2_v_tpg_0_0_tpgBackground
       \zonePlateVDelta_reg[15]\(15 downto 0) => \zonePlateVDelta_reg[15]\(15 downto 0),
       \zonePlateVDelta_reg[15]_0\(15 downto 0) => \zonePlateVDelta_reg[15]_0\(15 downto 0)
     );
-tpgForeground_U0: entity work.video_out_pynq_z2_v_tpg_0_0_tpgForeground
+tpgForeground_U0: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_tpgForeground
      port map (
       CO(0) => icmp_ln772_fu_392_p2,
       D(8 downto 0) => \grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_sig_allocacmp_x_1\(11 downto 3),
@@ -82273,7 +82273,7 @@ tpgForeground_U0: entity work.video_out_pynq_z2_v_tpg_0_0_tpgForeground
       \y_fu_114_reg[11]_0\(5 downto 3) => y_fu_114_reg(11 downto 9),
       \y_fu_114_reg[11]_0\(2 downto 0) => y_fu_114_reg(2 downto 0)
     );
-width_val7_c4_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
+width_val7_c4_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
      port map (
       DI(3) => width_val7_c4_U_n_37,
       DI(2) => width_val7_c4_U_n_38,
@@ -82320,7 +82320,7 @@ width_val7_c4_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w16_d2_S_10
       width_val7_c4_dout(15 downto 0) => width_val7_c4_dout(15 downto 0),
       width_val7_c4_empty_n => width_val7_c4_empty_n
     );
-width_val7_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S
+width_val7_c_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_fifo_w13_d2_S
      port map (
       D(8 downto 0) => \grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_sig_allocacmp_x_1\(11 downto 3),
       DI(3) => width_val7_c_U_n_39,
@@ -82377,7 +82377,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity video_out_pynq_z2_v_tpg_0_0_v_tpg is
+entity video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg is
   port (
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
@@ -82412,30 +82412,30 @@ entity video_out_pynq_z2_v_tpg_0_0_v_tpg is
     interrupt : out STD_LOGIC
   );
   attribute C_S_AXI_CTRL_ADDR_WIDTH : integer;
-  attribute C_S_AXI_CTRL_ADDR_WIDTH of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 8;
+  attribute C_S_AXI_CTRL_ADDR_WIDTH of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 8;
   attribute C_S_AXI_CTRL_DATA_WIDTH : integer;
-  attribute C_S_AXI_CTRL_DATA_WIDTH of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 32;
+  attribute C_S_AXI_CTRL_DATA_WIDTH of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 32;
   attribute C_S_AXI_CTRL_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_CTRL_WSTRB_WIDTH of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 4;
+  attribute C_S_AXI_CTRL_WSTRB_WIDTH of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 4;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 32;
+  attribute C_S_AXI_DATA_WIDTH of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 32;
   attribute C_S_AXI_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_WSTRB_WIDTH of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 4;
+  attribute C_S_AXI_WSTRB_WIDTH of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is 4;
   attribute ap_ST_fsm_state1 : string;
-  attribute ap_ST_fsm_state1 of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b00001";
+  attribute ap_ST_fsm_state1 of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b00001";
   attribute ap_ST_fsm_state2 : string;
-  attribute ap_ST_fsm_state2 of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b00010";
+  attribute ap_ST_fsm_state2 of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b00010";
   attribute ap_ST_fsm_state3 : string;
-  attribute ap_ST_fsm_state3 of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b00100";
+  attribute ap_ST_fsm_state3 of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b00100";
   attribute ap_ST_fsm_state4 : string;
-  attribute ap_ST_fsm_state4 of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b01000";
+  attribute ap_ST_fsm_state4 of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b01000";
   attribute ap_ST_fsm_state5 : string;
-  attribute ap_ST_fsm_state5 of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b10000";
+  attribute ap_ST_fsm_state5 of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "5'b10000";
   attribute hls_module : string;
-  attribute hls_module of video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "yes";
-end video_out_pynq_z2_v_tpg_0_0_v_tpg;
+  attribute hls_module of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg : entity is "yes";
+end video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg;
 
-architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_v_tpg is
+architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg is
   signal \<const0>\ : STD_LOGIC;
   signal ZplateHorContDelta : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal ZplateHorContStart : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -82674,7 +82674,7 @@ begin
   s_axi_CTRL_RDATA(15 downto 0) <= \^s_axi_ctrl_rdata\(15 downto 0);
   s_axi_CTRL_RRESP(1) <= \<const0>\;
   s_axi_CTRL_RRESP(0) <= \<const0>\;
-CTRL_s_axi_U: entity work.video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi
+CTRL_s_axi_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_CTRL_s_axi
      port map (
       D(0) => ap_NS_fsm(1),
       \FSM_onehot_rstate_reg[1]_0\ => s_axi_CTRL_ARREADY,
@@ -84786,7 +84786,7 @@ ap_sync_reg_grp_v_tpgHlsDataFlow_fu_439_ap_ready_reg: unisim.vcomponents.FDRE
       Q => field_id_read_reg_743(9),
       R => '0'
     );
-grp_reg_unsigned_short_s_fu_632: entity work.video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s
+grp_reg_unsigned_short_s_fu_632: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_reg_unsigned_short_s
      port map (
       D(30 downto 0) => add_ln502_fu_648_p2(31 downto 1),
       E(0) => count_new_0_reg_4280,
@@ -84804,7 +84804,7 @@ grp_reg_unsigned_short_s_fu_632: entity work.video_out_pynq_z2_v_tpg_0_0_reg_uns
       s => s,
       tmp_1_fu_664_p4(28 downto 0) => tmp_1_fu_664_p4(28 downto 0)
     );
-grp_v_tpgHlsDataFlow_fu_439: entity work.video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
+grp_v_tpgHlsDataFlow_fu_439: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpgHlsDataFlow
      port map (
       D(23 downto 0) => grp_v_tpgHlsDataFlow_fu_439_m_axis_video_TDATA(23 downto 0),
       Q(15 downto 0) => height_read_reg_733(15 downto 0),
@@ -85195,7 +85195,7 @@ grp_v_tpgHlsDataFlow_fu_439_ap_start_reg_reg: unisim.vcomponents.FDRE
       Q => ovrlayId_read_reg_758(7),
       R => '0'
     );
-regslice_both_m_axis_video_V_data_V_U: entity work.video_out_pynq_z2_v_tpg_0_0_regslice_both
+regslice_both_m_axis_video_V_data_V_U: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both
      port map (
       D(1) => ap_NS_fsm(4),
       D(0) => ap_NS_fsm(0),
@@ -85217,7 +85217,7 @@ regslice_both_m_axis_video_V_data_V_U: entity work.video_out_pynq_z2_v_tpg_0_0_r
       m_axis_video_TVALID => m_axis_video_TVALID,
       \out\(23 downto 0) => ovrlayYUV_dout(23 downto 0)
     );
-regslice_both_m_axis_video_V_last_V_U: entity work.\video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\
+regslice_both_m_axis_video_V_last_V_U: entity work.\video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1\
      port map (
       SR(0) => ap_rst_n_inv,
       ack_in_t_reg_0 => regslice_both_m_axis_video_V_last_V_U_n_3,
@@ -85229,7 +85229,7 @@ regslice_both_m_axis_video_V_last_V_U: entity work.\video_out_pynq_z2_v_tpg_0_0_
       m_axis_video_TLAST(0) => m_axis_video_TLAST(0),
       m_axis_video_TREADY => m_axis_video_TREADY
     );
-regslice_both_m_axis_video_V_user_V_U: entity work.\video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\
+regslice_both_m_axis_video_V_user_V_U: entity work.\video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_regslice_both__parameterized1_0\
      port map (
       SR(0) => ap_rst_n_inv,
       ack_in_t_reg_0 => regslice_both_m_axis_video_V_user_V_U_n_3,
@@ -85937,7 +85937,7 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0 is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of ap_clk : signal is "xilinx.com:signal:clock:1.0 ap_clk CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of ap_clk : signal is "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of ap_clk : signal is "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of ap_rst_n : signal is "xilinx.com:signal:reset:1.0 ap_rst_n RST";
   attribute X_INTERFACE_PARAMETER of ap_rst_n : signal is "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of interrupt : signal is "xilinx.com:signal:interrupt:1.0 interrupt INTERRUPT";
@@ -85951,13 +85951,13 @@ architecture STRUCTURE of video_out_pynq_z2_v_tpg_0_0 is
   attribute X_INTERFACE_INFO of s_axi_CTRL_BREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL BREADY";
   attribute X_INTERFACE_INFO of s_axi_CTRL_BVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL BVALID";
   attribute X_INTERFACE_INFO of s_axi_CTRL_RREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY";
-  attribute X_INTERFACE_PARAMETER of s_axi_CTRL_RREADY : signal is "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 8, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 100000000, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axi_CTRL_RREADY : signal is "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 8, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 1e+08, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axi_CTRL_RVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL RVALID";
   attribute X_INTERFACE_INFO of s_axi_CTRL_WREADY : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL WREADY";
   attribute X_INTERFACE_INFO of s_axi_CTRL_WVALID : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL WVALID";
   attribute X_INTERFACE_INFO of m_axis_video_TDATA : signal is "xilinx.com:interface:axis:1.0 m_axis_video TDATA";
   attribute X_INTERFACE_INFO of m_axis_video_TDEST : signal is "xilinx.com:interface:axis:1.0 m_axis_video TDEST";
-  attribute X_INTERFACE_PARAMETER of m_axis_video_TDEST : signal is "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_video_TDEST : signal is "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN video_out_pynq_z2_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_video_TID : signal is "xilinx.com:interface:axis:1.0 m_axis_video TID";
   attribute X_INTERFACE_INFO of m_axis_video_TKEEP : signal is "xilinx.com:interface:axis:1.0 m_axis_video TKEEP";
   attribute X_INTERFACE_INFO of m_axis_video_TLAST : signal is "xilinx.com:interface:axis:1.0 m_axis_video TLAST";
@@ -86008,7 +86008,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst: entity work.video_out_pynq_z2_v_tpg_0_0_v_tpg
+inst: entity work.video_out_pynq_z2_v_tpg_0_0_video_out_pynq_z2_v_tpg_0_0_v_tpg
      port map (
       ap_clk => ap_clk,
       ap_rst_n => ap_rst_n,

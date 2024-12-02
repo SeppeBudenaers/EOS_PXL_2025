@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 8,
-    "calls": "8 3",
+    "calls": "2 9",
     "file": "v_tpg.cpp",
     "fileloc": 409,
     "instructions": 69,
@@ -16,23 +16,85 @@
     "total_instructions": 1326
   },
   "1": {
-    "basicblocks": 130,
-    "calls": "4 7 9",
+    "basicblocks": 39,
+    "calls": "",
     "file": "v_tpg.cpp",
-    "fileloc": 536,
-    "instructions": 704,
+    "fileloc": 759,
+    "instructions": 171,
     "loads": {
-      "G": 65,
-      "L": 20
-    },
-    "name": "tpgBackground",
-    "stores": {
-      "G": 41,
+      "G": 7,
       "L": 12
     },
-    "total_instructions": 956
+    "name": "tpgForeground",
+    "stores": {
+      "G": 8
+    },
+    "total_instructions": 171
   },
   "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<int>",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 29,
+    "calls": "6",
+    "file": "v_tpg.cpp",
+    "fileloc": 1437,
+    "instructions": 112,
+    "loads": {
+      "G": 5,
+      "L": 1
+    },
+    "name": "tpgPatternCrossHatch",
+    "stores": {
+      "G": 11,
+      "L": 6
+    },
+    "total_instructions": 114
+  },
+  "5": {
+    "basicblocks": 30,
+    "calls": "",
+    "file": "v_tpg.cpp",
+    "fileloc": 1734,
+    "instructions": 137,
+    "loads": {
+      "G": 21
+    },
+    "name": "tpgPatternDPColorSquare",
+    "stores": {
+      "G": 10,
+      "L": 12
+    },
+    "total_instructions": 137
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  },
+  "7": {
     "basicblocks": 27,
     "calls": "",
     "file": "v_tpg.cpp",
@@ -49,92 +111,30 @@
     },
     "total_instructions": 119
   },
-  "3": {
+  "8": {
+    "basicblocks": 130,
+    "calls": "3 4 5",
+    "file": "v_tpg.cpp",
+    "fileloc": 536,
+    "instructions": 704,
+    "loads": {
+      "G": 65,
+      "L": 20
+    },
+    "name": "tpgBackground",
+    "stores": {
+      "G": 41,
+      "L": 12
+    },
+    "total_instructions": 956
+  },
+  "9": {
     "basicblocks": 1,
-    "calls": "1 6 2",
+    "calls": "8 1 7",
     "file": "v_tpg.cpp",
     "fileloc": 304,
     "instructions": 10,
     "name": "v_tpgHlsDataFlow",
     "total_instructions": 1256
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
-  },
-  "6": {
-    "basicblocks": 39,
-    "calls": "",
-    "file": "v_tpg.cpp",
-    "fileloc": 759,
-    "instructions": 171,
-    "loads": {
-      "G": 7,
-      "L": 12
-    },
-    "name": "tpgForeground",
-    "stores": {
-      "G": 8
-    },
-    "total_instructions": 171
-  },
-  "7": {
-    "basicblocks": 29,
-    "calls": "5",
-    "file": "v_tpg.cpp",
-    "fileloc": 1437,
-    "instructions": 112,
-    "loads": {
-      "G": 5,
-      "L": 1
-    },
-    "name": "tpgPatternCrossHatch",
-    "stores": {
-      "G": 11,
-      "L": 6
-    },
-    "total_instructions": 114
-  },
-  "8": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "name": "reg<unsigned short>",
-    "total_instructions": 1
-  },
-  "9": {
-    "basicblocks": 30,
-    "calls": "",
-    "file": "v_tpg.cpp",
-    "fileloc": 1734,
-    "instructions": 137,
-    "loads": {
-      "G": 21
-    },
-    "name": "tpgPatternDPColorSquare",
-    "stores": {
-      "G": 10,
-      "L": 12
-    },
-    "total_instructions": 137
   }
 }

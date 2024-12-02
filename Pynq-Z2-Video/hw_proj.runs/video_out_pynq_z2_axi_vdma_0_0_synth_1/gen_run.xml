@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="video_out_pynq_z2_axi_vdma_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1732624705">
+<GenRun Id="video_out_pynq_z2_axi_vdma_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1733153097">
   <File Type="PA-TCL" Name="video_out_pynq_z2_axi_vdma_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="video_out_pynq_z2_axi_vdma_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="video_out_pynq_z2_axi_vdma_0_0_reports.tcl"/>
@@ -12,7 +12,6 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/video_out_pynq_z2_axi_vdma_0_0" RelGenDir="$PGENDIR/video_out_pynq_z2_axi_vdma_0_0">
     <File Path="$PSRCDIR/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_vdma_0_0/video_out_pynq_z2_axi_vdma_0_0.xci">
       <FileInfo>
-        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -26,7 +25,6 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/video_out_pynq_z2_axi_vdma_0_0" RelGenDir="$PGENDIR/video_out_pynq_z2_axi_vdma_0_0">
     <File Path="$PSRCDIR/sources_1/bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_vdma_0_0/video_out_pynq_z2_axi_vdma_0_0.xci">
       <FileInfo>
-        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
