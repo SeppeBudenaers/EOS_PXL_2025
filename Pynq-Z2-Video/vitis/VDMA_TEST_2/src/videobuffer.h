@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include "xil_io.h"
 #include "xil_cache.h"
+#include <math.h>
 
 #define DISP_WIDTH (1280)
 #define DISP_HEIGHT (720)
@@ -12,6 +13,9 @@
 #define DISP_THIRD_BUFFER_OFFSET 0x10548000
 
 #define DISP_FLUSH Xil_DCacheFlushRange((UINTPTR)DISP_FIRST_BUFFER_OFFSET, DISP_SIZE_BYTES)
+
+// Define constants
+#define PI 3.14159265359
 
 uint32_t array;
 
@@ -30,6 +34,14 @@ typedef struct{
     point2d_t UL;
     point2d_t DR;
 }Rectangle_Loc_t;
+
+typedef struct{
+    Rectangle_Loc_t Previous;
+    Rectangle_Loc_t Next;
+    RGB_t BoxColor;
+    RGB_t BackgroundColor;
+}Rectangle_Move_t;
+
 
 typedef enum {
     First_buffer = 0,
@@ -89,6 +101,14 @@ void testColor(void){
     Xil_DCacheFlushRange((UINTPTR)DISP_FIRST_BUFFER_OFFSET, DISP_SIZE_BYTES);
 }
 
+RGB_t RGBFromHEX(uint32_t HexIn){
+    RGB_t output;
+    output.red = (HexIn >> 16) & 0xFF;
+    output.green = (HexIn >> 8) & 0xFF;
+    output.blue = HexIn & 0xFF;
+    return output;
+}
+
 uint32_t ConvertRGB(RGB_t input) {
     uint32_t output = 0;
 
@@ -122,4 +142,59 @@ void Drawbox(RGB_t color, Buffertype buffer, Rectangle_Loc_t R_loc){
             DrawPixel(color, buffer, loc);
         }
     }
+}
+
+void Movebox(Buffertype buffer, Rectangle_Move_t Move){
+    Drawbox(Move.BackgroundColor, buffer, Move.Previous);
+    Drawbox(Move.BoxColor, buffer, Move.Next);
+    DISP_FLUSH;
+}
+
+// Function to convert degrees to radians
+float toRadians(float degrees) {
+    return degrees * (PI / 180.0);
+}
+
+// Function to calculate rectangle width and height
+uint16_t getWidth(Rectangle_Loc_t rect) {
+    return rect.DR.x - rect.UL.x;
+}
+
+uint16_t getHeight(Rectangle_Loc_t rect) {
+    return rect.DR.y - rect.UL.y;
+}
+
+// Function to move a box with velocity and angle
+void MoveBoxWithVelocityAndAngle(Buffertype buffer,Rectangle_Loc_t *currentRect,float velocity,float angle,RGB_t boxColor,RGB_t backgroundColor) 
+{
+    // Create a Rectangle_Move_t structure for Movebox
+    Rectangle_Move_t move;
+
+    // Save the current position as the previous position
+    move.Previous = *currentRect;
+
+    // Calculate rectangle width and height
+    uint16_t rectWidth = getWidth(*currentRect);
+    uint16_t rectHeight = getHeight(*currentRect);
+
+    // Calculate displacement based on velocity and angle
+    float angleInRadians = toRadians(angle);
+    int16_t dx = (int16_t)(velocity * cos(angleInRadians));
+    int16_t dy = (int16_t)(velocity * sin(angleInRadians));
+
+    // Update the rectangle position
+    currentRect->UL.x += dx;
+    currentRect->UL.y += dy;
+    currentRect->DR.x += dx;
+    currentRect->DR.y += dy;
+
+    // Set the new position as the next position
+    move.Next = *currentRect;
+
+    // Set colors
+    move.BoxColor = boxColor;
+    move.BackgroundColor = backgroundColor;
+
+    // Call Movebox to render the movement
+    Movebox(buffer, move);
 }

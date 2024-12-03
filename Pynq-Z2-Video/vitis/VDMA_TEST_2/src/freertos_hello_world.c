@@ -41,54 +41,57 @@ static QueueHandle_t xQueue = NULL;
 static TimerHandle_t xTimer = NULL;
 char HWstring[15] = "Hello World";
 long RxtaskCntr = 0;
-
+uint8_t count = 0;
 int main( void )
 {
-	const TickType_t x10seconds = pdMS_TO_TICKS( DELAY_10_SECONDS );
-
-	xil_printf( "Hello from Freertos example main\r\n" );
 	//config
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x30, 0x808B);
-	        //frame buffers
-	        //frame size is 3*1280*720 = 2A3000
-	        //margin on frame = 1000
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xAC, 0x10000000);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xB0, 0x102A4000);//2A4000
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xB4, 0x10548000);//2A4000
-	        //HSIZE
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA8, 1280*3);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA4, 1280*3);
-	        //VSIZE
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA0, 720);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x30, 0x808B);
+		//frame buffers
+		//frame size is 3*1280*720 = 2A3000
+		//margin on frame = 1000
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xAC, 0x10000000);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xB0, 0x102A4000);//2A4000
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xB4, 0x10548000);//2A4000
+		//HSIZE
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA8, 1280*3);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA4, 1280*3);
+		//VSIZE
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA0, 720);
 
-	    //read
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x00, 0x8B);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x5C, 0x10000000);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x60, 0x102A4000);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x64, 0x10548000);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x58, 1280*3);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x54, 1280*3);
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x50, 720);
+		//read
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x00, 0x8B);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x5C, 0x10000000);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x60, 0x102A4000);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x64, 0x10548000);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x58, 1280*3);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x54, 1280*3);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x50, 720);
 
-	        RGB_t black;
-				black.red = 0x00;
-				black.blue = 0x00;
-				black.green = 0x00;
-			RGB_t white;
-				white.red = 0xff;
-				white.blue = 0xff;
-				white.green = 0xff;
+	RGB_t black;
+		black.red = 0x00;
+		black.blue = 0x00;
+		black.green = 0x00;
+	RGB_t white;
+		white.red = 0xff;
+		white.blue = 0xff;
+		white.green = 0xff;
 
-			point2d_t Up_left = {50, 50};
-			point2d_t Down_right = {100, 100};
-			Rectangle_Loc_t location = {Up_left, Down_right};
+	Rectangle_Loc_t boxPosition = {
+		.UL = {100, 100}, // Upper-left corner
+		.DR = {120, 500}  // Bottom-right corner
+	};
 
-	        outputColor(black, Triple_buffer);
-			Drawbox(white, Triple_buffer, location);
-			DISP_FLUSH;
+	// Define motion parameters
+    float velocity = 10.1;  // Speed of the box
+    float angle = 5;    // Angle in degrees
+
+	outputColor(black, Triple_buffer);
 
 	for( ;; ){
-
+		MoveBoxWithVelocityAndAngle(count,&boxPosition,velocity,angle,white,black);
+		if (boxPosition.DR.x >= 1200){angle = 180;}
+		else if (boxPosition.DR.x <= 100){angle = 0;}
+		if(count++ >= 3 ){count = 0;}
 	}
 }
 

@@ -121,3 +121,30 @@ timestamp=[2024-12-03 16:18:37], mode=BUILD, duration=0:00:01.268, duration_ms=1
 timestamp=[2024-12-03 16:18:49], mode=BUILD, duration=0:00:11.506, duration_ms=11506, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
 timestamp=[2024-12-03 16:29:56], mode=BUILD, duration=0:00:01.377, duration_ms=1377, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
 timestamp=[2024-12-03 16:30:08], mode=BUILD, duration=0:00:11.374, duration_ms=11374, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:01:12], mode=WORKBENCH_START, duration=0:18:21.243, duration_ms=1101243, data={}
+timestamp=[2024-12-03 17:01:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.581, duration_ms=581, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,VDMA_TEST_2,VDMA_TEST_2_system,design_1_wrapper,video_out_pynq_z2_wrapper}
+timestamp=[2024-12-03 17:01:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.073, duration_ms=73, data={}
+timestamp=[2024-12-03 17:13:50], mode=WORKBENCH_START, duration=0:00:13.771, duration_ms=13771, data={}
+timestamp=[2024-12-03 17:13:51], mode=WORKBENCH_UI_INIT, duration=0:00:01.257, duration_ms=1257, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,VDMA_TEST_2,VDMA_TEST_2_system,design_1_wrapper,video_out_pynq_z2_wrapper}
+timestamp=[2024-12-03 17:13:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.205, duration_ms=205, data={}
+timestamp=[2024-12-03 17:13:54], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=VDMA_TEST_2, configuration=Debug, clean_build=true}
+timestamp=[2024-12-03 17:14:04], mode=BUILD, duration=0:00:02.783, duration_ms=2783, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:14:17], mode=BUILD, duration=0:00:12.112, duration_ms=12112, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:16:26], mode=BUILD, duration=0:00:00.662, duration_ms=662, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:16:46], mode=BUILD, duration=0:00:01.210, duration_ms=1210, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:25:13], mode=BUILD, duration=0:00:02.905, duration_ms=2905, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:25:29], mode=BUILD, duration=0:00:15.696, duration_ms=15696, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:26:38], mode=BUILD, duration=0:00:01.369, duration_ms=1369, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:26:50], mode=BUILD, duration=0:00:11.489, duration_ms=11489, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:27:14], mode=BUILD, duration=0:00:00.474, duration_ms=474, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:27:24], mode=BUILD, duration=0:00:09.646, duration_ms=9646, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:27:25], mode=BUILD, duration=0:00:01.095, duration_ms=1095, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:27:37], mode=BUILD, duration=0:00:11.388, duration_ms=11388, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:28:59], mode=BUILD, duration=0:00:01.324, duration_ms=1324, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:29:11], mode=BUILD, duration=0:00:11.421, duration_ms=11421, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:32:34], mode=BUILD, duration=0:00:01.358, duration_ms=1358, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:32:46], mode=BUILD, duration=0:00:11.364, duration_ms=11364, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:34:32], mode=BUILD, duration=0:00:01.390, duration_ms=1390, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:34:44], mode=BUILD, duration=0:00:11.239, duration_ms=11239, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:36:27], mode=BUILD, duration=0:00:01.275, duration_ms=1275, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-03 17:36:39], mode=BUILD, duration=0:00:11.522, duration_ms=11522, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
