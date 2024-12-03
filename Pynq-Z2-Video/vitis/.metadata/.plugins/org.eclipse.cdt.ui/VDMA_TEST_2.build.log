@@ -1,4 +1,4 @@
-14:32:11 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+16:29:55 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,7 +6,7 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/freertos_hello_world.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
 ../src/freertos_hello_world.c: In function 'main':
 ../src/freertos_hello_world.c:47:26: warning: unused variable 'x10seconds' [-Wunused-variable]
    47 |         const TickType_t x10seconds = pdMS_TO_TICKS( DELAY_10_SECONDS );
@@ -37,15 +37,15 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_wor
 ' '
 'Building target: VDMA_TEST_2.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "VDMA_TEST_2.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxiltimer,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "VDMA_TEST_2.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxiltimer,-lxil,-lgcc,-lc,--end-group
 'Finished building target: VDMA_TEST_2.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  89724	   3372	  88808	 181904	  2c690	VDMA_TEST_2.elf
+  90244	   3372	  88808	 182424	  2c898	VDMA_TEST_2.elf
 'Finished building: VDMA_TEST_2.elf.size'
 ' '
 
-14:32:12 Build Finished (took 816ms)
+16:29:56 Build Finished (took 1s.368ms)
 

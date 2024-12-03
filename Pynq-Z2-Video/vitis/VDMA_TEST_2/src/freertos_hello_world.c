@@ -70,14 +70,25 @@ int main( void )
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x54, 1280*3);
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x50, 720);
 
-	        RGB_t color;
-	        color.red = 0x00;
-	        color.blue = 0x00;
-	        color.green = 0xFF;
-	        outputColor(color, First_buffer);
-	        //testColor();
+	        RGB_t black;
+				black.red = 0x00;
+				black.blue = 0x00;
+				black.green = 0x00;
+			RGB_t white;
+				white.red = 0xff;
+				white.blue = 0xff;
+				white.green = 0xff;
 
+			point2d_t Up_left = {50, 50};
+			point2d_t Down_right = {100, 100};
+			Rectangle_Loc_t location = {Up_left, Down_right};
 
-	for( ;; );
+	        outputColor(black, Triple_buffer);
+			Drawbox(white, Triple_buffer, location);
+			DISP_FLUSH;
+
+	for( ;; ){
+
+	}
 }
 

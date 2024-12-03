@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_Pynq-Z2-Video\export\VDMA_Pynq-Z2-Video;C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\design_1_wrapper\export\design_1_wrapper;C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\video_out_pynq_z2_wrapper\export\video_out_pynq_z2_wrapper"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_Pynq-Z2-Video\export\VDMA_Pynq-Z2-Video;C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\design_1_wrapper\export\design_1_wrapper;C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\video_out_pynq_z2_wrapper\export\video_out_pynq_z2_wrapper;C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\design_1_wrapper\export\design_1_wrapper;C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\video_out_pynq_z2_wrapper\export\video_out_pynq_z2_wrapper"/>
 </section>
