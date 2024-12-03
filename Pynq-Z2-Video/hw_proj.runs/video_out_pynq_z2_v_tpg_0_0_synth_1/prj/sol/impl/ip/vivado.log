@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec  2 16:32:50 2024
-# Process ID: 17172
+# Start of session at: Tue Dec  3 13:25:44 2024
+# Process ID: 2588
 # Current directory: C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip
 # Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file: C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/vivado.log
@@ -19,7 +19,7 @@
 # Host memory       :16969 MB
 # Swap memory       :6710 MB
 # Total Virtual     :23680 MB
-# Available Virtual :4429 MB
+# Available Virtual :5198 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/sol_data.json outdir=C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip srcdir=C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol sort_interfaces_ports=false
@@ -27,7 +27,7 @@ INFO: Copied 1 ipmisc file(s) to C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/
 INFO: Copied 103 verilog file(s) to C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/hdl/verilog
 INFO: Copied 70 vhdl file(s) to C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl
 INFO: Copied 10 swdriver file(s) to C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/drivers
-ipx::create_core: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 491.586 ; gain = 192.988
+ipx::create_core: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 492.461 ; gain = 194.160
 INFO: Import ports from HDL: C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl/video_out_pynq_z2_v_tpg_0_0_v_tpg.vhd (video_out_pynq_z2_v_tpg_0_0_v_tpg)
 INFO: Add axi4lite interface s_axi_CTRL
 INFO: Add clock interface ap_clk
@@ -44,4 +44,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/component.xml
 INFO: Created IP archive C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/impl/ip/xilinx_com_ip_v_tpg_8_2.zip
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 16:33:05 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 13:26:00 2024...

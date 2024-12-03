@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Nov 26 13:42:11 2024
+| Date         : Tue Dec  3 13:26:55 2024
 | Host         : Weathly running 64-bit major release  (build 9200)
 | Command      : report_utilization -file video_out_pynq_z2_wrapper_utilization_synth.rpt -pb video_out_pynq_z2_wrapper_utilization_synth.pb
 | Design       : video_out_pynq_z2_wrapper
@@ -159,19 +159,18 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------------------------------------+------+
 |                 Ref Name                 | Used |
 +------------------------------------------+------+
+| video_out_pynq_z2_xbar_2                 |    1 |
 | video_out_pynq_z2_xbar_0                 |    1 |
 | video_out_pynq_z2_v_tpg_0_0              |    1 |
-| video_out_pynq_z2_v_tc_0_0               |    1 |
+| video_out_pynq_z2_v_tc_0_1               |    1 |
 | video_out_pynq_z2_v_axi4s_vid_out_0_0    |    1 |
-| video_out_pynq_z2_smartconnect_0_0       |    1 |
 | video_out_pynq_z2_rst_ps7_0_100M_0       |    1 |
 | video_out_pynq_z2_rgb2dvi_0_0            |    1 |
 | video_out_pynq_z2_processing_system7_0_0 |    1 |
-| video_out_pynq_z2_proc_sys_vid_clk_0     |    1 |
 | video_out_pynq_z2_clk_wiz_0_0            |    1 |
 | video_out_pynq_z2_axi_vdma_0_0           |    1 |
-| video_out_pynq_z2_axi_gpio_0_0           |    1 |
-| video_out_pynq_z2_auto_pc_0              |    1 |
+| video_out_pynq_z2_auto_pc_5              |    1 |
+| video_out_pynq_z2_auto_pc_4              |    1 |
 +------------------------------------------+------+
 
 

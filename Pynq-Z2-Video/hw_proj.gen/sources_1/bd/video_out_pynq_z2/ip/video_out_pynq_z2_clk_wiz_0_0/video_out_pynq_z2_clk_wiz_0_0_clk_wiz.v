@@ -67,17 +67,6 @@ module video_out_pynq_z2_clk_wiz_0_0_clk_wiz
  (// Clock in ports
   // Clock out ports
   output        clk_out1,
-  // Dynamic reconfiguration ports
-  input   [6:0] daddr,
-  input         dclk,
-  input         den,
-  input  [15:0] din,
-  output [15:0] dout,
-  output        drdy,
-  input         dwe,
-  // Status and control signals
-  input         reset,
-  output        locked,
   input         clk_in1
  );
   // Input buffering
@@ -106,6 +95,8 @@ wire clk_in2_video_out_pynq_z2_clk_wiz_0_0;
   wire        clk_out6_video_out_pynq_z2_clk_wiz_0_0;
   wire        clk_out7_video_out_pynq_z2_clk_wiz_0_0;
 
+  wire [15:0] do_unused;
+  wire        drdy_unused;
   wire        psdone_unused;
   wire        locked_int;
   wire        clkfbout_video_out_pynq_z2_clk_wiz_0_0;
@@ -123,7 +114,6 @@ wire clk_in2_video_out_pynq_z2_clk_wiz_0_0;
   wire        clkout6_unused;
   wire        clkfbstopped_unused;
   wire        clkinstopped_unused;
-  wire        reset_high;
 
   MMCME2_ADV
   #(.BANDWIDTH            ("OPTIMIZED"),
@@ -162,13 +152,13 @@ wire clk_in2_video_out_pynq_z2_clk_wiz_0_0;
      // Tied to always select the primary input clock
     .CLKINSEL            (1'b1),
     // Ports for dynamic reconfiguration
-    .DADDR               (daddr),
-    .DCLK                (dclk),
-    .DEN                 (den),
-    .DI                  (din),
-    .DO                  (dout),
-    .DRDY                (drdy),
-    .DWE                 (dwe),
+    .DADDR               (7'h0),
+    .DCLK                (1'b0),
+    .DEN                 (1'b0),
+    .DI                  (16'h0),
+    .DO                  (do_unused),
+    .DRDY                (drdy_unused),
+    .DWE                 (1'b0),
     // Ports for dynamic phase shift
     .PSCLK               (1'b0),
     .PSEN                (1'b0),
@@ -179,10 +169,8 @@ wire clk_in2_video_out_pynq_z2_clk_wiz_0_0;
     .CLKINSTOPPED        (clkinstopped_unused),
     .CLKFBSTOPPED        (clkfbstopped_unused),
     .PWRDWN              (1'b0),
-    .RST                 (reset_high));
-  assign reset_high = reset; 
+    .RST                 (1'b0));
 
-  assign locked = locked_int;
 // Clock Monitor clock assigning
 //--------------------------------------
  // Output buffering

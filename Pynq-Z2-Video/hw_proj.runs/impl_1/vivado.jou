@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Nov 26 13:46:33 2024
-# Process ID: 17032
+# Start of session at: Tue Dec  3 13:27:03 2024
+# Process ID: 27224
 # Current directory: C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/impl_1
 # Command line: vivado.exe -log video_out_pynq_z2_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source video_out_pynq_z2_wrapper.tcl -notrace
 # Log file: C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/impl_1/video_out_pynq_z2_wrapper.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :16969 MB
-# Swap memory       :6174 MB
-# Total Virtual     :23143 MB
-# Available Virtual :12440 MB
+# Swap memory       :6710 MB
+# Total Virtual     :23680 MB
+# Available Virtual :6048 MB
 #-----------------------------------------------------------
 source video_out_pynq_z2_wrapper.tcl -notrace

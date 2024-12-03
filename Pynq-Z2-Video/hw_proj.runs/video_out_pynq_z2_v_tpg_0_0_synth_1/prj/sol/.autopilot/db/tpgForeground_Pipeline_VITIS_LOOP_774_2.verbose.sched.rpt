@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground_Pipeline_VITIS_LOOP_774_2'
 ================================================================
-* Date:           Mon Dec  2 16:32:23 2024
+* Date:           Tue Dec  3 13:25:22 2024
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        prj
@@ -233,7 +233,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln1956', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1956->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793) of constant 0 on local variable 'x', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1956->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793 [63]  (1.588 ns)
 	'load' operation 16 bit ('x', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1937->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) on local variable 'x', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1956->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793 [66]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln774', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:774) [69]  (2.077 ns)
+	'add' operation 16 bit ('x', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:774) [70]  (2.077 ns)
 	'store' operation 0 bit ('store_ln1956', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1956->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793) of variable 'x', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:774 on local variable 'x', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1956->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793 [176]  (1.588 ns)
 	blocking operation 0.978 ns on control path)
 

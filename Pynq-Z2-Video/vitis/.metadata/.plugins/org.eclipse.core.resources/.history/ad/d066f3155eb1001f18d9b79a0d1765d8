@@ -1,0 +1,48 @@
+#include <stdint.h>
+
+#define DISP_WIDTH 1280
+#define DISP_HEIGHT 720
+#define DISP_SIZE (DISP_WIDTH * DISP_HEIGHT)
+#define DISP_SIZE_BYTES (DISP_SIZE * 3)
+
+uint32_t array;
+
+typedef struct {
+    uint8_t red;
+    uint8_t green;
+    uint8_t blue;
+} RGB_t;
+
+typedef RGB_t Image_t[DISP_WIDTH][DISP_HEIGHT];
+
+void CreateByteArray(Image_t input, uint8_t * VideoBuffer);
+
+
+
+void outputColor(RGB_t color, Image_t input) {
+    uint8_t * ByteArray;
+    uint32_t writebuffer;
+    CreateByteArray(input, &ByteArray);
+
+    for(uint32_t i = 0; i < DISP_SIZE_BYTES; i++) {
+        if((i % 4)==0){
+            //write 32 bits to the videobuffer
+            writebuffer = (ByteArray[i+3] << 24) | (ByteArray[i+2] << 16) | (ByteArray[i+1] << 8) | (ByteArray[i]);
+            //Xil_out32(writebuffer);
+        }
+
+    }
+
+}
+
+void CreateByteArray(Image_t input, uint8_t * VideoBuffer) {
+
+
+    for(int height = 0; height <  DISP_HEIGHT; height++){
+        for(int width = 0; width < DISP_WIDTH; width++){
+        VideoBuffer[(width+(height*DISP_WIDTH))*3] = input[width][height].red;
+        VideoBuffer[((width+(height*DISP_WIDTH))*3)+1] = input[width][height].green;
+        VideoBuffer[((width+(height*DISP_WIDTH))*3)+2] = input[width][height].blue;
+        }
+    }
+}

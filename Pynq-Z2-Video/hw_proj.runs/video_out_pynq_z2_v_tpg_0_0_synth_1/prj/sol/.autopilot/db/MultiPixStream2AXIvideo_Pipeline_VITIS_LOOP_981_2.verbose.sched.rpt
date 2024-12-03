@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2'
 ================================================================
-* Date:           Mon Dec  2 16:32:25 2024
+* Date:           Tue Dec  3 13:25:24 2024
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        prj
@@ -180,7 +180,7 @@ The critical path consists of the following:
  <State 3>: 6.503ns
 The critical path consists of the following:
 	fifo read operation ('ovrlayYUV_read', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) on port 'ovrlayYUV' (C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [55]  (3.650 ns)
-	'sparsemux' operation 9 bit ('axi.data', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1029->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [64]  (1.588 ns)
+	'sparsemux' operation 8 bit ('tmp', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [66]  (1.588 ns)
 	axis write operation ('write_ln1035', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1035->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) on port 'm_axis_video_V_data_V' (C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1035->C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [70]  (1.265 ns)
 
  <State 4>: 0.000ns

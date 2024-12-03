@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Tue Nov 26 13:43:46 2024
+| Date         : Tue Dec  3 13:28:05 2024
 | Host         : Weathly
 | Design       : design_1
 | Device       : xc7z020-clg400-1--

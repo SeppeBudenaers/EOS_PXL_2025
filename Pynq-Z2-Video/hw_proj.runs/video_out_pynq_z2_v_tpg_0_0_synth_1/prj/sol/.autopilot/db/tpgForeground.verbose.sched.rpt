@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground'
 ================================================================
-* Date:           Mon Dec  2 16:32:24 2024
+* Date:           Tue Dec  3 13:25:23 2024
 
 * Version:        2024.1 (Build 5069499 on May 21 2024)
 * Project:        prj
@@ -176,7 +176,7 @@ The critical path consists of the following:
  <State 2>: 3.665ns
 The critical path consists of the following:
 	'load' operation 16 bit ('y', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:772) on local variable 'y', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:763 [81]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln772', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:772) [82]  (2.077 ns)
+	'add' operation 16 bit ('y', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:772) [83]  (2.077 ns)
 	'store' operation 0 bit ('store_ln763', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:763) of variable 'y', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:772 on local variable 'y', C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.runs/video_out_pynq_z2_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:763 [93]  (1.588 ns)
 
  <State 3>: 4.643ns

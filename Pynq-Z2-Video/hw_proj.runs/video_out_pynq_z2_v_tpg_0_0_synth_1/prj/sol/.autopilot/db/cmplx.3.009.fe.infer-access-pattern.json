@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 8,
-    "calls": "2 6",
+    "calls": "1 4",
     "file": "v_tpg.cpp",
     "fileloc": 409,
     "instructions": 76,
@@ -16,22 +16,6 @@
     "total_instructions": 1425
   },
   "1": {
-    "basicblocks": 36,
-    "calls": "",
-    "file": "v_tpg.cpp",
-    "fileloc": 759,
-    "instructions": 161,
-    "loads": {
-      "G": 7,
-      "L": 12
-    },
-    "name": "tpgForeground",
-    "stores": {
-      "G": 8
-    },
-    "total_instructions": 200
-  },
-  "2": {
     "basicblocks": 1,
     "calls": "",
     "file": "x_hls_utils.h",
@@ -40,16 +24,7 @@
     "name": "reg<unsigned short>",
     "total_instructions": 1
   },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 1,
-    "name": "reg<int>",
-    "total_instructions": 1
-  },
-  "4": {
+  "2": {
     "basicblocks": 29,
     "calls": "8",
     "file": "v_tpg.cpp",
@@ -66,7 +41,41 @@
     },
     "total_instructions": 114
   },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<int>",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "9 5 6",
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1348
+  },
   "5": {
+    "basicblocks": 36,
+    "calls": "",
+    "file": "v_tpg.cpp",
+    "fileloc": 759,
+    "instructions": 161,
+    "loads": {
+      "G": 7,
+      "L": 12
+    },
+    "name": "tpgForeground",
+    "stores": {
+      "G": 8
+    },
+    "total_instructions": 200
+  },
+  "6": {
     "basicblocks": 29,
     "calls": "",
     "file": "v_tpg.cpp",
@@ -82,15 +91,6 @@
       "L": 16
     },
     "total_instructions": 181
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "9 1 5",
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1348
   },
   "7": {
     "basicblocks": 30,
@@ -122,7 +122,7 @@
   },
   "9": {
     "basicblocks": 132,
-    "calls": "3 4 7",
+    "calls": "3 2 7",
     "file": "v_tpg.cpp",
     "fileloc": 536,
     "instructions": 684,

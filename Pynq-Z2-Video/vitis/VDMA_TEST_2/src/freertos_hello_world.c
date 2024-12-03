@@ -20,7 +20,7 @@
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "xil_io.h"
-
+#include "videobuffer.h"
 #define TIMER_ID	1
 #define DELAY_10_SECONDS	10000UL
 #define DELAY_1_SECOND		1000UL
@@ -48,7 +48,7 @@ int main( void )
 
 	xil_printf( "Hello from Freertos example main\r\n" );
 	//config
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x30, 0x0000008B);
+	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x30, 0x808B);
 	        //frame buffers
 	        //frame size is 3*1280*720 = 2A3000
 	        //margin on frame = 1000
@@ -62,7 +62,7 @@ int main( void )
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0xA0, 720);
 
 	    //read
-	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x00, 0x0000008B);
+	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x00, 0x8B);
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x5C, 0x10000000);
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x60, 0x102A4000);
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x64, 0x10548000);
@@ -70,7 +70,7 @@ int main( void )
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x54, 1280*3);
 	        Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x50, 720);
 
-	        xil_printf( "writing in video memory\r\n" );
+	        testColor();
 
 
 	for( ;; );

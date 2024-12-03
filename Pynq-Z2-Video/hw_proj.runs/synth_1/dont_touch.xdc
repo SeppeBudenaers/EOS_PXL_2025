@@ -6,20 +6,8 @@
 # Block Designs: bd/video_out_pynq_z2/video_out_pynq_z2.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2 || ORIG_REF_NAME==video_out_pynq_z2} -quiet] -quiet
 
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_gpio_0_0/video_out_pynq_z2_axi_gpio_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_axi_gpio_0_0 || ORIG_REF_NAME==video_out_pynq_z2_axi_gpio_0_0} -quiet] -quiet
-
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_clk_wiz_0_0/video_out_pynq_z2_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_clk_wiz_0_0 || ORIG_REF_NAME==video_out_pynq_z2_clk_wiz_0_0} -quiet] -quiet
-
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_constant_high_0/video_out_pynq_z2_constant_high_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_constant_high_0 || ORIG_REF_NAME==video_out_pynq_z2_constant_high_0} -quiet] -quiet
-
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_constant_low_0/video_out_pynq_z2_constant_low_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_constant_low_0 || ORIG_REF_NAME==video_out_pynq_z2_constant_low_0} -quiet] -quiet
-
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_proc_sys_vid_clk_0/video_out_pynq_z2_proc_sys_vid_clk_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_proc_sys_vid_clk_0 || ORIG_REF_NAME==video_out_pynq_z2_proc_sys_vid_clk_0} -quiet] -quiet
 
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_processing_system7_0_0/video_out_pynq_z2_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_processing_system7_0_0 || ORIG_REF_NAME==video_out_pynq_z2_processing_system7_0_0} -quiet] -quiet
@@ -30,20 +18,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_p
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_rst_ps7_0_100M_0/video_out_pynq_z2_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_rst_ps7_0_100M_0 || ORIG_REF_NAME==video_out_pynq_z2_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_smartconnect_0_0/video_out_pynq_z2_smartconnect_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_smartconnect_0_0 || ORIG_REF_NAME==video_out_pynq_z2_smartconnect_0_0} -quiet] -quiet
-
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_axi4s_vid_out_0_0/video_out_pynq_z2_v_axi4s_vid_out_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==video_out_pynq_z2_v_axi4s_vid_out_0_0} -quiet] -quiet
 
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_tc_0_0/video_out_pynq_z2_v_tc_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_v_tc_0_0 || ORIG_REF_NAME==video_out_pynq_z2_v_tc_0_0} -quiet] -quiet
-
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_tpg_0_0/video_out_pynq_z2_v_tpg_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_v_tpg_0_0 || ORIG_REF_NAME==video_out_pynq_z2_v_tpg_0_0} -quiet] -quiet
-
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_vdma_0_0/video_out_pynq_z2_axi_vdma_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_axi_vdma_0_0 || ORIG_REF_NAME==video_out_pynq_z2_axi_vdma_0_0} -quiet] -quiet
 
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_xbar_0/video_out_pynq_z2_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_xbar_0 || ORIG_REF_NAME==video_out_pynq_z2_xbar_0} -quiet] -quiet
@@ -51,7 +30,22 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_p
 # IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_mem_intercon_0/video_out_pynq_z2_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_axi_mem_intercon_0 || ORIG_REF_NAME==video_out_pynq_z2_axi_mem_intercon_0} -quiet] -quiet
 
-# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_auto_pc_0/video_out_pynq_z2_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_auto_pc_0 || ORIG_REF_NAME==video_out_pynq_z2_auto_pc_0} -quiet] -quiet
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_axi_vdma_0_0/video_out_pynq_z2_axi_vdma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_axi_vdma_0_0 || ORIG_REF_NAME==video_out_pynq_z2_axi_vdma_0_0} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_v_tc_0_1/video_out_pynq_z2_v_tc_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_v_tc_0_1 || ORIG_REF_NAME==video_out_pynq_z2_v_tc_0_1} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_xbar_2/video_out_pynq_z2_xbar_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_xbar_2 || ORIG_REF_NAME==video_out_pynq_z2_xbar_2} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_ps7_0_axi_periph_1/video_out_pynq_z2_ps7_0_axi_periph_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_ps7_0_axi_periph_1 || ORIG_REF_NAME==video_out_pynq_z2_ps7_0_axi_periph_1} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_auto_pc_4/video_out_pynq_z2_auto_pc_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_auto_pc_4 || ORIG_REF_NAME==video_out_pynq_z2_auto_pc_4} -quiet] -quiet
+
+# IP: bd/video_out_pynq_z2/ip/video_out_pynq_z2_auto_pc_5/video_out_pynq_z2_auto_pc_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_out_pynq_z2_auto_pc_5 || ORIG_REF_NAME==video_out_pynq_z2_auto_pc_5} -quiet] -quiet
 
 # XDC: c:/PXL/EOS_PXL_2025/Pynq-Z2-Video/hw_proj.gen/sources_1/bd/video_out_pynq_z2/video_out_pynq_z2_ooc.xdc
