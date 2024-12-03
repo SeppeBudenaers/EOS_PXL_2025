@@ -8074,3 +8074,9 @@ Caused by: org.eclipse.swt.SWTException: Invalid thread access
 	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
 	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
 	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-03 16:33:00.234
+!MESSAGE XSCT Command: [disconnect tcfchan#29], Thread: Thread-1451
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-03 16:33:00.244
+!MESSAGE XSCT command with result: [disconnect tcfchan#29], Result: [null, ]. Thread: Thread-1451
