@@ -1,51 +1,10 @@
-10:19:31 **** Build of configuration Debug for project VDMA_TEST_3 ****
+14:33:54 **** Incremental Build of configuration Debug for project VDMA_TEST_3 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/freertos_hello_world.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/export/video_out_pynq_z2_wrapper/sw/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
-../src/freertos_hello_world.c: In function 'main':
-../src/freertos_hello_world.c:47:26: warning: unused variable 'x10seconds' [-Wunused-variable]
-   47 |         const TickType_t x10seconds = pdMS_TO_TICKS( DELAY_10_SECONDS );
-      |                          ^~~~~~~~~~
-../src/freertos_hello_world.c: At top level:
-../src/freertos_hello_world.c:31:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
-   31 | static void prvTxTask( void *pvParameters );
-      |             ^~~~~~~~~
-../src/freertos_hello_world.c:32:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
-   32 | static void prvRxTask( void *pvParameters );
-      |             ^~~~~~~~~
-../src/freertos_hello_world.c:33:13: warning: 'vTimerCallback' declared 'static' but never defined [-Wunused-function]
-   33 | static void vTimerCallback( TimerHandle_t pxTimer );
-      |             ^~~~~~~~~~~~~~
-../src/freertos_hello_world.c:41:22: warning: 'xTimer' defined but not used [-Wunused-variable]
-   41 | static TimerHandle_t xTimer = NULL;
-      |                      ^~~~~~
-../src/freertos_hello_world.c:40:22: warning: 'xQueue' defined but not used [-Wunused-variable]
-   40 | static QueueHandle_t xQueue = NULL;
-      |                      ^~~~~~
-../src/freertos_hello_world.c:39:21: warning: 'xRxTask' defined but not used [-Wunused-variable]
-   39 | static TaskHandle_t xRxTask;
-      |                     ^~~~~~~
-../src/freertos_hello_world.c:38:21: warning: 'xTxTask' defined but not used [-Wunused-variable]
-   38 | static TaskHandle_t xTxTask;
-      |                     ^~~~~~~
-'Finished building: ../src/freertos_hello_world.c'
-' '
-'Building target: VDMA_TEST_3.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/export/video_out_pynq_z2_wrapper/sw/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "VDMA_TEST_3.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
-'Finished building target: VDMA_TEST_3.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size VDMA_TEST_3.elf  |tee "VDMA_TEST_3.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  84052	   3360	  88752	 176164	  2b024	VDMA_TEST_3.elf
-'Finished building: VDMA_TEST_3.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-10:19:33 Build Finished (took 1s.389ms)
+14:33:54 Build Finished (took 255ms)
 

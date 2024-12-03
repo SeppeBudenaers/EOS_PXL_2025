@@ -1,4 +1,4 @@
-14:19:29 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+14:32:11 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -47,5 +47,5 @@ arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
 'Finished building: VDMA_TEST_2.elf.size'
 ' '
 
-14:19:29 Build Finished (took 821ms)
+14:32:12 Build Finished (took 816ms)
 

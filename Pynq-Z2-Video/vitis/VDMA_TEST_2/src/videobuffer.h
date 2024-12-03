@@ -53,8 +53,7 @@ uint32_t ConvertRGB(RGB_t input);
 
 void outputColor(RGB_t color, Buffertype buffer) {
   uint32_t colorToWrite = 0x0;
-  //colorToWrite = ConvertRGB(color);
-  colorToWrite = 0x00ff00;
+  colorToWrite = ConvertRGB(color);
      for(uint32_t i = 0; i < DISP_SIZE_BYTES; i+=3) {
         Xil_Out32(DISP_FIRST_BUFFER_OFFSET+ i, colorToWrite & 0xFFFFFF);
     }
