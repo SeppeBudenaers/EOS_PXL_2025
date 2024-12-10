@@ -3754,3 +3754,456 @@ operable program or batch file.
 14:31:41 INFO  : Registering command handlers for Vitis TCF services
 14:31:41 INFO  : Platform repository initialization has completed.
 14:31:41 INFO  : Successfully done query RDI_DATADIR 
+15:11:15 DEBUG : Logs will be stored at 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/IDE.log'.
+15:11:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\temp_xsdb_launch_script.tcl
+15:11:16 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+15:11:16 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+15:11:16 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+15:11:19 INFO  : XSCT server has started successfully.
+15:11:19 INFO  : Successfully done setting XSCT server connection channel  
+15:11:19 INFO  : plnx-install-location is set to ''
+15:11:19 INFO  : Successfully done setting workspace for the tool. 
+15:11:25 INFO  : Registering command handlers for Vitis TCF services
+15:11:25 INFO  : Platform repository initialization has completed.
+15:11:25 INFO  : Successfully done query RDI_DATADIR 
+15:11:44 INFO  : Result from executing command 'getProjects': design_1_wrapper;video_out_pynq_z2_wrapper
+15:11:44 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;video_out_pynq_z2_wrapper|C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/export/video_out_pynq_z2_wrapper/video_out_pynq_z2_wrapper.xpfm
+15:11:44 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:15:44 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:18:56 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:19:15 INFO  : Result from executing command 'getProjects': design_1_wrapper;video_out_pynq_z2_wrapper
+15:19:15 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;video_out_pynq_z2_wrapper|C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/export/video_out_pynq_z2_wrapper/video_out_pynq_z2_wrapper.xpfm
+15:22:02 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:24:02 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:24:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:24:11 INFO  : 'jtag frequency' command is executed.
+15:24:11 INFO  : Context for 'APU' is selected.
+15:24:11 INFO  : System reset is completed.
+15:24:14 INFO  : 'after 3000' command is executed.
+15:24:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:24:17 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:24:17 INFO  : Context for 'APU' is selected.
+15:24:17 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:24:17 INFO  : 'configparams force-mem-access 1' command is executed.
+15:24:17 INFO  : Context for 'APU' is selected.
+15:24:17 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:24:17 INFO  : 'ps7_init' command is executed.
+15:24:17 INFO  : 'ps7_post_config' command is executed.
+15:24:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:18 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:24:18 INFO  : 'configparams force-mem-access 0' command is executed.
+15:24:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:24:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:18 INFO  : 'con' command is executed.
+15:24:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:24:18 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:25:51 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:25:55 INFO  : Disconnected from the channel tcfchan#4.
+15:25:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:56 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:25:56 INFO  : 'jtag frequency' command is executed.
+15:25:57 INFO  : Context for 'APU' is selected.
+15:25:57 INFO  : System reset is completed.
+15:26:00 INFO  : 'after 3000' command is executed.
+15:26:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:26:03 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:26:03 INFO  : Context for 'APU' is selected.
+15:26:03 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:26:03 INFO  : 'configparams force-mem-access 1' command is executed.
+15:26:03 INFO  : Context for 'APU' is selected.
+15:26:03 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:26:03 INFO  : 'ps7_init' command is executed.
+15:26:03 INFO  : 'ps7_post_config' command is executed.
+15:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:03 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:26:03 INFO  : 'configparams force-mem-access 0' command is executed.
+15:26:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:03 INFO  : 'con' command is executed.
+15:26:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:26:03 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:26:15 INFO  : Disconnected from the channel tcfchan#5.
+15:26:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:26:16 INFO  : 'jtag frequency' command is executed.
+15:26:16 INFO  : Context for 'APU' is selected.
+15:26:16 INFO  : System reset is completed.
+15:26:19 INFO  : 'after 3000' command is executed.
+15:26:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:26:22 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:26:22 INFO  : Context for 'APU' is selected.
+15:26:22 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:26:22 INFO  : 'configparams force-mem-access 1' command is executed.
+15:26:22 INFO  : Context for 'APU' is selected.
+15:26:22 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:26:22 INFO  : 'ps7_init' command is executed.
+15:26:22 INFO  : 'ps7_post_config' command is executed.
+15:26:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:22 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:26:22 INFO  : 'configparams force-mem-access 0' command is executed.
+15:26:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:26:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:22 INFO  : 'con' command is executed.
+15:26:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:26:22 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:27:17 INFO  : Disconnected from the channel tcfchan#6.
+15:27:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:27:18 INFO  : 'jtag frequency' command is executed.
+15:27:18 INFO  : Context for 'APU' is selected.
+15:27:18 INFO  : System reset is completed.
+15:27:21 INFO  : 'after 3000' command is executed.
+15:27:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:27:23 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:27:23 INFO  : Context for 'APU' is selected.
+15:27:23 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:27:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:27:23 INFO  : Context for 'APU' is selected.
+15:27:23 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:27:23 INFO  : 'ps7_init' command is executed.
+15:27:23 INFO  : 'ps7_post_config' command is executed.
+15:27:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:24 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:27:24 INFO  : 'configparams force-mem-access 0' command is executed.
+15:27:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:27:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:24 INFO  : 'con' command is executed.
+15:27:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:27:24 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:27:36 INFO  : Disconnected from the channel tcfchan#7.
+15:27:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:27:37 INFO  : 'jtag frequency' command is executed.
+15:27:37 INFO  : Context for 'APU' is selected.
+15:27:37 INFO  : System reset is completed.
+15:27:40 INFO  : 'after 3000' command is executed.
+15:27:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:27:43 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:27:43 INFO  : Context for 'APU' is selected.
+15:27:43 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:27:43 INFO  : 'configparams force-mem-access 1' command is executed.
+15:27:43 INFO  : Context for 'APU' is selected.
+15:27:43 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:27:43 INFO  : 'ps7_init' command is executed.
+15:27:43 INFO  : 'ps7_post_config' command is executed.
+15:27:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:43 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:27:43 INFO  : 'configparams force-mem-access 0' command is executed.
+15:27:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:27:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:43 INFO  : 'con' command is executed.
+15:27:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:27:43 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:29:33 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:29:39 INFO  : Disconnected from the channel tcfchan#8.
+15:29:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:41 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:29:41 INFO  : 'jtag frequency' command is executed.
+15:29:41 INFO  : Context for 'APU' is selected.
+15:29:41 INFO  : System reset is completed.
+15:29:44 INFO  : 'after 3000' command is executed.
+15:29:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:29:46 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:29:46 INFO  : Context for 'APU' is selected.
+15:29:46 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:29:46 INFO  : 'configparams force-mem-access 1' command is executed.
+15:29:46 INFO  : Context for 'APU' is selected.
+15:29:46 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:29:46 INFO  : 'ps7_init' command is executed.
+15:29:46 INFO  : 'ps7_post_config' command is executed.
+15:29:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:47 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:29:47 INFO  : 'configparams force-mem-access 0' command is executed.
+15:29:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:29:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:47 INFO  : 'con' command is executed.
+15:29:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:29:47 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:30:16 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:30:20 INFO  : Disconnected from the channel tcfchan#9.
+15:30:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:22 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:30:22 ERROR : port closed
+15:30:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:30:22 ERROR : port closed
+15:30:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:27 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:30:27 INFO  : 'jtag frequency' command is executed.
+15:30:27 INFO  : Context for 'APU' is selected.
+15:30:27 INFO  : System reset is completed.
+15:30:30 INFO  : 'after 3000' command is executed.
+15:30:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:30:32 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:30:32 INFO  : Context for 'APU' is selected.
+15:30:32 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:30:32 INFO  : 'configparams force-mem-access 1' command is executed.
+15:30:32 INFO  : Context for 'APU' is selected.
+15:30:32 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:30:32 INFO  : 'ps7_init' command is executed.
+15:30:32 INFO  : 'ps7_post_config' command is executed.
+15:30:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:33 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:30:33 INFO  : 'configparams force-mem-access 0' command is executed.
+15:30:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:33 INFO  : 'con' command is executed.
+15:30:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:30:33 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:34:16 INFO  : Disconnected from the channel tcfchan#10.
+15:34:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:17 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:34:17 INFO  : 'jtag frequency' command is executed.
+15:34:17 INFO  : Context for 'APU' is selected.
+15:34:17 INFO  : System reset is completed.
+15:34:20 INFO  : 'after 3000' command is executed.
+15:34:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:34:23 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:34:23 INFO  : Context for 'APU' is selected.
+15:34:23 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:34:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:34:23 INFO  : Context for 'APU' is selected.
+15:34:23 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:34:23 INFO  : 'ps7_init' command is executed.
+15:34:23 INFO  : 'ps7_post_config' command is executed.
+15:34:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:23 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:34:23 INFO  : 'configparams force-mem-access 0' command is executed.
+15:34:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:34:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:23 INFO  : 'con' command is executed.
+15:34:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:34:23 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:35:08 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+15:35:15 INFO  : Disconnected from the channel tcfchan#11.
+15:35:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:35:16 INFO  : 'jtag frequency' command is executed.
+15:35:17 INFO  : Context for 'APU' is selected.
+15:35:18 INFO  : System reset is completed.
+15:35:21 INFO  : 'after 3000' command is executed.
+15:35:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:35:23 INFO  : Device configured successfully with "C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+15:35:23 INFO  : Context for 'APU' is selected.
+15:35:23 INFO  : Hardware design and registers information is loaded from 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:35:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:35:23 INFO  : Context for 'APU' is selected.
+15:35:23 INFO  : Sourcing of 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+15:35:23 INFO  : 'ps7_init' command is executed.
+15:35:23 INFO  : 'ps7_post_config' command is executed.
+15:35:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:23 INFO  : The application 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:35:23 INFO  : 'configparams force-mem-access 0' command is executed.
+15:35:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:35:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:24 INFO  : 'con' command is executed.
+15:35:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:35:24 INFO  : Launch script is exported to file 'C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+15:38:06 INFO  : Disconnected from the channel tcfchan#12.

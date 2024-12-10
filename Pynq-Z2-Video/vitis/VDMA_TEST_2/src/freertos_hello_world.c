@@ -92,6 +92,7 @@ int main( void )
 		if (boxPosition.DR.x >= 1200){angle = 180;}
 		else if (boxPosition.DR.x <= 100){angle = 0;}
 		if(count++ >= 3 ){count = 0;}
+		// screenprintf(white, (point2d_t){100, 200}, "hello world");
 	}
 }
 

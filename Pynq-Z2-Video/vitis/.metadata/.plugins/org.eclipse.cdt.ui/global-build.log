@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-21:37:29 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+15:35:08 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -11,12 +11,24 @@ make --no-print-directory main-build
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
 In file included from ../src/freertos_hello_world.c:23:
 ../src/videobuffer.h: In function 'MoveBoxWithVelocityAndAngle':
-../src/videobuffer.h:178:14: warning: unused variable 'rectHeight' [-Wunused-variable]
-  178 |     uint16_t rectHeight = getHeight(*currentRect);
+../src/videobuffer.h:182:14: warning: unused variable 'rectHeight' [-Wunused-variable]
+  182 |     uint16_t rectHeight = getHeight(*currentRect);
       |              ^~~~~~~~~~
-../src/videobuffer.h:177:14: warning: unused variable 'rectWidth' [-Wunused-variable]
-  177 |     uint16_t rectWidth = getWidth(*currentRect);
+../src/videobuffer.h:181:14: warning: unused variable 'rectWidth' [-Wunused-variable]
+  181 |     uint16_t rectWidth = getWidth(*currentRect);
       |              ^~~~~~~~~
+../src/videobuffer.h: In function 'screenprintCharacter':
+../src/videobuffer.h:212:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+  212 |     uint8_t* charBitmap = font8x8_basic[charIndex];
+      |                           ^~~~~~~~~~~~~
+../src/videobuffer.h: In function 'screenprintf':
+../src/videobuffer.h:236:5: warning: implicit declaration of function 'vsnprintf' [-Wimplicit-function-declaration]
+  236 |     vsnprintf(formattedString, sizeof(formattedString), format, args);
+      |     ^~~~~~~~~
+../src/videobuffer.h:7:1: note: include '<stdio.h>' or provide a declaration of 'vsnprintf'
+    6 | #include "font8x8_basic.h"
+  +++ |+#include <stdio.h>
+    7 | 
 ../src/freertos_hello_world.c: At top level:
 ../src/freertos_hello_world.c:31:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
    31 | static void prvTxTask( void *pvParameters );
@@ -49,21 +61,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  95384	   3372	  88808	 187564	  2dcac	VDMA_TEST_2.elf
+  96056	   4396	  88808	 189260	  2e34c	VDMA_TEST_2.elf
 'Finished building: VDMA_TEST_2.elf.size'
 ' '
-21:37:30 **** Incremental Build of configuration Debug for project VDMA_TEST_2_system ****
-make all 
-Generating bif file for the system project
-generate_system_bif.bat 56607 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm freertos10_xilinx_ps7_cortexa9_0 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2_system/Debug/system.bif
-'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
-operable program or batch file.
-'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
-operable program or batch file.
-'\gnuwin\bin\' is not recognized as an internal or external command,
-operable program or batch file.
-sdcard_gen --xpfm C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2_system/Debug/system.bif --bitstream C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit --elf C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf,ps7_cortexa9_0
-creating BOOT.BIN using C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
-Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
-Nothing to build in platform 'video_out_pynq_z2_wrapper'
-

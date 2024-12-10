@@ -1,7 +1,7 @@
-21:37:30 **** Incremental Build of configuration Debug for project VDMA_TEST_2_system ****
+15:18:57 **** Build of configuration Debug for project VDMA_TEST_2_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 56607 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm freertos10_xilinx_ps7_cortexa9_0 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2_system/Debug/system.bif
+generate_system_bif.bat 50352 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm freertos10_xilinx_ps7_cortexa9_0 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2_system/Debug/system.bif
 '\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
 operable program or batch file.
 '\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
@@ -12,5 +12,5 @@ sdcard_gen --xpfm C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_
 creating BOOT.BIN using C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
 Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-21:37:36 Build Finished (took 6s.312ms)
+15:19:03 Build Finished (took 6s.353ms)
 

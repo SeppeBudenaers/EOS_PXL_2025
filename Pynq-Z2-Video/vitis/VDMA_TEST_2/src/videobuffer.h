@@ -1,7 +1,9 @@
 #include <stdint.h>
 #include "xil_io.h"
 #include "xil_cache.h"
+#include <stdarg.h>
 #include <math.h>
+#include "font8x8_basic.h"
 
 #define DISP_WIDTH (1280)
 #define DISP_HEIGHT (720)
@@ -13,6 +15,8 @@
 #define DISP_THIRD_BUFFER_OFFSET 0x10548000
 
 #define DISP_FLUSH Xil_DCacheFlushRange((UINTPTR)DISP_FIRST_BUFFER_OFFSET, DISP_SIZE_BYTES)
+
+#define CHAR_WIDTH 8
 
 // Define constants
 #define PI 3.14159265359
@@ -197,4 +201,50 @@ void MoveBoxWithVelocityAndAngle(Buffertype buffer,Rectangle_Loc_t *currentRect,
 
     // Call Movebox to render the movement
     Movebox(buffer, move);
+}
+
+
+void screenprintCharacter(char character, point2d_t location, RGB_t color) {
+    // Get the font index for the character
+    uint8_t charIndex = character - ' ';  // Assuming the font starts from ' ' (space)
+
+    // Get the 8x8 bitmap for the character
+    uint8_t* charBitmap = font8x8_basic[charIndex];
+
+    // Iterate over each pixel of the character (8x8)
+    for (uint8_t y = 0; y < 8; y++) {
+        for (uint8_t x = 0; x < 8; x++) {
+            // Check if the pixel should be on (1) or off (0)
+            if (charBitmap[y] & (1 << (7 - x))) {
+                // Calculate the position for this pixel
+                point2d_t pixelLocation = {location.x + x, location.y + y};
+                // Draw the pixel with the given color
+                DrawPixel(color, First_buffer, pixelLocation);
+            }
+        }
+    }
+}
+
+
+void screenprintf(RGB_t color, point2d_t startLocation, const char *format, ...) {
+    // Buffer to hold the formatted string
+    char formattedString[256];  // Adjust size as needed
+
+    // Format the string using vsnprintf (handles variable arguments)
+    va_list args;
+    va_start(args, format);
+    vsnprintf(formattedString, sizeof(formattedString), format, args);
+    va_end(args);
+
+    // Start drawing the formatted string
+    point2d_t currentLocation = startLocation;
+
+    // Iterate through each character in the formatted string
+    for (size_t i = 0; i < strlen(formattedString); i++) {
+        // Print each character at the current location
+        screenprintCharacter(formattedString[i], currentLocation, color);
+
+        // Move the x position for the next character
+        currentLocation.x += CHAR_WIDTH;  // Move 8 pixels for the next character
+    }
 }
