@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdio.h>
 #include "xil_io.h"
 #include "xil_cache.h"
 #include <stdarg.h>
@@ -214,10 +215,10 @@ void screenprintCharacter(char character, point2d_t location, RGB_t color) {
     // Iterate over each pixel of the character (8x8)
     for (uint8_t y = 0; y < 8; y++) {
         for (uint8_t x = 0; x < 8; x++) {
-            // Check if the pixel should be on (1) or off (0)
-            if (charBitmap[y] & (1 << (7 - x))) {
+            // No need to flip bits here. Just check each bit from left to right.
+            if (charBitmap[y] & (1 << x)) {  // Check from left to right (no change)
                 // Calculate the position for this pixel
-                point2d_t pixelLocation = {location.x + x, location.y + y};
+                point2d_t pixelLocation = {location.x + x, location.y + y};  // No flipping needed for now
                 // Draw the pixel with the given color
                 DrawPixel(color, First_buffer, pixelLocation);
             }
@@ -225,26 +226,40 @@ void screenprintCharacter(char character, point2d_t location, RGB_t color) {
     }
 }
 
-
-void screenprintf(RGB_t color, point2d_t startLocation, const char *format, ...) {
-    // Buffer to hold the formatted string
-    char formattedString[256];  // Adjust size as needed
-
-    // Format the string using vsnprintf (handles variable arguments)
+void screenprintf(RGB_t color, point2d_t location, const char *format, ...) {
     va_list args;
     va_start(args, format);
-    vsnprintf(formattedString, sizeof(formattedString), format, args);
-    va_end(args);
 
-    // Start drawing the formatted string
-    point2d_t currentLocation = startLocation;
+    int x_position = location.x;
+    int y_position = location.y;
+    int original_x = x_position;  // Store the original x position to reset it after newline
 
-    // Iterate through each character in the formatted string
-    for (size_t i = 0; i < strlen(formattedString); i++) {
-        // Print each character at the current location
-        screenprintCharacter(formattedString[i], currentLocation, color);
-
-        // Move the x position for the next character
-        currentLocation.x += CHAR_WIDTH;  // Move 8 pixels for the next character
+    for (const char *ptr = format; *ptr != '\0'; ptr++) {
+        if (*ptr == '%') {
+            ptr++;
+            if (*ptr == 'd') {
+                // Handle %d (integer)
+                int num = va_arg(args, int);
+                char str[20];  // buffer to hold the number as a string
+                snprintf(str, sizeof(str), "%d", num);
+                for (int i = 0; str[i] != '\0'; i++) {
+                    screenprintCharacter(str[i], (point2d_t){x_position, y_position}, color);
+                    x_position += 6;  // Increment x for the next character
+                }
+            }
+            // Add cases for other format specifiers (e.g., %s for strings)
+        } else if (*ptr == '\n') {
+            // Handle newline '\n'
+            x_position = original_x;  // Reset x position to the original starting point
+            y_position += 8;  // Move y position down by one row (adjust based on your font height)
+        } else {
+            // Regular character (no format specifier)
+            screenprintCharacter(*ptr, (point2d_t){x_position, y_position}, color);
+            x_position += 8;  // Increment x for the next character
+        }
     }
+
+    va_end(args);
 }
+
+

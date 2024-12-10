@@ -92,7 +92,7 @@ int main( void )
 		if (boxPosition.DR.x >= 1200){angle = 180;}
 		else if (boxPosition.DR.x <= 100){angle = 0;}
 		if(count++ >= 3 ){count = 0;}
-		// screenprintf(white, (point2d_t){100, 200}, "hello world");
+		screenprintf(white, (point2d_t){100, 200}, "according to all known laws of aviation, \nthere is no way a bee should be able to fly. \nits wings are too small to get its fat little body off the ground. \nthe bee, of course, flies anyway because bees don't care what humans think is impossible.");
 	}
 }
 
