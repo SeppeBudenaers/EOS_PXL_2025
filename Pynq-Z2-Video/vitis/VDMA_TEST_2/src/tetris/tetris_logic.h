@@ -1,9 +1,11 @@
 #include "tetris_types.h"
 #include <stdio.h> 
 #include <stdlib.h>
+#ifdef _WIN32
 #include <conio.h>
 #include <time.h>
 #include <windows.h> // For Sleep()
+#endif
 Playfield moveablefield = {0};
 Playfield Inmovablefield = {0};
 Playfield displayfield = {0};
