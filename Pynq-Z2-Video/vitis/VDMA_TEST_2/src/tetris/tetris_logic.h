@@ -41,7 +41,6 @@ int isValidPosition(int piece_x, int piece_y, int piece_type,int piece_rotation,
 
 void printBoardWithPiece() {
     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
-    DrawTetrisBackground((RGB_t){100,100,100});
     for (int y = 0; y < PLAYFIELD_HEIGHT; y++) {
         for (int x = 0; x < PLAYFIELD_WIDTH; x++) {
             if (1 <= displayfield[x][y] && displayfield[x][y] <= 7) {

@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-21:46:23 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+21:52:39 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -35,19 +35,19 @@ In file included from ../src/tetris/tetris_types.h:16,
    43 |     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
       |     ^~~~~~~~~~~~~~~~
 ../src/tetris/tetris_logic.h: In function 'movePiece':
-../src/tetris/tetris_logic.h:103:37: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
-  103 |             player_piece_rotation = rand() % 4;
+../src/tetris/tetris_logic.h:102:37: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+  102 |             player_piece_rotation = rand() % 4;
       |                                     ^~~~
 ../src/tetris/tetris_logic.h: At top level:
-../src/tetris/tetris_logic.h:124:6: warning: conflicting types for 'combindingfields'; have 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
-  124 | void combindingfields(Playfield* input1, Playfield* input2, Playfield* output) {
+../src/tetris/tetris_logic.h:123:6: warning: conflicting types for 'combindingfields'; have 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
+  123 | void combindingfields(Playfield* input1, Playfield* input2, Playfield* output) {
       |      ^~~~~~~~~~~~~~~~
 ../src/tetris/tetris_logic.h:43:5: note: previous implicit declaration of 'combindingfields' with type 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
    43 |     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
       |     ^~~~~~~~~~~~~~~~
 ../src/tetris/tetris_logic.h: In function 'gameLoop':
-../src/tetris/tetris_logic.h:152:9: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-  152 |         sleep(1);  // Sleep for 50 ms
+../src/tetris/tetris_logic.h:151:9: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  151 |         sleep(1);  // Sleep for 50 ms
       |         ^~~~~
 ../src/freertos_hello_world.c: In function 'main':
 ../src/freertos_hello_world.c:87:11: warning: unused variable 'angle' [-Wunused-variable]
@@ -97,6 +97,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 102240	   4404	  89928	 196572	  2ffdc	VDMA_TEST_2.elf
+ 102176	   4404	  89928	 196508	  2ff9c	VDMA_TEST_2.elf
 'Finished building: VDMA_TEST_2.elf.size'
 ' '

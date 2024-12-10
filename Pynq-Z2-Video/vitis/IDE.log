@@ -6629,3 +6629,68 @@ con
 
 21:46:59 INFO  : Launch script is exported to file 'C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
 21:47:43 INFO  : Disconnected from the channel tcfchan#16.
+21:52:16 DEBUG : Logs will be stored at 'C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/IDE.log'.
+21:52:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\temp_xsdb_launch_script.tcl
+21:52:17 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+21:52:17 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+21:52:17 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+21:52:20 INFO  : XSCT server has started successfully.
+21:52:20 INFO  : plnx-install-location is set to ''
+21:52:20 INFO  : Successfully done setting XSCT server connection channel  
+21:52:20 INFO  : Successfully done setting workspace for the tool. 
+21:52:22 INFO  : Successfully done query RDI_DATADIR 
+21:52:22 INFO  : Platform repository initialization has completed.
+21:52:22 INFO  : Registering command handlers for Vitis TCF services
+21:52:36 INFO  : Checking for BSP changes to sync application flags for project 'VDMA_TEST_2'...
+21:52:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:52:47 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:52:47 INFO  : 'jtag frequency' command is executed.
+21:52:47 INFO  : Context for 'APU' is selected.
+21:52:47 INFO  : System reset is completed.
+21:52:50 INFO  : 'after 3000' command is executed.
+21:52:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:52:52 INFO  : Device configured successfully with "C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit"
+21:52:52 INFO  : Context for 'APU' is selected.
+21:52:53 INFO  : Hardware design and registers information is loaded from 'C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:52:53 INFO  : 'configparams force-mem-access 1' command is executed.
+21:52:53 INFO  : Context for 'APU' is selected.
+21:52:53 INFO  : Sourcing of 'C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl' is done.
+21:52:53 INFO  : 'ps7_init' command is executed.
+21:52:53 INFO  : 'ps7_post_config' command is executed.
+21:52:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:54 INFO  : The application 'C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:52:54 INFO  : 'configparams force-mem-access 0' command is executed.
+21:52:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/Debug/VDMA_TEST_2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:52:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:54 INFO  : 'con' command is executed.
+21:52:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:52:54 INFO  : Launch script is exported to file 'C:\PXL\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2_system\_ide\scripts\debugger_vdma_test_2-default.tcl'
+21:54:18 INFO  : Disconnected from the channel tcfchan#1.
