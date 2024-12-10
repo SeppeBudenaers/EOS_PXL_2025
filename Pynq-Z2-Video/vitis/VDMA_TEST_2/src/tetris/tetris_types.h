@@ -1,5 +1,18 @@
 #include <stdint.h>
 
+#define PLAYFIELD_WIDTH 10
+#define PLAYFIELD_HEIGHT 20
+
+#define RESET "\033[0m"
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define YELLOW "\033[33m"
+#define BLUE "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN "\033[36m"
+#define WHITE "\033[37m"
+const char *colors[8] = {RESET, CYAN, YELLOW, MAGENTA, BLUE, WHITE, RED, GREEN};
+
 typedef enum {
     I_Block =  1,
     J_Block =  2,
@@ -30,7 +43,7 @@ typedef enum{
     col_3
 }column;
 
-typedef uint8_t Playfield[10][20];
+typedef uint8_t Playfield[PLAYFIELD_WIDTH][PLAYFIELD_HEIGHT];
 
 typedef uint8_t BlockArray[4][4];
 
@@ -75,10 +88,10 @@ void initializeBlocks() {
     0 x 0 0
     0 x 0 0
     */
-    Blocks[I_Block][rot_180][col_1][row_0] = I_Block;
-    Blocks[I_Block][rot_180][col_1][row_1] = I_Block;
-    Blocks[I_Block][rot_180][col_1][row_2] = I_Block;
-    Blocks[I_Block][rot_180][col_1][row_3] = I_Block;
+    Blocks[I_Block][rot_270][col_1][row_0] = I_Block;
+    Blocks[I_Block][rot_270][col_1][row_1] = I_Block;
+    Blocks[I_Block][rot_270][col_1][row_2] = I_Block;
+    Blocks[I_Block][rot_270][col_1][row_3] = I_Block;
 
 
     /* Block J Rotation 0
@@ -205,7 +218,7 @@ void initializeBlocks() {
     Blocks[O_Block][rot_270][col_1][row_1] = O_Block;
     Blocks[O_Block][rot_270][col_2][row_0] = O_Block;
     Blocks[O_Block][rot_270][col_2][row_1] = O_Block;
-
-
 }
+
+
 
