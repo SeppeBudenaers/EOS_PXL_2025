@@ -203,6 +203,7 @@
                   </children>
                 </children>
                 <children xsi:type="basic:PartStack" xmi:id="_DSPtULGQEe-4QPVYJ6QwUA" elementId="PartStack@297ef99f" containerData="5245" selectedElement="_DSPtUbGQEe-4QPVYJ6QwUA">
+                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_DSPtUbGQEe-4QPVYJ6QwUA" elementId="com.xilinx.sdx.assistant.assistantView" ref="_DSQVErGQEe-4QPVYJ6QwUA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:Vitis</tags>
@@ -210,7 +211,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_DSPtUrGQEe-4QPVYJ6QwUA" containerData="8166" selectedElement="_DSPtU7GQEe-4QPVYJ6QwUA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_DSPtUrGQEe-4QPVYJ6QwUA" containerData="8166" selectedElement="_DSPta7GQEe-4QPVYJ6QwUA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_DSPtU7GQEe-4QPVYJ6QwUA" containerData="6429" selectedElement="_DSPtVLGQEe-4QPVYJ6QwUA" horizontal="true">
                 <children xsi:type="basic:PartSashContainer" xmi:id="_DSPtVLGQEe-4QPVYJ6QwUA" containerData="8691" selectedElement="_DSPtVbGQEe-4QPVYJ6QwUA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_DSPtVbGQEe-4QPVYJ6QwUA" elementId="org.eclipse.ui.editorss" containerData="6000" ref="_DSPukbGQEe-4QPVYJ6QwUA"/>
@@ -398,14 +399,11 @@
       <children xsi:type="basic:PartStack" xmi:id="_DSPukrGQEe-4QPVYJ6QwUA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_DSPuk7GQEe-4QPVYJ6QwUA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_DSPuk7GQEe-4QPVYJ6QwUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="freertos_hello_world.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;freertos_hello_world.c&quot; partName=&quot;freertos_hello_world.c&quot; title=&quot;freertos_hello_world.c&quot; tooltip=&quot;VDMA_TEST_2/src/freertos_hello_world.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VDMA_TEST_2/src/freertos_hello_world.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2903&quot; selectionTopPixel=&quot;1518&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;freertos_hello_world.c&quot; partName=&quot;freertos_hello_world.c&quot; title=&quot;freertos_hello_world.c&quot; tooltip=&quot;VDMA_TEST_2/src/freertos_hello_world.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VDMA_TEST_2/src/freertos_hello_world.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;228&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3042&quot; selectionTopPixel=&quot;1518&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_DSPul7GQEe-4QPVYJ6QwUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="videobuffer.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;videobuffer.h&quot; partName=&quot;videobuffer.h&quot; title=&quot;videobuffer.h&quot; tooltip=&quot;VDMA_TEST_2/src/videobuffer.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VDMA_TEST_2/src/videobuffer.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;600&quot; selectionTopPixel=&quot;1408&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -478,6 +476,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view AssistantView.EXPANSION=&quot;VDMA_TEST_2_system,VDMA_TEST_2_system/VDMA_TEST_2&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Vitis</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_DSQVE7GQEe-4QPVYJ6QwUA" elementId="com.xilinx.sdx.assistant.assistantView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -3501,6 +3501,7 @@
   <addons xmi:id="_VhEsYbb6Ee-WWa25Jqtymw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_EsvXELb7Ee-IF6-VBgOr6g" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_nIUoMbcAEe---ra4BKU_tg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_mNRYYbcEEe-veKZBon_rqw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_DSUn4bGQEe-4QPVYJ6QwUA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_DSUn4rGQEe-4QPVYJ6QwUA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_DSUn47GQEe-4QPVYJ6QwUA" elementId="org.eclipse.ui.category.edit" name="Edit"/>

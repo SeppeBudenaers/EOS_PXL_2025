@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-15:35:08 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+16:29:43 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -11,24 +11,16 @@ make --no-print-directory main-build
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
 In file included from ../src/freertos_hello_world.c:23:
 ../src/videobuffer.h: In function 'MoveBoxWithVelocityAndAngle':
-../src/videobuffer.h:182:14: warning: unused variable 'rectHeight' [-Wunused-variable]
-  182 |     uint16_t rectHeight = getHeight(*currentRect);
+../src/videobuffer.h:183:14: warning: unused variable 'rectHeight' [-Wunused-variable]
+  183 |     uint16_t rectHeight = getHeight(*currentRect);
       |              ^~~~~~~~~~
-../src/videobuffer.h:181:14: warning: unused variable 'rectWidth' [-Wunused-variable]
-  181 |     uint16_t rectWidth = getWidth(*currentRect);
+../src/videobuffer.h:182:14: warning: unused variable 'rectWidth' [-Wunused-variable]
+  182 |     uint16_t rectWidth = getWidth(*currentRect);
       |              ^~~~~~~~~
 ../src/videobuffer.h: In function 'screenprintCharacter':
-../src/videobuffer.h:212:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
-  212 |     uint8_t* charBitmap = font8x8_basic[charIndex];
+../src/videobuffer.h:213:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+  213 |     uint8_t* charBitmap = font8x8_basic[charIndex];
       |                           ^~~~~~~~~~~~~
-../src/videobuffer.h: In function 'screenprintf':
-../src/videobuffer.h:236:5: warning: implicit declaration of function 'vsnprintf' [-Wimplicit-function-declaration]
-  236 |     vsnprintf(formattedString, sizeof(formattedString), format, args);
-      |     ^~~~~~~~~
-../src/videobuffer.h:7:1: note: include '<stdio.h>' or provide a declaration of 'vsnprintf'
-    6 | #include "font8x8_basic.h"
-  +++ |+#include <stdio.h>
-    7 | 
 ../src/freertos_hello_world.c: At top level:
 ../src/freertos_hello_world.c:31:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
    31 | static void prvTxTask( void *pvParameters );
@@ -61,6 +53,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  96056	   4396	  88808	 189260	  2e34c	VDMA_TEST_2.elf
+  96610	   4396	  88808	 189814	  2e576	VDMA_TEST_2.elf
 'Finished building: VDMA_TEST_2.elf.size'
 ' '
