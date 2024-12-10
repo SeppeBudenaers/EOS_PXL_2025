@@ -91,6 +91,36 @@ void initializeBlocks() {
     Blocks[J_Block][rot_0][col_0][row_1] = J_Block;
     Blocks[J_Block][rot_0][col_1][row_1] = J_Block;
     Blocks[J_Block][rot_0][col_2][row_1] = J_Block;
+    /* Block J Rotation 90
+    0 x x 0
+    0 x 0 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[J_Block][rot_90][col_1][row_0] = J_Block;
+    Blocks[J_Block][rot_90][col_2][row_0] = J_Block;
+    Blocks[J_Block][rot_90][col_1][row_1] = J_Block;
+    Blocks[J_Block][rot_90][col_1][row_2] = J_Block;
+    /* Block J Rotation 180
+    0 0 0 0
+    x x x 0
+    0 0 x 0
+    0 0 0 0
+    */
+    Blocks[J_Block][rot_180][col_0][row_1] = J_Block;
+    Blocks[J_Block][rot_180][col_1][row_1] = J_Block;
+    Blocks[J_Block][rot_180][col_2][row_1] = J_Block;
+    Blocks[J_Block][rot_180][col_2][row_2] = J_Block;
+    /* Block J Rotation 180
+    0 x 0 0
+    0 x 0 0
+    x x 0 0
+    0 0 0 0
+    */
+    Blocks[J_Block][rot_270][col_1][row_0] = J_Block;
+    Blocks[J_Block][rot_270][col_1][row_1] = J_Block;
+    Blocks[J_Block][rot_270][col_1][row_2] = J_Block;
+    Blocks[J_Block][rot_270][col_0][row_2] = J_Block;
 
 }
 
