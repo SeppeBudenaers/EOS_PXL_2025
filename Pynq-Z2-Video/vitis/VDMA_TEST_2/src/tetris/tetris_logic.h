@@ -1,4 +1,5 @@
 #include "tetris_types.h"
+
 #ifdef _WIN32
 #include <stdio.h> 
 #include <stdlib.h>
@@ -6,6 +7,7 @@
 #include <time.h>
 #include <windows.h> // For Sleep()
 #endif
+
 Playfield moveablefield = {0};
 Playfield Inmovablefield = {0};
 Playfield displayfield = {0};
@@ -39,6 +41,22 @@ int isValidPosition(int piece_x, int piece_y, int piece_type,int piece_rotation,
     return 1;  // Valid position
 }
 
+#ifdef _WIN32
+void printBoardWithPiece() {
+    combindingfields(&moveablefield, &Inmovablefield, &displayfield);
+    system("cls");
+    for (int y = 0; y < PLAYFIELD_HEIGHT; y++) {
+        for (int x = 0; x < PLAYFIELD_WIDTH; x++) {
+            if (1 <= displayfield[x][y] && displayfield[x][y] <= 7) {
+                printf("%s#", colors[displayfield[x][y]]);
+            } else {
+                printf("%s.", RESET);
+            }
+        }
+        printf("%s\n", RESET);
+    }
+}
+#else
 void printBoardWithPiece() {
     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
     for (int y = 0; y < PLAYFIELD_HEIGHT; y++) {
@@ -51,6 +69,8 @@ void printBoardWithPiece() {
         }
     }
 }
+#endif
+
 
 void clearPiece(int piece_x, int piece_y, Playfield* field) {
     for (int y = 0; y < 4; y++) {
@@ -135,7 +155,24 @@ void combindingfields(Playfield* input1, Playfield* input2, Playfield* output) {
     }
 }
 
-
+#ifdef _WIN32
+void gameLoop() {
+    spawnPiece(player_piece_x, player_piece_y, player_piece_type, player_piece_rotation, &moveablefield);
+    printBoardWithPiece();
+    while (1) {
+        if (_kbhit()) {  // Check if a key is pressed
+            char input = _getch();
+            if (input == 'a' || input == 'd' || input == 's') {
+                movePiece(input, &moveablefield);
+            } else if (input == 'w') {  // Rotate piece with 'w'
+                rotatePiece(&moveablefield);
+            }
+            printBoardWithPiece();
+        }
+        Sleep(50);  // Sleep for 50 ms
+    }
+}
+#else
 void gameLoop() {
 
     while (1) {
@@ -151,3 +188,5 @@ void gameLoop() {
         sleep(1);  // Sleep for 50 ms
     }
 }
+#endif
+
