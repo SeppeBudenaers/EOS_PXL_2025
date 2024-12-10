@@ -122,5 +122,49 @@ void initializeBlocks() {
     Blocks[J_Block][rot_270][col_1][row_2] = J_Block;
     Blocks[J_Block][rot_270][col_0][row_2] = J_Block;
 
+
+    /* Block L Rotation 0
+    0 0 x 0
+    x x x 0
+    0 0 0 0
+    0 0 0 0
+    */
+    Blocks[L_Block][rot_0][col_0][row_1] = L_Block;
+    Blocks[L_Block][rot_0][col_1][row_1] = L_Block;
+    Blocks[L_Block][rot_0][col_2][row_1] = L_Block;
+    Blocks[L_Block][rot_0][col_2][row_0] = L_Block;
+    /* Block L Rotation 90
+    0 x 0 0
+    0 x 0 0
+    0 x x 0
+    0 0 0 0
+    */
+    Blocks[L_Block][rot_90][col_1][row_0] = L_Block;
+    Blocks[L_Block][rot_90][col_1][row_1] = L_Block;
+    Blocks[L_Block][rot_90][col_1][row_2] = L_Block;
+    Blocks[L_Block][rot_90][col_2][row_2] = L_Block;
+    /* Block L Rotation 180
+    0 0 0 0
+    x x x 0
+    x 0 0 0
+    0 0 0 0
+    */
+    Blocks[L_Block][rot_180][col_0][row_1] = L_Block;
+    Blocks[L_Block][rot_180][col_1][row_1] = L_Block;
+    Blocks[L_Block][rot_180][col_2][row_1] = L_Block;
+    Blocks[L_Block][rot_180][col_0][row_2] = L_Block;
+    /* Block L Rotation 270
+    x x 0 0
+    0 x 0 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[L_Block][rot_270][col_1][row_0] = L_Block;
+    Blocks[L_Block][rot_270][col_1][row_1] = L_Block;
+    Blocks[L_Block][rot_270][col_1][row_2] = L_Block;
+    Blocks[L_Block][rot_270][col_0][row_0] = L_Block;
+
+
+
 }
 
