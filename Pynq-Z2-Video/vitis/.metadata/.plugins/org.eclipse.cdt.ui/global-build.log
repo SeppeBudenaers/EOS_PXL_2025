@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-18:00:41 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+21:46:23 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,71 +8,95 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/freertos_hello_world.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
-In file included from ../src/freertos_hello_world.c:23:
-../src/videobuffer.h: In function 'MoveBoxWithVelocityAndAngle':
-../src/videobuffer.h:206:14: warning: unused variable 'rectHeight' [-Wunused-variable]
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+In file included from ../src/tetris/tetris_types.h:16,
+                 from ../src/tetris/tetris_logic.h:1,
+                 from ../src/freertos_hello_world.c:23:
+../src/tetris/../videobuffer.h: In function 'MoveBoxWithVelocityAndAngle':
+../src/tetris/../videobuffer.h:206:14: warning: unused variable 'rectHeight' [-Wunused-variable]
   206 |     uint16_t rectHeight = getHeight(*currentRect);
       |              ^~~~~~~~~~
-../src/videobuffer.h:205:14: warning: unused variable 'rectWidth' [-Wunused-variable]
+../src/tetris/../videobuffer.h:205:14: warning: unused variable 'rectWidth' [-Wunused-variable]
   205 |     uint16_t rectWidth = getWidth(*currentRect);
       |              ^~~~~~~~~
-../src/videobuffer.h: In function 'DrawTetrisBackground':
-../src/videobuffer.h:290:15: warning: unused variable 'initloc' [-Wunused-variable]
+../src/tetris/../videobuffer.h: In function 'DrawTetrisBackground':
+../src/tetris/../videobuffer.h:290:15: warning: unused variable 'initloc' [-Wunused-variable]
   290 |     point2d_t initloc = {TETRIS_GRID_X,TETRIS_GRID_Y};
       |               ^~~~~~~
-../src/videobuffer.h: In function 'screenprintCharacter':
-../src/videobuffer.h:307:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+../src/tetris/../videobuffer.h: In function 'screenprintCharacter':
+../src/tetris/../videobuffer.h:307:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
   307 |     uint8_t* charBitmap = font8x8_basic[charIndex];
       |                           ^~~~~~~~~~~~~
+../src/tetris/tetris_logic.h: In function 'isValidPosition':
+../src/tetris/tetris_logic.h:27:40: warning: suggest parentheses around comparison in operand of '!=' [-Wparentheses]
+   27 |                 if (new_x < 0 || new_x >= PLAYFIELD_WIDTH  !=0) {
+../src/tetris/tetris_logic.h: In function 'printBoardWithPiece':
+../src/tetris/tetris_logic.h:43:5: warning: implicit declaration of function 'combindingfields' [-Wimplicit-function-declaration]
+   43 |     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
+      |     ^~~~~~~~~~~~~~~~
+../src/tetris/tetris_logic.h: In function 'movePiece':
+../src/tetris/tetris_logic.h:103:37: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+  103 |             player_piece_rotation = rand() % 4;
+      |                                     ^~~~
+../src/tetris/tetris_logic.h: At top level:
+../src/tetris/tetris_logic.h:124:6: warning: conflicting types for 'combindingfields'; have 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
+  124 | void combindingfields(Playfield* input1, Playfield* input2, Playfield* output) {
+      |      ^~~~~~~~~~~~~~~~
+../src/tetris/tetris_logic.h:43:5: note: previous implicit declaration of 'combindingfields' with type 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
+   43 |     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
+      |     ^~~~~~~~~~~~~~~~
+../src/tetris/tetris_logic.h: In function 'gameLoop':
+../src/tetris/tetris_logic.h:152:9: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  152 |         sleep(1);  // Sleep for 50 ms
+      |         ^~~~~
 ../src/freertos_hello_world.c: In function 'main':
-../src/freertos_hello_world.c:86:11: warning: unused variable 'angle' [-Wunused-variable]
-   86 |     float angle = 5;    // Angle in degrees
+../src/freertos_hello_world.c:87:11: warning: unused variable 'angle' [-Wunused-variable]
+   87 |     float angle = 5;    // Angle in degrees
       |           ^~~~~
-../src/freertos_hello_world.c:85:11: warning: unused variable 'velocity' [-Wunused-variable]
-   85 |     float velocity = 2;  // Speed of the box
+../src/freertos_hello_world.c:86:11: warning: unused variable 'velocity' [-Wunused-variable]
+   86 |     float velocity = 2;  // Speed of the box
       |           ^~~~~~~~
-../src/freertos_hello_world.c:79:25: warning: unused variable 'boxPosition' [-Wunused-variable]
-   79 |         Rectangle_Loc_t boxPosition = {
+../src/freertos_hello_world.c:80:25: warning: unused variable 'boxPosition' [-Wunused-variable]
+   80 |         Rectangle_Loc_t boxPosition = {
       |                         ^~~~~~~~~~~
-../src/freertos_hello_world.c:74:15: warning: variable 'white' set but not used [-Wunused-but-set-variable]
-   74 |         RGB_t white;
+../src/freertos_hello_world.c:75:15: warning: variable 'white' set but not used [-Wunused-but-set-variable]
+   75 |         RGB_t white;
       |               ^~~~~
-../src/freertos_hello_world.c:70:15: warning: variable 'black' set but not used [-Wunused-but-set-variable]
-   70 |         RGB_t black;
+../src/freertos_hello_world.c:71:15: warning: variable 'black' set but not used [-Wunused-but-set-variable]
+   71 |         RGB_t black;
       |               ^~~~~
 ../src/freertos_hello_world.c: At top level:
-../src/freertos_hello_world.c:31:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
-   31 | static void prvTxTask( void *pvParameters );
+../src/freertos_hello_world.c:32:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
+   32 | static void prvTxTask( void *pvParameters );
       |             ^~~~~~~~~
-../src/freertos_hello_world.c:32:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
-   32 | static void prvRxTask( void *pvParameters );
+../src/freertos_hello_world.c:33:13: warning: 'prvRxTask' declared 'static' but never defined [-Wunused-function]
+   33 | static void prvRxTask( void *pvParameters );
       |             ^~~~~~~~~
-../src/freertos_hello_world.c:33:13: warning: 'vTimerCallback' declared 'static' but never defined [-Wunused-function]
-   33 | static void vTimerCallback( TimerHandle_t pxTimer );
+../src/freertos_hello_world.c:34:13: warning: 'vTimerCallback' declared 'static' but never defined [-Wunused-function]
+   34 | static void vTimerCallback( TimerHandle_t pxTimer );
       |             ^~~~~~~~~~~~~~
-../src/freertos_hello_world.c:41:22: warning: 'xTimer' defined but not used [-Wunused-variable]
-   41 | static TimerHandle_t xTimer = NULL;
+../src/freertos_hello_world.c:42:22: warning: 'xTimer' defined but not used [-Wunused-variable]
+   42 | static TimerHandle_t xTimer = NULL;
       |                      ^~~~~~
-../src/freertos_hello_world.c:40:22: warning: 'xQueue' defined but not used [-Wunused-variable]
-   40 | static QueueHandle_t xQueue = NULL;
+../src/freertos_hello_world.c:41:22: warning: 'xQueue' defined but not used [-Wunused-variable]
+   41 | static QueueHandle_t xQueue = NULL;
       |                      ^~~~~~
-../src/freertos_hello_world.c:39:21: warning: 'xRxTask' defined but not used [-Wunused-variable]
-   39 | static TaskHandle_t xRxTask;
+../src/freertos_hello_world.c:40:21: warning: 'xRxTask' defined but not used [-Wunused-variable]
+   40 | static TaskHandle_t xRxTask;
       |                     ^~~~~~~
-../src/freertos_hello_world.c:38:21: warning: 'xTxTask' defined but not used [-Wunused-variable]
-   38 | static TaskHandle_t xTxTask;
+../src/freertos_hello_world.c:39:21: warning: 'xTxTask' defined but not used [-Wunused-variable]
+   39 | static TaskHandle_t xTxTask;
       |                     ^~~~~~~
 'Finished building: ../src/freertos_hello_world.c'
 ' '
 'Building target: VDMA_TEST_2.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "VDMA_TEST_2.elf"  ./src/freertos_hello_world.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -lm -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxiltimer,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "VDMA_TEST_2.elf"  ./src/tetris/visualiser.o  ./src/freertos_hello_world.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -lm -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxiltimer,-lxil,-lgcc,-lc,--end-group
 'Finished building target: VDMA_TEST_2.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  99416	   4396	  89320	 193132	  2f26c	VDMA_TEST_2.elf
+ 102240	   4404	  89928	 196572	  2ffdc	VDMA_TEST_2.elf
 'Finished building: VDMA_TEST_2.elf.size'
 ' '

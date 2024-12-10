@@ -5,7 +5,7 @@
 #include <stdarg.h>
 #include <math.h>
 #include "font8x8_basic.h"
-#include "tetris/tetris_types.h"
+
 
 #define DISP_WIDTH (1280)
 #define DISP_HEIGHT (720)

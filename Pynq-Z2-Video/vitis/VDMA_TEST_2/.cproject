@@ -103,7 +103,7 @@
                                 								
                                 <option id="xilinx.gnu.c.link.option.ldflags.647150540" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.c.link.option.libs.247536132" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                <option id="xilinx.gnu.c.link.option.libs.247536132" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="m"/>
                                     								
@@ -261,7 +261,7 @@
                                 								
                                 <option id="xilinx.gnu.c.link.option.ldflags.986350628" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.c.link.option.libs.1256882884" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
+                                <option id="xilinx.gnu.c.link.option.libs.1256882884" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="m"/>
                                     								

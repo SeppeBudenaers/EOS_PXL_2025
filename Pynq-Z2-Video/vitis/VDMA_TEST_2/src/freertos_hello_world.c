@@ -20,7 +20,8 @@
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "xil_io.h"
-#include "videobuffer.h"
+#include "tetris/tetris_logic.h"
+
 #define TIMER_ID	1
 #define DELAY_10_SECONDS	10000UL
 #define DELAY_1_SECOND		1000UL
@@ -105,12 +106,17 @@ int main( void )
 	DrawTestBox(RGB_Teal, (point2d_t){310, 50});
 	DrawTestBox(RGB_Violet, (point2d_t){330, 50});
 
+	initializeBlocks();
+	spawnPiece(player_piece_x, player_piece_y, player_piece_type, player_piece_rotation, &moveablefield);
+	printBoardWithPiece();
+	gameLoop();
 	for( ;; ){
-		
-		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,1});
-		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,2});
-		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,3});
-		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,4});
+
+
+//		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,1});
+//		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,2});
+//		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,3});
+//		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,4});
 		//screenprintf(white, (point2d_t){100, 200}, "according to all known laws of aviation, \nthere is no way a bee should be able to fly. \nits wings are too small to get its fat little body off the ground. \nthe bee, of course, flies anyway because bees don't care what humans think is impossible.");
 	}
 }

@@ -2,7 +2,7 @@
 
 #define PLAYFIELD_WIDTH 10
 #define PLAYFIELD_HEIGHT 20
-
+#ifdef _WIN32
 #define RESET "\033[0m"
 #define RED "\033[31m"
 #define GREEN "\033[32m"
@@ -12,6 +12,10 @@
 #define CYAN "\033[36m"
 #define WHITE "\033[37m"
 const char *colors[8] = {RESET, CYAN, YELLOW, MAGENTA, BLUE, WHITE, RED, GREEN};
+#else
+#include "../videobuffer.h"
+const RGB_t colors[8] = {(RGB_t){100,100,100}, RGB_Cyan, RGB_Blue, RGB_Orange, RGB_Yellow, RGB_White, RGB_White, RGB_White};
+#endif
 
 typedef enum {
     I_Block =  1,

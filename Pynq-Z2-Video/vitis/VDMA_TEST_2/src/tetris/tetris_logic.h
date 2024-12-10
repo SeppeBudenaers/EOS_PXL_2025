@@ -1,7 +1,7 @@
 #include "tetris_types.h"
+#ifdef _WIN32
 #include <stdio.h> 
 #include <stdlib.h>
-#ifdef _WIN32
 #include <conio.h>
 #include <time.h>
 #include <windows.h> // For Sleep()
@@ -41,16 +41,15 @@ int isValidPosition(int piece_x, int piece_y, int piece_type,int piece_rotation,
 
 void printBoardWithPiece() {
     combindingfields(&moveablefield, &Inmovablefield, &displayfield);
-    system("cls");
+    DrawTetrisBackground((RGB_t){100,100,100});
     for (int y = 0; y < PLAYFIELD_HEIGHT; y++) {
         for (int x = 0; x < PLAYFIELD_WIDTH; x++) {
             if (1 <= displayfield[x][y] && displayfield[x][y] <= 7) {
-                printf("%s#", colors[displayfield[x][y]]);
+            	DrawTetrisBlock(colors[displayfield[x][y]], (point2d_t){x,y});
             } else {
-                printf("%s.", RESET);
+            	DrawTetrisBlockEmpty((RGB_t){100,100,100},(point2d_t){x,y});
             }
         }
-        printf("%s\n", RESET);
     }
 }
 
@@ -139,11 +138,10 @@ void combindingfields(Playfield* input1, Playfield* input2, Playfield* output) {
 
 
 void gameLoop() {
-    spawnPiece(player_piece_x, player_piece_y, player_piece_type, player_piece_rotation, &moveablefield);
-    printBoardWithPiece();
+
     while (1) {
-        if (_kbhit()) {  // Check if a key is pressed
-            char input = _getch();
+        if (1) {  // Check if a key is pressed
+            char input = 's';
             if (input == 'a' || input == 'd' || input == 's') {
                 movePiece(input, &moveablefield);
             } else if (input == 'w') {  // Rotate piece with 'w'
@@ -151,6 +149,6 @@ void gameLoop() {
             }
             printBoardWithPiece();
         }
-        Sleep(50);  // Sleep for 50 ms
+        sleep(1);  // Sleep for 50 ms
     }
 }

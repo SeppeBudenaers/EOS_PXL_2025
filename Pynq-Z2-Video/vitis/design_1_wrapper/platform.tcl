@@ -24,3 +24,7 @@ platform generate -domains freertos10_xilinx_ps7_cortexa9_0,zynq_fsbl
 platform active {design_1_wrapper}
 platform generate -domains 
 platform generate
+platform generate -domains freertos10_xilinx_ps7_cortexa9_0,zynq_fsbl 
+platform active {design_1_wrapper}
+bsp reload
+platform generate -domains 
