@@ -1,4 +1,4 @@
-16:29:43 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
+18:00:41 **** Incremental Build of configuration Debug for project VDMA_TEST_2 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -9,16 +9,36 @@ make --no-print-directory main-build
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
 In file included from ../src/freertos_hello_world.c:23:
 ../src/videobuffer.h: In function 'MoveBoxWithVelocityAndAngle':
-../src/videobuffer.h:183:14: warning: unused variable 'rectHeight' [-Wunused-variable]
-  183 |     uint16_t rectHeight = getHeight(*currentRect);
+../src/videobuffer.h:206:14: warning: unused variable 'rectHeight' [-Wunused-variable]
+  206 |     uint16_t rectHeight = getHeight(*currentRect);
       |              ^~~~~~~~~~
-../src/videobuffer.h:182:14: warning: unused variable 'rectWidth' [-Wunused-variable]
-  182 |     uint16_t rectWidth = getWidth(*currentRect);
+../src/videobuffer.h:205:14: warning: unused variable 'rectWidth' [-Wunused-variable]
+  205 |     uint16_t rectWidth = getWidth(*currentRect);
       |              ^~~~~~~~~
+../src/videobuffer.h: In function 'DrawTetrisBackground':
+../src/videobuffer.h:290:15: warning: unused variable 'initloc' [-Wunused-variable]
+  290 |     point2d_t initloc = {TETRIS_GRID_X,TETRIS_GRID_Y};
+      |               ^~~~~~~
 ../src/videobuffer.h: In function 'screenprintCharacter':
-../src/videobuffer.h:213:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
-  213 |     uint8_t* charBitmap = font8x8_basic[charIndex];
+../src/videobuffer.h:307:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+  307 |     uint8_t* charBitmap = font8x8_basic[charIndex];
       |                           ^~~~~~~~~~~~~
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:86:11: warning: unused variable 'angle' [-Wunused-variable]
+   86 |     float angle = 5;    // Angle in degrees
+      |           ^~~~~
+../src/freertos_hello_world.c:85:11: warning: unused variable 'velocity' [-Wunused-variable]
+   85 |     float velocity = 2;  // Speed of the box
+      |           ^~~~~~~~
+../src/freertos_hello_world.c:79:25: warning: unused variable 'boxPosition' [-Wunused-variable]
+   79 |         Rectangle_Loc_t boxPosition = {
+      |                         ^~~~~~~~~~~
+../src/freertos_hello_world.c:74:15: warning: variable 'white' set but not used [-Wunused-but-set-variable]
+   74 |         RGB_t white;
+      |               ^~~~~
+../src/freertos_hello_world.c:70:15: warning: variable 'black' set but not used [-Wunused-but-set-variable]
+   70 |         RGB_t black;
+      |               ^~~~~
 ../src/freertos_hello_world.c: At top level:
 ../src/freertos_hello_world.c:31:13: warning: 'prvTxTask' declared 'static' but never defined [-Wunused-function]
    31 | static void prvTxTask( void *pvParameters );
@@ -51,9 +71,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VDMA_TEST_2.elf  |tee "VDMA_TEST_2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  96610	   4396	  88808	 189814	  2e576	VDMA_TEST_2.elf
+  99416	   4396	  89320	 193132	  2f26c	VDMA_TEST_2.elf
 'Finished building: VDMA_TEST_2.elf.size'
 ' '
 
-16:29:44 Build Finished (took 710ms)
+18:00:42 Build Finished (took 703ms)
 

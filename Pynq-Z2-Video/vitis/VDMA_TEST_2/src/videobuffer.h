@@ -5,6 +5,7 @@
 #include <stdarg.h>
 #include <math.h>
 #include "font8x8_basic.h"
+#include "tetris/tetris_types.h"
 
 #define DISP_WIDTH (1280)
 #define DISP_HEIGHT (720)
@@ -18,6 +19,9 @@
 #define DISP_FLUSH Xil_DCacheFlushRange((UINTPTR)DISP_FIRST_BUFFER_OFFSET, DISP_SIZE_BYTES)
 
 #define CHAR_WIDTH 8
+#define TETRIS_BOXSIZE 30
+#define TETRIS_GRID_X 490
+#define TETRIS_GRID_Y 60
 
 // Define constants
 #define PI 3.14159265359
@@ -29,6 +33,25 @@ typedef struct {
     uint8_t green;
     uint8_t blue;
 } RGB_t;
+
+
+#define RGB_Black   (RGB_t){0,0,0}
+#define RGB_White   (RGB_t){255,255,255}
+#define RGB_Red     (RGB_t){255,0,0}
+#define RGB_Green   (RGB_t){0,255,0}
+#define RGB_Blue    (RGB_t){0,0,255}
+#define RGB_Yellow  (RGB_t){255,255,0}
+#define RGB_Cyan    (RGB_t){0,255,255}
+#define RGB_Magenta (RGB_t){255,0,255}
+#define RGB_Orange  (RGB_t){255,165,0}
+#define RGB_Purple  (RGB_t){128,0,128}
+#define RGB_Pink    (RGB_t){255,192,203}
+#define RGB_Brown   (RGB_t){139,69,19}
+#define RGB_Lime    (RGB_t){0,255,0}
+#define RGB_Teal    (RGB_t){0,128,128}
+#define RGB_Violet  (RGB_t){238,130,238}
+
+
 
 typedef struct{
     uint16_t x;
@@ -119,8 +142,8 @@ uint32_t ConvertRGB(RGB_t input) {
 
     // Pack the RGB values in XRBG format
     output |= ((uint32_t)input.red << 16);   // Red in the second byte
-    output |= ((uint32_t)input.green << 8);  // Green in the third byte
-    output |= ((uint32_t)input.blue);        // Blue in the least significant byte
+    output |= ((uint32_t)input.blue << 8);  // Green in the third byte
+    output |= ((uint32_t)input.green);        // Blue in the least significant byte
 
     // The most significant byte (X) remains undefined (could be zero)
     // By default, it stays as 0 due to initialization.
@@ -204,6 +227,77 @@ void MoveBoxWithVelocityAndAngle(Buffertype buffer,Rectangle_Loc_t *currentRect,
     Movebox(buffer, move);
 }
 
+void DrawTestBox(RGB_t color, point2d_t location){
+    Rectangle_Loc_t Box = {
+        .UL = location,
+		.DR = {location.x+20, location.y+20}
+    };
+    Drawbox(color, First_buffer, Box);
+}
+
+void DrawTetrisBlock(RGB_t color, point2d_t location){
+    /*
+    size = 20x20
+    black border of one pixel,
+    with a white corner in the upper left, at relative
+    1,1 to 5,5
+    */
+
+    point2d_t AdjustedLoc = {TETRIS_GRID_X+(location.x*TETRIS_BOXSIZE),TETRIS_GRID_Y+(location.y*TETRIS_BOXSIZE)};
+    Rectangle_Loc_t Box = {
+        .UL = AdjustedLoc,
+		.DR = {AdjustedLoc.x+TETRIS_BOXSIZE, AdjustedLoc.y+TETRIS_BOXSIZE}
+    };
+
+    //first draw the black border
+    Drawbox(RGB_Black, First_buffer,Box);
+
+    Box.UL.x+=1;// go 1 in relative
+    Box.UL.y+=1;
+    Box.DR.x-=1;
+    Box.DR.y-=1;
+
+    Drawbox(color,First_buffer, Box);
+
+    Box.DR.x = (Box.UL.x+14);
+    Box.DR.y = (Box.UL.y+14);
+
+    Drawbox(RGB_White, First_buffer, Box);
+
+
+    DISP_FLUSH;
+}
+
+void DrawTetrisBlockEmpty(RGB_t Background, point2d_t location){
+    point2d_t AdjustedLoc = {TETRIS_GRID_X+(location.x*TETRIS_BOXSIZE),TETRIS_GRID_Y+(location.y*TETRIS_BOXSIZE)};
+    Rectangle_Loc_t Box = {
+        .UL = AdjustedLoc,
+		.DR = {AdjustedLoc.x+TETRIS_BOXSIZE, AdjustedLoc.y+TETRIS_BOXSIZE}
+    };
+
+    //first draw the black border
+    Drawbox(RGB_Black, First_buffer,Box);
+
+    Box.UL.x+=1;// go 1 in relative
+    Box.UL.y+=1;
+    Box.DR.x-=1;
+    Box.DR.y-=1;
+
+    Drawbox(Background,First_buffer, Box);
+}
+
+void DrawTetrisBackground(RGB_t Background){
+    point2d_t initloc = {TETRIS_GRID_X,TETRIS_GRID_Y};
+    for (int y = 0; y < 20; y++)
+    {
+        for (int x = 0; x < 10; x++)
+        {
+            DrawTetrisBlockEmpty(Background, (point2d_t){x,y});
+        }
+        
+    }
+    
+}
 
 void screenprintCharacter(char character, point2d_t location, RGB_t color) {
     // Get the font index for the character

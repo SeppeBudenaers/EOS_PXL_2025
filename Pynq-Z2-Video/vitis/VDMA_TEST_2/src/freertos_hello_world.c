@@ -85,14 +85,33 @@ int main( void )
     float velocity = 2;  // Speed of the box
     float angle = 5;    // Angle in degrees
 
-	outputColor(black, Triple_buffer);
+	outputColor((RGB_t){100,100,100}, Triple_buffer);// background is gray
+
+	DrawTetrisBackground((RGB_t){100,100,100});
+
+	DrawTestBox(RGB_Black, (point2d_t){50, 50});
+	DrawTestBox(RGB_White, (point2d_t){70, 50});
+	DrawTestBox(RGB_Red, (point2d_t){90, 50});
+	DrawTestBox(RGB_Green, (point2d_t){110, 50});
+	DrawTestBox(RGB_Blue, (point2d_t){130, 50});
+	DrawTestBox(RGB_Yellow, (point2d_t){150, 50});
+	DrawTestBox(RGB_Cyan, (point2d_t){170, 50});
+	DrawTestBox(RGB_Magenta, (point2d_t){190, 50});
+	DrawTestBox(RGB_Orange, (point2d_t){210, 50});
+	DrawTestBox(RGB_Purple, (point2d_t){230, 50});
+	DrawTestBox(RGB_Pink, (point2d_t){250, 50});
+	DrawTestBox(RGB_Brown, (point2d_t){270, 50});
+	DrawTestBox(RGB_Lime, (point2d_t){290, 50});
+	DrawTestBox(RGB_Teal, (point2d_t){310, 50});
+	DrawTestBox(RGB_Violet, (point2d_t){330, 50});
 
 	for( ;; ){
-		MoveBoxWithVelocityAndAngle(count,&boxPosition,velocity,angle,white,black);
-		if (boxPosition.DR.x >= 1200){angle = 180;}
-		else if (boxPosition.DR.x <= 100){angle = 0;}
-		if(count++ >= 3 ){count = 0;}
-		screenprintf(white, (point2d_t){100, 200}, "according to all known laws of aviation, \nthere is no way a bee should be able to fly. \nits wings are too small to get its fat little body off the ground. \nthe bee, of course, flies anyway because bees don't care what humans think is impossible.");
+		
+		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,1});
+		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,2});
+		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,3});
+		DrawTetrisBlock(RGB_Cyan, (point2d_t){1,4});
+		//screenprintf(white, (point2d_t){100, 200}, "according to all known laws of aviation, \nthere is no way a bee should be able to fly. \nits wings are too small to get its fat little body off the ground. \nthe bee, of course, flies anyway because bees don't care what humans think is impossible.");
 	}
 }
 
