@@ -148,3 +148,27 @@ timestamp=[2024-12-03 17:34:32], mode=BUILD, duration=0:00:01.390, duration_ms=1
 timestamp=[2024-12-03 17:34:44], mode=BUILD, duration=0:00:11.239, duration_ms=11239, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
 timestamp=[2024-12-03 17:36:27], mode=BUILD, duration=0:00:01.275, duration_ms=1275, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
 timestamp=[2024-12-03 17:36:39], mode=BUILD, duration=0:00:11.522, duration_ms=11522, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:03:47], mode=WORKBENCH_START, duration=0:00:07.578, duration_ms=7578, data={}
+timestamp=[2024-12-09 21:03:48], mode=WORKBENCH_UI_INIT, duration=0:00:01.117, duration_ms=1117, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,VDMA_TEST_2,VDMA_TEST_2_system,design_1_wrapper,video_out_pynq_z2_wrapper}
+timestamp=[2024-12-09 21:03:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.169, duration_ms=169, data={}
+timestamp=[2024-12-09 21:29:57], mode=PLATFORM_GENERATION, duration=0:00:02.962, duration_ms=2962, data={name=design_1_wrapper}
+timestamp=[2024-12-09 21:30:00], mode=BUILD, duration=0:00:01.717, duration_ms=1717, data={name=VDMA_TEST_2, configuration=Release, clean_build=false}
+timestamp=[2024-12-09 21:34:13], mode=BUILD, duration=0:00:01.029, duration_ms=1029, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:34:53], mode=BUILD, duration=0:00:00.736, duration_ms=736, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:35:00], mode=BUILD, duration=0:00:06.626, duration_ms=6626, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:35:03], mode=PLATFORM_GENERATION, duration=0:00:02.927, duration_ms=2927, data={name=video_out_pynq_z2_wrapper}
+timestamp=[2024-12-09 21:35:38], mode=BUILD, duration=0:00:00.782, duration_ms=782, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:35:44], mode=BUILD, duration=0:00:06.323, duration_ms=6323, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:36:20], mode=BUILD, duration=0:00:00.772, duration_ms=772, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:36:27], mode=BUILD, duration=0:00:06.322, duration_ms=6322, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:37:29], mode=BUILD, duration=0:00:00.732, duration_ms=732, data={name=VDMA_TEST_2, configuration=Debug, clean_build=false}
+timestamp=[2024-12-09 21:37:36], mode=BUILD, duration=0:00:06.318, duration_ms=6318, data={name=VDMA_TEST_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-12-10 12:51:36], mode=WORKBENCH_START, duration=0:00:10.421, duration_ms=10421, data={}
+timestamp=[2024-12-10 12:51:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.190, duration_ms=190, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,VDMA_TEST_2,VDMA_TEST_2_system,design_1_wrapper,video_out_pynq_z2_wrapper}
+timestamp=[2024-12-10 12:51:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.125, duration_ms=125, data={}
+timestamp=[2024-12-10 14:26:23], mode=WORKBENCH_START, duration=0:00:06.528, duration_ms=6528, data={}
+timestamp=[2024-12-10 14:26:24], mode=WORKBENCH_UI_INIT, duration=0:00:00.830, duration_ms=830, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,VDMA_TEST_2,VDMA_TEST_2_system,design_1_wrapper,video_out_pynq_z2_wrapper}
+timestamp=[2024-12-10 14:26:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.066, duration_ms=66, data={}
+timestamp=[2024-12-10 14:31:40], mode=WORKBENCH_START, duration=0:00:06.420, duration_ms=6420, data={}
+timestamp=[2024-12-10 14:31:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.783, duration_ms=783, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,VDMA_TEST_2,VDMA_TEST_2_system,design_1_wrapper,video_out_pynq_z2_wrapper}
+timestamp=[2024-12-10 14:31:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.059, duration_ms=59, data={}

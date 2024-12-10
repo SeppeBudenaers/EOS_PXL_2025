@@ -3780,3 +3780,377 @@ C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/p
 C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
 
 TRACE::2024-12-03.15:10:51::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:30::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:30::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:30::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:30::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:30::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:30::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened new HwDB with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWReader::Active system found as  video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWReader::Handling sysconfig video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWDomain::checking for install qemu data   : 
+TRACE::2024-12-09.21:14:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-12-09.21:14:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-09.21:14:32::SCWMssOS::No sw design opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::mss exists loading the mss file  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Opened the sw design from mss  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Adding the swdes entry C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system_1
+TRACE::2024-12-09.21:14:32::SCWMssOS::updating the scw layer about changes
+TRACE::2024-12-09.21:14:32::SCWMssOS::Opened the sw design.  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:14:32::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:14:32::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS:: library already available in sw design:  xilrsa:1.8
+TRACE::2024-12-09.21:14:32::SCWMssOS::Saving the mss changes C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-12-09.21:14:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-12-09.21:14:32::SCWMssOS::Commit changes completed.
+TRACE::2024-12-09.21:14:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-12-09.21:14:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:14:32::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWReader::No isolation master present  
+TRACE::2024-12-09.21:14:32::SCWDomain::checking for install qemu data   : 
+TRACE::2024-12-09.21:14:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-12-09.21:14:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:14:32::SCWMssOS::No sw design opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::mss exists loading the mss file  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Opened the sw design from mss  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Adding the swdes entry C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss with des name system_2
+TRACE::2024-12-09.21:14:32::SCWMssOS::updating the scw layer about changes
+TRACE::2024-12-09.21:14:32::SCWMssOS::Opened the sw design.  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Saving the mss changes C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-12-09.21:14:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-12-09.21:14:32::SCWMssOS::Commit changes completed.
+TRACE::2024-12-09.21:14:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-12-09.21:14:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:14:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:14:32::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:14:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:14:32::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_2||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:14:32::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:14:32::SCWReader::No isolation master present  
+LOG::2024-12-09.21:35:02::SCWPlatform::Started generating the artifacts platform video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-12-09.21:35:02::SCWPlatform::Started generating the artifacts for system configuration video_out_pynq_z2_wrapper
+LOG::2024-12-09.21:35:02::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-12-09.21:35:02::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-12-09.21:35:02::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-12-09.21:35:02::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-12-09.21:35:02::SCWSystem::Checking the domain freertos10_xilinx_ps7_cortexa9_0
+LOG::2024-12-09.21:35:02::SCWSystem::Not a boot domain 
+LOG::2024-12-09.21:35:02::SCWSystem::Started Processing the domain freertos10_xilinx_ps7_cortexa9_0
+TRACE::2024-12-09.21:35:02::SCWDomain::Generating domain artifcats
+TRACE::2024-12-09.21:35:02::SCWMssOS::Generating standalone artifcats
+TRACE::2024-12-09.21:35:02::SCWMssOS::Copying the qemu file from  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/resources/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu_args.txt To C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/export/video_out_pynq_z2_wrapper/sw/video_out_pynq_z2_wrapper/qemu/
+TRACE::2024-12-09.21:35:02::SCWMssOS::Copying the qemu file from  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/resources/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu_args.txt To C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/export/video_out_pynq_z2_wrapper/sw/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu/
+TRACE::2024-12-09.21:35:02::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:35:02::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_2||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:35:02::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::Completed writing the mss file at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp
+TRACE::2024-12-09.21:35:02::SCWMssOS::Mss edits present, copying mssfile into export location C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-12-09.21:35:02::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-12-09.21:35:02::SCWDomain::Skipping the build for domain :  freertos10_xilinx_ps7_cortexa9_0
+TRACE::2024-12-09.21:35:02::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-12-09.21:35:02::SCWMssOS::Copying to export directory.
+TRACE::2024-12-09.21:35:02::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-12-09.21:35:02::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-12-09.21:35:02::SCWSystem::Completed Processing the domain freertos10_xilinx_ps7_cortexa9_0
+LOG::2024-12-09.21:35:02::SCWSystem::Completed Processing the sysconfig video_out_pynq_z2_wrapper
+LOG::2024-12-09.21:35:02::SCWPlatform::Completed generating the artifacts for system configuration video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Started preparing the platform 
+TRACE::2024-12-09.21:35:02::SCWSystem::Writing the bif file for system config video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWSystem::dir created 
+TRACE::2024-12-09.21:35:02::SCWSystem::Writing the bif 
+TRACE::2024-12-09.21:35:02::SCWPlatform::Started writing the spfm file 
+TRACE::2024-12-09.21:35:02::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-12-09.21:35:02::SCWPlatform::Completed generating the platform
+TRACE::2024-12-09.21:35:02::SCWMssOS::Saving the mss changes C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-12-09.21:35:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-12-09.21:35:02::SCWMssOS::Commit changes completed.
+TRACE::2024-12-09.21:35:02::SCWMssOS::Saving the mss changes C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-12-09.21:35:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-12-09.21:35:02::SCWMssOS::Commit changes completed.
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:35:02::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_2||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:35:02::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:35:02::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_2||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:35:02::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWWriter::formatted JSON is {
+	"platformName":	"video_out_pynq_z2_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"video_out_pynq_z2_wrapper",
+	"platHandOff":	"C:/Users/seppe/Downloads/video_out_pynq_z2_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/video_out_pynq_z2_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"video_out_pynq_z2_wrapper",
+	"systems":	[{
+			"systemName":	"video_out_pynq_z2_wrapper",
+			"systemDesc":	"video_out_pynq_z2_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"video_out_pynq_z2_wrapper",
+			"sysActiveDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"sysDefaultDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"ad4398cb2fc4043b3164390efc8318af",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2", "xilrsa:1.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDispName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDesc":	"freertos10_xilinx_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"qemuArgs":	"<platformDir>/resources/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/video_out_pynq_z2_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.15",
+					"mssFile":	"",
+					"md5Digest":	"29300f8ebe31ecb23c3ab87802390890",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-12-09.21:35:02::SCWPlatform::updated the xpfm file.
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to open the hw design at C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA given C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA absoulate path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform::DSA directory C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Platform Path C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/hw/video_out_pynq_z2_wrapper.xsa
+TRACE::2024-12-09.21:35:02::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-12-09.21:35:02::SCWPlatform::Trying to set the existing hwdb with name video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Opened existing hwdb video_out_pynq_z2_wrapper
+TRACE::2024-12-09.21:35:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-09.21:35:02::SCWMssOS::Checking the sw design at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-12-09.21:35:02::SCWMssOS::DEBUG:  swdes dump  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_2||
+C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2024-12-09.21:35:02::SCWMssOS::Sw design exists and opened at  C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/video_out_pynq_z2_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss

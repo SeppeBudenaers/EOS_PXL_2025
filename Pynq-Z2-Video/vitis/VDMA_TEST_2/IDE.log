@@ -1,0 +1,54 @@
+21:03:06 DEBUG : Logs will be stored at 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/IDE.log'.
+21:03:12 INFO  : Registering command handlers for Vitis TCF services
+21:03:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2\temp_xsdb_launch_script.tcl
+21:03:12 INFO  : Platform repository initialization has completed.
+21:03:12 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+21:03:12 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+21:03:12 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+21:03:16 INFO  : XSCT server has started successfully.
+21:03:18 INFO  : Successfully done setting XSCT server connection channel  
+21:03:18 INFO  : plnx-install-location is set to ''
+21:03:18 INFO  : Successfully done query RDI_DATADIR 
+21:03:18 INFO  : Successfully done setting workspace for the tool. 
+12:46:28 DEBUG : Logs will be stored at 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/IDE.log'.
+12:46:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2\temp_xsdb_launch_script.tcl
+12:46:32 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:46:32 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:46:32 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:46:33 INFO  : Registering command handlers for Vitis TCF services
+12:46:33 INFO  : Platform repository initialization has completed.
+12:46:35 INFO  : XSCT server has started successfully.
+12:46:35 INFO  : plnx-install-location is set to ''
+12:46:35 INFO  : Successfully done setting XSCT server connection channel  
+12:46:35 INFO  : Successfully done query RDI_DATADIR 
+12:46:35 INFO  : Successfully done setting workspace for the tool. 
+12:47:01 DEBUG : Logs will be stored at 'C:/XilinxDev/PBEAI3/EOS_PXL_2025/Pynq-Z2-Video/vitis/VDMA_TEST_2/IDE.log'.
+12:47:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\XilinxDev\PBEAI3\EOS_PXL_2025\Pynq-Z2-Video\vitis\VDMA_TEST_2\temp_xsdb_launch_script.tcl
+12:47:04 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:47:04 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:47:04 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:47:04 INFO  : Registering command handlers for Vitis TCF services
+12:47:04 INFO  : Platform repository initialization has completed.
+12:47:07 INFO  : XSCT server has started successfully.
+12:47:07 INFO  : Successfully done setting XSCT server connection channel  
+12:47:07 INFO  : plnx-install-location is set to ''
+12:47:07 INFO  : Successfully done query RDI_DATADIR 
+12:47:07 INFO  : Successfully done setting workspace for the tool. 

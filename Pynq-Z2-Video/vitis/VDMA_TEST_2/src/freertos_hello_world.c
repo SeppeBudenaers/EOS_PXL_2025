@@ -45,7 +45,7 @@ uint8_t count = 0;
 int main( void )
 {
 	//config
-		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x30, 0x808B);
+		Xil_Out32(XPAR_AXI_VDMA_0_BASEADDR + 0x30, 0x8003);
 		//frame buffers
 		//frame size is 3*1280*720 = 2A3000
 		//margin on frame = 1000
@@ -77,12 +77,12 @@ int main( void )
 		white.green = 0xff;
 
 	Rectangle_Loc_t boxPosition = {
-		.UL = {100, 100}, // Upper-left corner
-		.DR = {120, 500}  // Bottom-right corner
+		.UL = {100, 0}, // Upper-left corner
+		.DR = {120, 720}  // Bottom-right corner
 	};
 
 	// Define motion parameters
-    float velocity = 10.1;  // Speed of the box
+    float velocity = 2;  // Speed of the box
     float angle = 5;    // Angle in degrees
 
 	outputColor(black, Triple_buffer);
