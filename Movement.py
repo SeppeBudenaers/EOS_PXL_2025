@@ -2,7 +2,7 @@ import socket
 import keyboard  # Install with `pip install keyboard`
 
 # UDP configuration
-UDP_IP = "192.168.0.113"  # Replace with the target IP address
+UDP_IP = "192.168.137.26"  # Replace with the target IP address
 UDP_PORT = 5001      # Replace with the target port
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 

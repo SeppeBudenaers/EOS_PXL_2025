@@ -76,7 +76,7 @@ struct netif server_netif;
 static void prvgravity( void *pvParameters);
 
 static TaskHandle_t xGameLogic;
-static TimerHandle_t xgravity = NULL;
+TimerHandle_t xgravity = NULL;
 QueueHandle_t xMovement_Queue = NULL;
 QueueHandle_t xDisplay_Queue = NULL;
 
@@ -248,8 +248,6 @@ int main()
 										prvgravity);
 	xMovement_Queue = xQueueCreate( 	5, sizeof(char));
 	xDisplay_Queue = xQueueCreate( 	5, sizeof(Playfield));
-	xTimerStart( xgravity, 0 );
-
 	sys_thread_new("main_thread", (void(*)(void*))main_thread, 0,
 			THREAD_STACKSIZE, DEFAULT_THREAD_PRIO);
 	vTaskStartScheduler();
