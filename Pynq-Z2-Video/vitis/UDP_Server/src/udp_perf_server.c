@@ -48,34 +48,6 @@ void print_app_header(void)
 
 }
 
-
-
-static void stats_buffer(char* outString,
-		double data, enum measure_t type)
-{
-	int conv = KCONV_UNIT;
-	const char *format;
-	double unit = 1024.0;
-
-	if (type == SPEED)
-		unit = 1000.0;
-
-	while (data >= unit && conv <= KCONV_GIGA) {
-		data /= unit;
-		conv++;
-	}
-
-	/* Fit data in 4 places */
-	if (data < 9.995) { /* 9.995 rounded to 10.0 */
-		format = "%4.2f %c"; /* #.## */
-	} else if (data < 99.95) { /* 99.95 rounded to 100 */
-		format = "%4.1f %c"; /* ##.# */
-	} else {
-		format = "%4.0f %c"; /* #### */
-	}
-	sprintf(outString, format, data, kLabel[conv]);
-}
-
 /** Receive data on a udp session */
 static void udp_recv_perf_traffic(int sock)
 {

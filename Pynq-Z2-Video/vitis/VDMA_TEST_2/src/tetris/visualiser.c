@@ -1,6 +1,7 @@
 #ifdef _WIN32
 #include "tetris_logic.h"
-int main() {
+int main()
+{
     srand(time(0));
     initializeBlocks();
     gameLoop();
