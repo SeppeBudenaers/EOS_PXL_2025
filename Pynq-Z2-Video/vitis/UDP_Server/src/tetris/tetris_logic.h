@@ -19,6 +19,7 @@ int player_piece_type = 1;
 
 extern QueueHandle_t xMovement_Queue;
 extern QueueHandle_t xDisplay_Queue;
+extern QueueHandle_t xBlock_Queue;
 extern TickType_t xFramePerSecond;
 Playfield moveablefield = {0};
 Playfield Inmovablefield = {0};
@@ -112,7 +113,7 @@ void spawnPiece(int piece_x, int piece_y, int piece_type, int piece_rotation, Pl
 
 void movePiece(char input, Playfield* field) {
     int state = 0;
-    
+    UBaseType_t itemsInQueue = 0;
 
     if (input == 'a') {  // Move left
         state = isValidPosition(player_piece_x - 1, player_piece_y, player_piece_type, player_piece_rotation, &Inmovablefield);
@@ -133,10 +134,16 @@ void movePiece(char input, Playfield* field) {
             player_piece_y++;  
         } else if (state == 2 || state == 3) {  // Hit bottom or immovable block
             combindingfields(field, &Inmovablefield, &Inmovablefield);  // Add piece to immovable field
+            itemsInQueue = uxQueueMessagesWaiting(xBlock_Queue);
+            if(itemsInQueue != 0){
+            	xQueueReceive(xBlock_Queue,&player_piece_type, portMAX_DELAY );
+            }else{
+            	player_piece_type = (rand() % 7 + 1);
+            }
+
             player_piece_x = PLAYFIELD_WIDTH / 2;  
             player_piece_y = 0;
-            player_piece_rotation = rand() % 4;  
-            player_piece_type = (rand() % 4 + 1);
+            player_piece_rotation = rand() % 4;
         }
     }
 

@@ -78,6 +78,7 @@ static void prvgravity( void *pvParameters);
 static TaskHandle_t xGameLogic;
 TimerHandle_t xgravity = NULL;
 QueueHandle_t xMovement_Queue = NULL;
+QueueHandle_t xBlock_Queue = NULL;
 QueueHandle_t xDisplay_Queue = NULL;
 
 TickType_t xFramePerSecond = pdMS_TO_TICKS( DELAY_1_SECOND/30);
@@ -246,8 +247,11 @@ int main()
 		                                pdTRUE,
 		                                (void *) NULL,
 										prvgravity);
+
 	xMovement_Queue = xQueueCreate( 	5, sizeof(char));
+	xBlock_Queue = xQueueCreate( 	100, sizeof(uint8_t));
 	xDisplay_Queue = xQueueCreate( 	5, sizeof(Playfield));
+
 	sys_thread_new("main_thread", (void(*)(void*))main_thread, 0,
 			THREAD_STACKSIZE, DEFAULT_THREAD_PRIO);
 	vTaskStartScheduler();

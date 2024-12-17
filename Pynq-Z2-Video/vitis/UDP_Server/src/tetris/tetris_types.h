@@ -14,7 +14,7 @@
 const char *colors[8] = {RESET, CYAN, YELLOW, MAGENTA, BLUE, WHITE, RED, GREEN};
 #else
 #include "../videobuffer.h"
-const RGB_t colors[8] = {(RGB_t){100,100,100}, RGB_Cyan, RGB_Blue, RGB_Orange, RGB_Yellow, RGB_White, RGB_White, RGB_White};
+const RGB_t colors[8] = {(RGB_t){100,100,100}, RGB_Cyan, RGB_Blue, RGB_Orange, RGB_Yellow, RGB_Lime, RGB_Purple, RGB_Red};
 #endif
 
 typedef enum {
@@ -222,7 +222,129 @@ void initializeBlocks() {
     Blocks[O_Block][rot_270][col_1][row_1] = O_Block;
     Blocks[O_Block][rot_270][col_2][row_0] = O_Block;
     Blocks[O_Block][rot_270][col_2][row_1] = O_Block;
+
+    /* Block S Rotation 0
+    0 x x 0
+    x x 0 0
+    0 0 0 0
+    0 0 0 0
+    */
+    Blocks[S_Block][rot_0][col_1][row_0] = S_Block;
+    Blocks[S_Block][rot_0][col_2][row_0] = S_Block;
+    Blocks[S_Block][rot_0][col_0][row_1] = S_Block;
+    Blocks[S_Block][rot_0][col_1][row_1] = S_Block;
+    /* Block S Rotation 90
+    0 x 0 0
+    0 x x 0
+    0 0 x 0
+    0 0 0 0
+    */
+    Blocks[S_Block][rot_90][col_1][row_0] = S_Block;
+    Blocks[S_Block][rot_90][col_1][row_1] = S_Block;
+    Blocks[S_Block][rot_90][col_2][row_1] = S_Block;
+    Blocks[S_Block][rot_90][col_2][row_2] = S_Block;
+    /* Block S Rotation 180
+    0 0 0 0
+    0 x x 0
+    x x 0 0
+    0 0 0 0
+    */
+    Blocks[S_Block][rot_180][col_1][row_1] = S_Block;
+    Blocks[S_Block][rot_180][col_2][row_1] = S_Block;
+    Blocks[S_Block][rot_180][col_0][row_2] = S_Block;
+    Blocks[S_Block][rot_180][col_1][row_2] = S_Block;
+    /* Block S Rotation 270
+    x 0 0 0
+    x x 0 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[S_Block][rot_270][col_0][row_0] = S_Block;
+    Blocks[S_Block][rot_270][col_0][row_1] = S_Block;
+    Blocks[S_Block][rot_270][col_1][row_1] = S_Block;
+    Blocks[S_Block][rot_270][col_1][row_2] = S_Block;
+
+    /* Block T Rotation 0
+    0 x 0 0
+    x x x 0
+    0 0 0 0
+    0 0 0 0
+    */
+    Blocks[T_Block][rot_0][col_1][row_0] = T_Block;
+    Blocks[T_Block][rot_0][col_0][row_1] = T_Block;
+    Blocks[T_Block][rot_0][col_1][row_1] = T_Block;
+    Blocks[T_Block][rot_0][col_2][row_1] = T_Block;
+    /* Block T Rotation 90
+    0 x 0 0
+    0 x x 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[T_Block][rot_90][col_1][row_0] = T_Block;
+    Blocks[T_Block][rot_90][col_1][row_1] = T_Block;
+    Blocks[T_Block][rot_90][col_1][row_2] = T_Block;
+    Blocks[T_Block][rot_90][col_2][row_1] = T_Block;
+    /* Block T Rotation 180
+    0 0 0 0
+    x x x 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[T_Block][rot_180][col_1][row_2] = T_Block;
+    Blocks[T_Block][rot_180][col_0][row_1] = T_Block;
+    Blocks[T_Block][rot_180][col_1][row_1] = T_Block;
+    Blocks[T_Block][rot_180][col_2][row_1] = T_Block;
+    /* Block T Rotation 270
+    0 x 0 0
+    x x 0 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[T_Block][rot_270][col_1][row_0] = T_Block;
+    Blocks[T_Block][rot_270][col_1][row_1] = T_Block;
+    Blocks[T_Block][rot_270][col_1][row_2] = T_Block;
+    Blocks[T_Block][rot_270][col_0][row_1] = T_Block;
+
+    /* Block Z Rotation 0
+    x x 0 0
+    0 x x 0
+    0 0 0 0
+    0 0 0 0
+    */
+    Blocks[Z_Block][rot_0][col_0][row_0] = Z_Block;
+    Blocks[Z_Block][rot_0][col_1][row_0] = Z_Block;
+    Blocks[Z_Block][rot_0][col_1][row_1] = Z_Block;
+    Blocks[Z_Block][rot_0][col_2][row_1] = Z_Block;
+    /* Block Z Rotation 90
+    0 0 x 0
+    0 x x 0
+    0 x 0 0
+    0 0 0 0
+    */
+    Blocks[Z_Block][rot_90][col_2][row_0] = Z_Block;
+    Blocks[Z_Block][rot_90][col_2][row_1] = Z_Block;
+    Blocks[Z_Block][rot_90][col_1][row_1] = Z_Block;
+    Blocks[Z_Block][rot_90][col_1][row_2] = Z_Block;
+    /* Block Z Rotation 180
+    0 0 0 0
+    x x 0 0
+    0 x x 0
+    0 0 0 0
+    */
+    Blocks[Z_Block][rot_180][col_0][row_1] = Z_Block;
+    Blocks[Z_Block][rot_180][col_1][row_1] = Z_Block;
+    Blocks[Z_Block][rot_180][col_1][row_2] = Z_Block;
+    Blocks[Z_Block][rot_180][col_2][row_2] = Z_Block;
+        /* Block Z Rotation 270
+    0 x 0 0
+    x x 0 0
+    x 0 0 0
+    0 0 0 0
+    */
+    Blocks[Z_Block][rot_270][col_1][row_0] = Z_Block;
+    Blocks[Z_Block][rot_270][col_1][row_1] = Z_Block;
+    Blocks[Z_Block][rot_270][col_0][row_1] = Z_Block;
+    Blocks[Z_Block][rot_270][col_0][row_2] = Z_Block;
+
 }
-
-
 

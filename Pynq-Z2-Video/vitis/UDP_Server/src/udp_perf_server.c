@@ -32,9 +32,9 @@
 #include <string.h>
 
 extern struct netif server_netif;
-static struct perf_stats server;
 extern TimerHandle_t xgravity;
 extern QueueHandle_t xMovement_Queue;
+extern QueueHandle_t xBlock_Queue;
 /* Report interval in ms */
 #define REPORT_INTERVAL_TIME (INTERIM_REPORT_INTERVAL * 1000)
 
@@ -81,6 +81,7 @@ static void udp_recv_perf_traffic(int sock)
 {
     char input[UDP_RECV_BUFSIZE] = "";
     char direction = 'w';
+    uint8_t block = 0;
     struct sockaddr_in from;
     socklen_t fromlen = sizeof(from); // Initialize and set the length
     int start = 0;
@@ -91,6 +92,7 @@ static void udp_recv_perf_traffic(int sock)
             xil_printf("Error or no data received\r\n");
             continue; // Skip this iteration and keep listening
         }
+
         if(start == 0){
         	start++;
         	xTimerStart( xgravity, 0 );
@@ -109,13 +111,37 @@ static void udp_recv_perf_traffic(int sock)
                direction = '\0';
         }
 
+        if (strcmp(input, "Line") == 0) {
+            block = 1;
+        } else if (strcmp(input, "J") == 0) {
+            block = 2;
+        } else if (strcmp(input, "L") == 0) {
+            block = 3;
+        } else if (strcmp(input, "Square") == 0) {
+            block = 4;
+        } else if (strcmp(input, "S") == 0) {
+            block = 5;
+        } else if (strcmp(input, "T") == 0) {
+            block = 6;
+        } else if (strcmp(input, "Z") == 0) {
+            block = 7;
+        }else{
+        	 block = 0;
+        }
+
+
         for (int i = 0; i < sizeof(input); i++) {
-                input[i] = '\0';
+        	input[i] = '\0';
         }
 
         if (direction != '\0') {
-                printf("The corresponding direction character is: %c\n", direction);
-                xQueueSend(xMovement_Queue, &direction, 0UL );
+        	printf("The corresponding direction character is: %c\n", direction);
+        	xQueueSend(xMovement_Queue, &direction, 0UL );
+        }
+
+        if (block != 0) {
+        	printf("The corresponding block is: %i\n", block);
+        	xQueueSend(xBlock_Queue, &block, 0UL );
         }
     }
 }
