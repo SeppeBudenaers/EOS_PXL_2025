@@ -1,0 +1,27 @@
+13:18:50 DEBUG : Logs will be stored at 'C:/EOS/EOS_PXL_2025/Pynq-Z2-Video/baremetal/vitis_workspace/IDE.log'.
+13:18:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\EOS\EOS_PXL_2025\Pynq-Z2-Video\baremetal\vitis_workspace\temp_xsdb_launch_script.tcl
+13:18:52 INFO  : Platform repository initialization has completed.
+13:18:52 INFO  : Registering command handlers for Vitis TCF services
+13:18:52 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:18:52 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:18:52 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+13:18:54 INFO  : XSCT server has started successfully.
+13:18:54 INFO  : plnx-install-location is set to ''
+13:18:54 INFO  : Successfully done setting XSCT server connection channel  
+13:18:54 INFO  : Successfully done query RDI_DATADIR 
+13:18:54 INFO  : Successfully done setting workspace for the tool. 
+13:19:56 INFO  : Result from executing command 'getProjects': video_out_pynq_z2
+13:19:56 INFO  : Result from executing command 'getPlatforms': 
+13:19:56 WARN  : An unexpected exception occurred in the module 'platform project logging'
+13:19:56 INFO  : Platform 'video_out_pynq_z2' is added to custom repositories.
+13:20:03 INFO  : Platform 'video_out_pynq_z2' is added to custom repositories.
+13:20:28 INFO  : Result from executing command 'getProjects': video_out_pynq_z2
+13:20:28 INFO  : Result from executing command 'getPlatforms': video_out_pynq_z2|C:/EOS/EOS_PXL_2025/Pynq-Z2-Video/baremetal/vitis_workspace/video_out_pynq_z2/export/video_out_pynq_z2/video_out_pynq_z2.xpfm
+13:21:07 INFO  : Checking for BSP changes to sync application flags for project 'hdmi'...
+13:21:19 INFO  : Checking for BSP changes to sync application flags for project 'hdmi'...

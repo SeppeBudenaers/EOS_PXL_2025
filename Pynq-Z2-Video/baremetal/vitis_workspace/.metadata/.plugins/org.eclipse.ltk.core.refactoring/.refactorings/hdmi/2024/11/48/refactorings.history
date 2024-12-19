@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hdmi/src/video_out_pynq.c&apos; to &apos;freertos_hello_world.c&apos;" description="Rename resource &apos;video_out_pynq.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/video_out_pynq.c" name="freertos_hello_world.c" stamp="1732623655869" updateReferences="true"/>
+</session>

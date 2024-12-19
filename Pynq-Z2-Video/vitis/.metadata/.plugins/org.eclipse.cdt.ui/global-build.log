@@ -1,0 +1,99 @@
+Nothing to build in platform 'design_1_wrapper_1_AND_LWIP'
+
+13:09:07 **** Incremental Build of configuration Debug for project UDP_Server ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper_1_AND_LWIP/export/design_1_wrapper_1_AND_LWIP/sw/design_1_wrapper_1_AND_LWIP/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/tetris/tetris_types.h:16,
+                 from ../src/tetris/tetris_logic.h:1,
+                 from ../src/main.c:41:
+../src/tetris/../videobuffer.h: In function 'VDMA_Init':
+../src/tetris/../videobuffer.h:130:5: warning: implicit declaration of function 'outputColor'; did you mean 'testColor'? [-Wimplicit-function-declaration]
+  130 |     outputColor((RGB_t){100, 100, 100}, Triple_buffer); // background is gray
+      |     ^~~~~~~~~~~
+      |     testColor
+../src/tetris/../videobuffer.h:131:5: warning: implicit declaration of function 'DrawTetrisBackground' [-Wimplicit-function-declaration]
+  131 |     DrawTetrisBackground((RGB_t){100, 100, 100});
+      |     ^~~~~~~~~~~~~~~~~~~~
+../src/tetris/../videobuffer.h: At top level:
+../src/tetris/../videobuffer.h:134:6: warning: conflicting types for 'outputColor'; have 'void(RGB_t,  Buffertype)'
+  134 | void outputColor(RGB_t color, Buffertype buffer)
+      |      ^~~~~~~~~~~
+../src/tetris/../videobuffer.h:130:5: note: previous implicit declaration of 'outputColor' with type 'void(RGB_t,  Buffertype)'
+  130 |     outputColor((RGB_t){100, 100, 100}, Triple_buffer); // background is gray
+      |     ^~~~~~~~~~~
+../src/tetris/../videobuffer.h: In function 'MoveBoxWithVelocityAndAngle':
+../src/tetris/../videobuffer.h:276:14: warning: unused variable 'rectHeight' [-Wunused-variable]
+  276 |     uint16_t rectHeight = getHeight(*currentRect);
+      |              ^~~~~~~~~~
+../src/tetris/../videobuffer.h:275:14: warning: unused variable 'rectWidth' [-Wunused-variable]
+  275 |     uint16_t rectWidth = getWidth(*currentRect);
+      |              ^~~~~~~~~
+../src/tetris/../videobuffer.h: At top level:
+../src/tetris/../videobuffer.h:358:6: warning: conflicting types for 'DrawTetrisBackground'; have 'void(RGB_t)'
+  358 | void DrawTetrisBackground(RGB_t Background)
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/tetris/../videobuffer.h:131:5: note: previous implicit declaration of 'DrawTetrisBackground' with type 'void(RGB_t)'
+  131 |     DrawTetrisBackground((RGB_t){100, 100, 100});
+      |     ^~~~~~~~~~~~~~~~~~~~
+../src/tetris/../videobuffer.h: In function 'DrawTetrisBackground':
+../src/tetris/../videobuffer.h:360:15: warning: unused variable 'initloc' [-Wunused-variable]
+  360 |     point2d_t initloc = {TETRIS_GRID_X, TETRIS_GRID_Y};
+      |               ^~~~~~~
+../src/tetris/../videobuffer.h: In function 'screenprintCharacter':
+../src/tetris/../videobuffer.h:376:27: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+  376 |     uint8_t *charBitmap = font8x8_basic[charIndex];
+      |                           ^~~~~~~~~~~~~
+../src/tetris/tetris_logic.h: In function 'isValidPosition':
+../src/tetris/tetris_logic.h:47:40: warning: suggest parentheses around comparison in operand of '!=' [-Wparentheses]
+   47 |                 if (new_x < 0 || new_x >= PLAYFIELD_WIDTH != 0)
+../src/tetris/tetris_logic.h: In function 'printBoardWithPiece':
+../src/tetris/tetris_logic.h:92:9: warning: implicit declaration of function 'printPreview' [-Wimplicit-function-declaration]
+   92 |         printPreview();
+      |         ^~~~~~~~~~~~
+../src/tetris/tetris_logic.h: At top level:
+../src/tetris/tetris_logic.h:111:6: warning: conflicting types for 'printPreview'; have 'void()'
+  111 | void printPreview(){
+      |      ^~~~~~~~~~~~
+../src/tetris/tetris_logic.h:92:9: note: previous implicit declaration of 'printPreview' with type 'void()'
+   92 |         printPreview();
+      |         ^~~~~~~~~~~~
+../src/tetris/tetris_logic.h: In function 'movePiece':
+../src/tetris/tetris_logic.h:198:13: warning: implicit declaration of function 'combindingfields' [-Wimplicit-function-declaration]
+  198 |             combindingfields(field, &Inmovablefield, &Inmovablefield); // Add piece to immovable field
+      |             ^~~~~~~~~~~~~~~~
+../src/tetris/tetris_logic.h: At top level:
+../src/tetris/tetris_logic.h:237:6: warning: conflicting types for 'combindingfields'; have 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
+  237 | void combindingfields(Playfield *input1, Playfield *input2, Playfield *output)
+      |      ^~~~~~~~~~~~~~~~
+../src/tetris/tetris_logic.h:198:13: note: previous implicit declaration of 'combindingfields' with type 'void(uint8_t (*)[10][20], uint8_t (*)[10][20], uint8_t (*)[10][20])' {aka 'void(unsigned char (*)[10][20], unsigned char (*)[10][20], unsigned char (*)[10][20])'}
+  198 |             combindingfields(field, &Inmovablefield, &Inmovablefield); // Add piece to immovable field
+      |             ^~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:257:57: warning: passing argument 5 of 'xTimerCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  257 |                                                         prvgravity);
+      |                                                         ^~~~~~~~~~
+      |                                                         |
+      |                                                         void (*)(void *)
+In file included from ../src/main.c:32:
+C:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper_1_AND_LWIP/export/design_1_wrapper_1_AND_LWIP/sw/design_1_wrapper_1_AND_LWIP/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include/timers.h:236:57: note: expected 'TimerCallbackFunction_t' {aka 'void (*)(struct tmrTimerControl *)'} but argument is of type 'void (*)(void *)'
+  236 |                                 TimerCallbackFunction_t pxCallbackFunction ) PRIVILEGED_FUNCTION;
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: UDP_Server.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/EOS_PXL_2025/Pynq-Z2-Video/vitis/design_1_wrapper_1_AND_LWIP/export/design_1_wrapper_1_AND_LWIP/sw/design_1_wrapper_1_AND_LWIP/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "UDP_Server.elf"  ./src/tetris/visualiser.o  ./src/iic_phyreset.o ./src/main.o ./src/udp_perf_server.o   -lm -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: UDP_Server.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size UDP_Server.elf  |tee "UDP_Server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 210033	   4444	41023552	41238029	2753e0d	UDP_Server.elf
+'Finished building: UDP_Server.elf.size'
+' '
