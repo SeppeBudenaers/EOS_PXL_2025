@@ -1,64 +1,21 @@
-### Inhoud van de Opdracht
-
-Deze opdrachten dienen uitgevoerd te worden in groepjes van maximaal 3 studenten. Stuur vóór **18/10/2024** een e-mail naar **vincent.claes@pxl.be** met de namen van je groepsleden.
-
-De ingediende opdracht moet de volgende onderdelen bevatten:
-
-- **Demovideo**
-- **Vivado Code**
-- **Vitis Code**
-- **Extra** (indien van toepassing)
-
-Tijdens de laatste les wordt er een demonstratie van de projecten gegeven.
-
----
-
-### Vraag 1 (10 punten)
-
-Ontwikkel een game met behulp van het **PYNQ**-board. De game moet gebruik maken van:
-
-- **HDMI** als uitvoer
-- **2 UDP-verbindingen** als invoer
-
-De software moet draaien op **FreeRTOS**.
-
----
-
-### Vraag 2 (10 punten)
-
-Ontwikkel een applicatie met behulp van het **PYNQ**-board, waarbij een **RTSP-stream** als invoer wordt gebruikt. Voer een hardwareverwerking uit op de stream en toon het resultaat op een **HDMI-scherm**.
-
-De software moet draaien op **Linux** (gebruik de PYNQ SD-kaart of **Petalinux**).
-
-### Teststreams in het lab (Netwerk: TheEdge)
-
-De volgende teststreams kunnen gebruikt worden in het laboratorium:
-
-#### TheEdgeCam01
-- **RTSP Stream 1 (HQ):**  
-  `rtsp://192.168.2.11:554/stream1`  
-  (EdgeCam en EdgeCam)
-
-- **RTSP Stream 2 (LQ):**  
-  `rtsp://192.168.2.11:554/stream2`  
-  (EdgeCam en EdgeCam)
-
-#### TheEdgeCam02 (Labobank Rechts)
-- **RTSP Stream 1 (HQ):**  
-  `rtsp://192.168.2.12:554/stream1`  
-  (EdgeCam en EdgeCam)
-
-- **RTSP Stream 2 (LQ):**  
-  `rtsp://192.168.2.12:554/stream2`  
-  (EdgeCam en EdgeCam)
-
-#### TheEdgeCam03 (Labobank Links)
-- **RTSP Stream 1 (HQ):**  
-  `rtsp://192.168.2.13:554/stream1`  
-  (EdgeCam en EdgeCam)
-
-- **RTSP Stream 2 (LQ):**  
-  `rtsp://192.168.2.13:554/stream2`  
-  (EdgeCam en EdgeCam)
-
----
+## Pynq game (Pynq-Z2-Video) `insert link to project folder`
+### vivado project	(Hardware Design)
+spreek over dat dit een aangepaste design is van een of andre tutorial (geef git link). timming moesten aan gepast worden en IP moesten gebuild worden 
+`insert PDF`
+### vitis code 		(Server + Video output)
+bespreek free rtos,UDP en tetris library die custom voor dit is geschreven
+UDP heeft twee verschillende digen die die kan doen of terwijl player input krijgen of iemand kan "god" spelen en de blokken opvoorhand kiezen
+`insert link to code`
+### Python code       (Client)
+bespreek dat we een python client hebben gemaakt voor de keystrokes door te sturen om te kunnen spellen
+`insert link to code`
+## Pynq RTSP -> HMDI with hardware filter (Pynq-Z2-HDMI-Filter) `insert link to project folder`
+### vivado project (Hardware Design)
+spreek over dat we dit project een copy is van Pynq game maar dan met de interupt connected en een IP block tussen `v_axi4s_vid_out_0` en `rgb2dvi_0` om een filter op toe te passen 
+`insert PDF`
+#### harware filter 
+bespreek wat we doen voor hardware filter en waarom 
+`insert link to code`
+### Jupyter note book (Code)
+bespreek te code blocks van de pynb ze zijn pretty clear
+`insert link to PYNB`
