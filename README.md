@@ -43,13 +43,11 @@ This project builds on the Pynq Game project, with some modifications to suit th
 ![Block Diagram](references/HDMI_BD.png)  
 
 ## Hardware Filter ([Code](Pynq-z2-HDMI-Filter/RGB_Filter.vhd))  
-The hardware filter is a VHDL module designed to process RGB video data. For this implementation, a red filter is applied, passing only the red channel's data and setting the green and blue channels to zero.  
-
-### Module Description  
+The hardware filter is a VHDL module designed to process RGB video data. 
 - **Input**: Receives 24-bit RGB data (`RGBin`).  
 - **Output**:  
   - The red channel (8 bits) is preserved from the input.  
-  - The green and blue channels (16 bits) are set to zero, resulting in a red-filtered output.  
+  - The green and blue channels (16 bits) are set to zero, resulting in a red-filtered output.
 
 ![Filter Diagram](references/image.png)  
 
