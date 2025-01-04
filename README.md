@@ -39,11 +39,9 @@ This Python client captures keyboard inputs and sends them to the server via UDP
   - Interrupts connected.  
   - An IP block added between `v_axi4s_vid_out_0` and `rgb2dvi_0` to apply a hardware filter.
 
-   ![alt text](references/image.png)  
-
 ## Hardware Filter ([code](Pynq-z2-HDMI-Filter/RGB_Filter.vhd))
 
-The hardware filter is a VHDL module that processes RGB video data. It is used to modify the pixel data before displaying it via HDMI.  
+The hardware filter is a VHDL module that processes RGB video data.  
 
 ### Module Description  
 - **Input**: 24-bit RGB data (`RGBin`) is received as input.  
@@ -51,16 +49,7 @@ The hardware filter is a VHDL module that processes RGB video data. It is used t
   - The red channel (8 bits) is preserved from the input.  
   - The green and blue channels (16 bits) are set to zero, resulting in a red-filtered output.  
 
-### VHDL Code Overview  
-- **Entity Definition**:  
-  Defines the `RGB_Filter` module with input (`RGBin`) and output (`RGBout`) ports.  
-- **Behavioral Architecture**:  
-  Implements the filter logic where only the red channel is passed through, and the other channels are cleared.  
-
-### Usage  
-1. Integrate the `RGB_Filter` module into your Vivado design.  
-2. Connect `RGB_Filter` between the `v_axi4s_vid_out_0` and `rgb2dvi_0` blocks in your hardware design.  
-3. Ensure the module is synthesized and connected properly to the rest of the video pipeline.  
+![alt text](references/image.png)  
 
 ## Jupyter Notebook ([Code](Pynq-z2-HDMI-Filter/FullColorXSA_AXI.ipynb))  
 This Jupyter Notebook demonstrates the hardware and software integration for the Pynq platform. It sets up hardware acceleration for video processing, establishes an RTSP stream, and manages data transfer with the VDMA.  
@@ -76,8 +65,3 @@ This Jupyter Notebook demonstrates the hardware and software integration for the
 3. **RTSP Stream Handling**:  
    - Opens an RTSP stream and captures video frames.
    - Resizes the frames to match the VDMA dimensions and stores them in a hardware-allocated buffer.
-
-### Usage  
-1. Ensure you have the required Python dependencies installed, such as `numpy`, `opencv-python`, and `pynq`.  
-2. Load the bitstream file (`Interupt_Red_Filter.xsa`) onto the Pynq-Z2 board.  
-3. Run the notebook step-by-step to configure the hardware and process the video stream.
