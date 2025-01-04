@@ -23,3 +23,4 @@ platform generate
 platform active {design_1_wrapper_1_AND_LWIP}
 bsp reload
 platform generate -domains 
+platform generate
