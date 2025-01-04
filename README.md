@@ -13,7 +13,7 @@
   2. It allows someone to play as a "god" by pre-selecting blocks.  
 [Insert link to code]  
 
-## Python Code (Client)  
+## Python Code ([Client](Movement.py))
 This Python client captures keyboard inputs and sends them to the server via UDP to control the game.  
 
 ### Key Features  
@@ -32,14 +32,8 @@ This Python client captures keyboard inputs and sends them to the server via UDP
     UDP_IP = "192.168.x.xxx"  # Replace with the target IP address
     UDP_PORT = 5001          # Replace with the target port
     ```
-For the full implementation [Python code](Movement.py)
 
-
----
-
-# Pynq RTSP -> HDMI with Hardware Filter (Pynq-Z2-HDMI-Filter)  
-[Project Folder](Pynq-z2-HDMI-Filter) 
-
+# Pynq RTSP -> HDMI with Hardware Filter ([Pynq-Z2-HDMI-Filter](Pynq-z2-HDMI-Filter)) 
 ## Vivado Project (Hardware Design)  
 - Discuss how this project is a copy of the Pynq Game project, but with:  
   - Interrupts connected.  
@@ -47,7 +41,7 @@ For the full implementation [Python code](Movement.py)
 
    ![alt text](references/image.png)  
 
-## Hardware Filter  
+## Hardware Filter ([code](Pynq-z2-HDMI-Filter/RGB_Filter.vhd))
 
 The hardware filter is a VHDL module that processes RGB video data. It is used to modify the pixel data before displaying it via HDMI.  
 
@@ -68,10 +62,7 @@ The hardware filter is a VHDL module that processes RGB video data. It is used t
 2. Connect `RGB_Filter` between the `v_axi4s_vid_out_0` and `rgb2dvi_0` blocks in your hardware design.  
 3. Ensure the module is synthesized and connected properly to the rest of the video pipeline.  
 
-For the full VHDL implementation, refer to the [Hardware Filter Code](Pynq-z2-HDMI-Filter/RGB_Filter.vhd).  
-
-
-## Jupyter Notebook (Code)  
+## Jupyter Notebook ([Code](Pynq-z2-HDMI-Filter/FullColorXSA_AXI.ipynb))  
 This Jupyter Notebook demonstrates the hardware and software integration for the Pynq platform. It sets up hardware acceleration for video processing, establishes an RTSP stream, and manages data transfer with the VDMA.  
 
 ### Key Highlights  
@@ -86,12 +77,7 @@ This Jupyter Notebook demonstrates the hardware and software integration for the
    - Opens an RTSP stream and captures video frames.
    - Resizes the frames to match the VDMA dimensions and stores them in a hardware-allocated buffer.
 
-4. **Hardware Processing**:  
-   - Uses the hardware filter to process video frames and prepares them for HDMI output.
-
 ### Usage  
 1. Ensure you have the required Python dependencies installed, such as `numpy`, `opencv-python`, and `pynq`.  
 2. Load the bitstream file (`Interupt_Red_Filter.xsa`) onto the Pynq-Z2 board.  
 3. Run the notebook step-by-step to configure the hardware and process the video stream.
-
-For the full notebook, see the [Jupyter Notebook file](Pynq-z2-HDMI-Filter/FullColorXSA_AXI.ipynb).  
