@@ -1,4 +1,4 @@
-# Pynq Game (Pynq-Z2-Video)  
+# Pynq Game ([Pynq-Z2-Video](Pynq-Z2-Video))  
 [Insert link to project folder]  
 
 ## Vivado Project (Hardware Design)  
@@ -33,7 +33,7 @@ This Python client captures keyboard inputs and sends them to the server via UDP
     UDP_PORT = 5001          # Replace with the target port
     ```
 
-# Pynq RTSP -> HDMI with Hardware Filter ([Pynq-Z2-HDMI-Filter](Pynq-z2-HDMI-Filter))  
+# RTSP to HDMI Hardware filter PYNQ Z2 ([Pynq-Z2-HDMI-Filter](Pynq-z2-HDMI-Filter))  
 
 ## Vivado Project (Hardware Design)  
 This project builds on the Pynq Game project, with some modifications to suit the requirements of this application:  
