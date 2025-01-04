@@ -2,16 +2,25 @@
 
 ## Demo (link to demo)
 
-## Vivado Project (Hardware Design)  
-- Discuss how this is a customized design based on some tutorial ([Insert Git link]).  
-- Adjustments were made to timing, and IP cores had to be built.  
-[Insert PDF]  
+## Vivado Project (Hardware Design)
+
+This project is a modified hardware implementation based on a tutorial from [this GitHub repository](https://github.com/xflorentw/Pynq-Z2-Video). The tutorial focuses on using the HDMI interface of the Pynq-Z2 by creating a block design in Vivado and running the associated code in Vitis.
+
+### Modifications and Optimizations
+While the original tutorial served as a foundation, we made specific adjustments to meet our requirements:
+
+- **Resolution Adjustment**: The entire design was modified to ensure stable operation at a resolution of 720p.  
+- **Timing Optimizations**: Various timing parameters were fine-tuned to improve system reliability.  
+
+### Design Overview
+Below is a complete schematic of the updated design, including the adjusted timing and resolution settings:  
+![VDMA Block Diagram](<references/Vivado_Project_HDMI.png>)
 
 ## Game Implementation (Server + Video Output)  
 
 For the game implementation, we chose Tetris, with the `PYNQ-Z2` handling player input, game logic, and video output.
 
-### FreeRTOS  
+### FreeRTOS  S
 
 To ensure smooth operation, FreeRTOS was implemented as the operating system (`OS`). This allows for task scheduling and prioritization as needed. The game can be divided into three main components: player input (UDP server), game logic, and visualization.
 
