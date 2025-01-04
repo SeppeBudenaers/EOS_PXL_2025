@@ -1,15 +1,37 @@
 # Pynq Game ([Pynq-Z2-Video](Pynq-Z2-Video))  
+
+## Demo (link to demo)
+
 ## Vivado Project (Hardware Design)  
 - Discuss how this is a customized design based on some tutorial ([Insert Git link]).  
 - Adjustments were made to timing, and IP cores had to be built.  
 [Insert PDF]  
 
-## Vitis Code (Server + Video Output)  
-- Discuss FreeRTOS, UDP, and the custom Tetris library written specifically for this project.  
-- The UDP functionality has two distinct modes:  
-  1. It can receive player inputs.  
-  2. It allows someone to play as a "god" by pre-selecting blocks.  
-  [Insert link to code]  
+## Game Implementation (Server + Video Output)  
+
+For the game implementation, we chose Tetris, with the `PYNQ-Z2` handling player input, game logic, and video output.
+
+### FreeRTOS  
+
+To ensure smooth operation, FreeRTOS was implemented as the operating system (`OS`). This allows for task scheduling and prioritization as needed. The game can be divided into three main components: player input (UDP server), game logic, and visualization.
+
+#### UDP Server ([Link to UDP])  
+
+The UDP server is set up to receive two types of commands: **movement commands** and **block commands**.  
+
+- **Movement Commands**: These commands are sent by the player client and include actions like `Rotate`, `Left`, `Down`, and `Right`.  
+
+- **Block Commands**: These commands come from a "god" client and define the upcoming blocks, such as `Line`, `J`, `L`, `Square`, `S`, `T`, and `Z`.  
+
+Both types of commands are sorted into their respective queues so that the game logic can process them when needed.  
+
+#### Game Logic ([Link to Tetris])  
+
+We developed a custom Tetris library to handle game logic. The library defines block types, initializes the game, and runs the game logic. For ease of testing, the library is cross-compatible with Windows, allowing game logic to be tested independently of the `PYNQ-Z2` hardware.
+
+#### Visualization  
+
+At this stage, the game state is sent via a queue to the visualization task. This task draws the current game state on the screen. Since the game logic must always run before rendering, visualization is given the lowest priority in FreeRTOS.  
 
 ## Python Code ([Client](Movement.py))
 This Python client captures keyboard inputs and sends them to the server via UDP to control the game.  
@@ -30,8 +52,9 @@ This Python client captures keyboard inputs and sends them to the server via UDP
     UDP_IP = "192.168.x.xxx"  # Replace with the target IP address
     UDP_PORT = 5001          # Replace with the target port
     ```
-
+    
 # RTSP to HDMI Hardware filter PYNQ Z2 ([Pynq-Z2-HDMI-Filter](Pynq-z2-HDMI-Filter))  
+## Demo (link to demo)
 
 ## Vivado Project (Hardware Design)  
 This project builds on the Pynq Game project, with some modifications to suit the requirements of this application:  
