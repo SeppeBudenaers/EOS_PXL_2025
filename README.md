@@ -1,6 +1,6 @@
 # Pynq Game ([Pynq-Z2-Video](Pynq-Z2-Video))  
 
-## Demo (link to demo)
+## Demo ([Youtube](https://www.youtube.com/watch?v=4u5uUDjD0i4))
 
 ## Vivado Project (Hardware Design)
 
@@ -16,7 +16,7 @@ While the original tutorial served as a foundation, we made specific adjustments
 Below is a complete schematic of the updated design, including the adjusted timing and resolution settings:  
 ![VDMA Block Diagram](<references/Vivado_Project_HDMI.png>)
 
-## Game Implementation (Server + Video Output)  
+## Game Implementation ([Server + Video Output](Pynq-Z2-Video/vitis/UDP_Server/src))  
 
 For the game implementation, we chose Tetris, with the `PYNQ-Z2` handling player input, game logic, and video output.
 
@@ -24,7 +24,7 @@ For the game implementation, we chose Tetris, with the `PYNQ-Z2` handling player
 
 To ensure smooth operation, FreeRTOS was implemented as the operating system (`OS`). This allows for task scheduling and prioritization as needed. The game can be divided into three main components: player input (UDP server), game logic, and visualization.
 
-#### UDP Server ([Link to UDP])  
+#### UDP Server ([Code](Pynq-Z2-Video/vitis/UDP_Server/src/udp_perf_server.c))  
 
 The UDP server is set up to receive two types of commands: **movement commands** and **block commands**.  
 
@@ -34,7 +34,7 @@ The UDP server is set up to receive two types of commands: **movement commands**
 
 Both types of commands are sorted into their respective queues so that the game logic can process them when needed.  
 
-#### Game Logic ([Link to Tetris])  
+#### Game Logic ([Code](Pynq-Z2-Video/vitis/UDP_Server/src/tetris))  
 
 We developed a custom Tetris library to handle game logic. The library defines block types, initializes the game, and runs the game logic. For ease of testing, the library is cross-compatible with Windows, allowing game logic to be tested independently of the `PYNQ-Z2` hardware.
 
@@ -63,7 +63,7 @@ This Python client captures keyboard inputs and sends them to the server via UDP
     ```
     
 # RTSP to HDMI Hardware filter PYNQ Z2 ([Pynq-Z2-HDMI-Filter](Pynq-z2-HDMI-Filter))  
-## Demo (link to demo)
+## Demo ([Youtube](https://www.youtube.com/watch?v=EgmVjxT6fgA&t))
 
 ## Vivado Project (Hardware Design)  
 This project builds on the Pynq Game project, with some modifications to suit the requirements of this application:  
