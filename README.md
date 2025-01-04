@@ -1,6 +1,4 @@
 # Pynq Game ([Pynq-Z2-Video](Pynq-Z2-Video))  
-[Insert link to project folder]  
-
 ## Vivado Project (Hardware Design)  
 - Discuss how this is a customized design based on some tutorial ([Insert Git link]).  
 - Adjustments were made to timing, and IP cores had to be built.  
