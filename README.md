@@ -2,7 +2,7 @@
 
 ## Demo ([Youtube](https://www.youtube.com/watch?v=4u5uUDjD0i4))
 
-## Vivado Project (Hardware Design)
+## Vivado Project ([Hardware Design](Pynq-Z2-Video))
 
 This project is a modified hardware implementation based on a tutorial from [this GitHub repository](https://github.com/xflorentw/Pynq-Z2-Video). The tutorial focuses on using the HDMI interface of the Pynq-Z2 by creating a block design in Vivado and running the associated code in Vitis.
 
@@ -65,7 +65,7 @@ This Python client captures keyboard inputs and sends them to the server via UDP
 # RTSP to HDMI Hardware filter PYNQ Z2 ([Pynq-Z2-HDMI-Filter](Pynq-z2-HDMI-Filter))  
 ## Demo ([Youtube](https://www.youtube.com/watch?v=EgmVjxT6fgA&t))
 
-## Vivado Project (Hardware Design)  
+## Vivado Project ([Hardware Design](Pynq-z2-HDMI-Filter/HDMI-Filter))  
 This project builds on the Pynq Game project, with some modifications to suit the requirements of this application:  
 - **VDMA Interrupts**: Interrupts from the `VDMA` are connected to the `processing_system_7_0`. This ensures proper recognition of the VDMA by the PYNQ board.  
 - **Hardware Filter**: An additional IP block is inserted between `v_axi4s_vid_out_0` and `rgb2dvi_0` to implement a hardware-based video filter.  
