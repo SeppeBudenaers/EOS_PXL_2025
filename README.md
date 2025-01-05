@@ -20,7 +20,7 @@ Below is a complete schematic of the updated design, including the adjusted timi
 
 For the game implementation, we chose Tetris, with the `PYNQ-Z2` handling player input, game logic, and video output.
 
-### FreeRTOS  S
+### FreeRTOS
 
 To ensure smooth operation, FreeRTOS was implemented as the operating system (`OS`). This allows for task scheduling and prioritization as needed. The game can be divided into three main components: player input (UDP server), game logic, and visualization.
 
