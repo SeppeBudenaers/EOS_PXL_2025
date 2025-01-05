@@ -9,8 +9,8 @@ This project is a modified hardware implementation based on a tutorial from [thi
 ### Modifications and Optimizations
 While the original tutorial served as a foundation, we made specific adjustments to meet our requirements:
 
-- **Resolution Adjustment**: The entire design was modified to ensure stable operation at a resolution of 720p.  
-- **Timing Optimizations**: Various timing parameters were fine-tuned to improve system reliability.  
+- **Resolution Adjustment**: The was based in a resolutoin that was no longer suported by vivado so we switched to 1280 * 720.  
+- **Timing Adjustment**: To be able to send 720p Video the timing of `Pixel_CLK` needed to change to 74.25 MHZ.  
 
 ### Design Overview
 Below is a complete schematic of the updated design, including the adjusted timing and resolution settings:  
